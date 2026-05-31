@@ -54,7 +54,41 @@ NOMBRES_ES = {
     "Electric eel": "Anguila eléctrica", "Axolotl": "Ajolote",
     "Poison dart frog": "Rana dardo venenosa", "Viper": "Víbora",
     "Rattlesnake": "Serpiente de cascabel", "Chameleon": "Camaleón",
-    "Gecko": "Gecko",
+    "Gecko": "Gecko","Dalmatian dog":        "Dálmata",
+    "Boxer (dog)":          "Boxer",
+    "Pomeranian (dog)":     "Pomerania",
+    "Ragdoll cat":          "Ragdoll",
+    "Mako shark":           "Tiburón mako",
+    "Reef shark":           "Tiburón de arrecife",
+    "Bullfrog":             "Rana toro",
+    "Red-eyed tree frog":   "Rana arbórea de ojos rojos",
+    "Manta ray":            "Manta raya",
+    "Black bear":           "Oso negro",
+    "Grizzly bear":         "Oso grizzly",
+    "Sun bear":             "Oso malayo",
+    "Monitor lizard":       "Lagarto monitor",
+    "Macaw":                "Guacamayo",
+    "Cockatoo":             "Cacatúa",
+    "Bumblebee":            "Abejorro",
+    "Mandrill":             "Mandril",
+    "Baboon":               "Babuino",
+    "Gibbon":               "Gibón",
+    "Bonobo":               "Bonobo",
+    "Wombat":               "Wombat",
+    "Tasmanian devil":      "Demonio de Tasmania",
+    "Donkey":               "Burro",
+    "Mule":                 "Mula",
+    "Water buffalo":        "Búfalo de agua",
+    "Snowshoe hare":        "Liebre americana",
+    "Dingo":                "Dingo",
+    "Mongoose":             "Mangosta",
+    "Beluga whale":         "Ballena beluga",
+    "Spinner dolphin":      "Delfín tornillo",
+    "Common dolphin":       "Delfín común",
+    "Bottlenose dolphin":   "Delfín mular",
+    "Saltwater crocodile":  "Cocodrilo marino",
+    "Clouded leopard":      "Leopardo nebuloso",
+    "Caracal":              "Caracal",
 }
 
 def esc(s):
@@ -78,17 +112,30 @@ for a in data:
 
     label_en  = a.get("labels", {}).get("en", "")
     label_es  = a.get("labels", {}).get("es", "")
+    label_fr  = a.get("labels", {}).get("fr", "")
+    label_pt  = a.get("labels", {}).get("pt", "")
+    label_de  = a.get("labels", {}).get("de", "")
+
+    # Usar traducción manual si existe, si no usar la española del dump
     nombre_es = NOMBRES_ES.get(label_en, label_es if label_es else label_en)
-    thumbnail = a.get("thumbnail", "")
-    abstract  = a.get("abstract", "")
 
     triples = [f"<{uri}>"]
     triples.append("  a owl:NamedIndividual, dbo:Animal ;")
     triples.append(f'  rdfs:label "{esc(nombre_es)}"@es ;')
     if label_en:
         triples.append(f'  rdfs:label "{esc(label_en)}"@en ;')
-    if abstract:
-        triples.append(f'  dbo:abstract "{esc(abstract[:500])}"@es ;')
+    if label_fr:
+        triples.append(f'  rdfs:label "{esc(label_fr)}"@fr ;')
+    if label_pt:
+        triples.append(f'  rdfs:label "{esc(label_pt)}"@pt ;')
+    if label_de:
+        triples.append(f'  rdfs:label "{esc(label_de)}"@de ;')
+
+    ab = a.get("abstract", "")
+    if ab:
+        triples.append(f'  dbo:abstract "{esc(ab[:500])}"@es ;')
+
+    thumbnail = a.get("thumbnail", "")
     if thumbnail:
         triples.append(f'  foaf:depiction <{thumbnail}> ;')
 

@@ -7,269 +7,769 @@
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Perro"@es ;
   rdfs:label "Dog"@en ;
+  rdfs:label "Chien"@fr ;
+  rdfs:label "Cão"@pt ;
+  rdfs:label "Haushund"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue_merle_koolie_short_coat_heading_sheep_(cropped).jpg?width=300> .
-
-<http://dbpedia.org/resource/Cat>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Gato"@es ;
-  rdfs:label "Cat"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cat_August_2010-4.jpg?width=300> .
-
-<http://dbpedia.org/resource/Lion>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "León"@es ;
-  rdfs:label "Lion"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?width=300> .
-
-<http://dbpedia.org/resource/Tiger>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Tigre"@es ;
-  rdfs:label "Tiger"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg?width=300> .
-
-<http://dbpedia.org/resource/Bear>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Oso"@es ;
-  rdfs:label "Bear"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ours_brun_parcanimalierpyrenees_1.jpg?width=300> .
-
-<http://dbpedia.org/resource/Wolf>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Lobo"@es ;
-  rdfs:label "Wolf"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_wolf_2.jpg?width=300> .
-
-<http://dbpedia.org/resource/Fox>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Zorro"@es ;
-  rdfs:label "Fox"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_vulpes_ssp_fulvus.jpg?width=300> .
-
-<http://dbpedia.org/resource/Dolphin>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Delfín"@es ;
-  rdfs:label "Dolphin"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tursiops_truncatus_01.jpg?width=300> .
-
-<http://dbpedia.org/resource/Blue_whale>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Ballena azul"@es ;
-  rdfs:label "Blue whale"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg?width=300> .
-
-<http://dbpedia.org/resource/Gorilla>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Gorila"@es ;
-  rdfs:label "Gorilla"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gorille_des_plaines_de_l'ouest_à_l'Espace_Zoologique.jpg?width=300> .
-
-<http://dbpedia.org/resource/Horse>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Caballo"@es ;
-  rdfs:label "Horse"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mares_and_Foals.jpg?width=300> .
-
-<http://dbpedia.org/resource/Golden_eagle>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Águila real"@es ;
-  rdfs:label "Golden eagle"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg?width=300> .
-
-<http://dbpedia.org/resource/Penguin>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Pingüino"@es ;
-  rdfs:label "Penguin"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg?width=300> .
-
-<http://dbpedia.org/resource/Nile_crocodile>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Cocodrilo del Nilo"@es ;
-  rdfs:label "Nile crocodile"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/NileCrocodile.jpg?width=300> .
-
-<http://dbpedia.org/resource/Green_iguana>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Iguana verde"@es ;
-  rdfs:label "Green iguana"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Iguana_iguana_(male_resting).jpg?width=300> .
-
-<http://dbpedia.org/resource/Tree_frog>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Rana arbórea"@es ;
-  rdfs:label "Tree frog"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Laubfrosch_cropped.jpg?width=300> .
-
-<http://dbpedia.org/resource/Atlantic_salmon>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Salmón atlántico"@es ;
-  rdfs:label "Atlantic salmon"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Salmo_salar.jpg?width=300> .
-
-<http://dbpedia.org/resource/Monarch_butterfly>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Mariposa monarca"@es ;
-  rdfs:label "Monarch butterfly"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg?width=300> .
-
-<http://dbpedia.org/resource/Bengal_tiger>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Tigre de Bengala"@es ;
-  rdfs:label "Bengal tiger"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Adult_male_Royal_Bengal_tiger.jpg?width=300> .
-
-<http://dbpedia.org/resource/Polar_bear>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Oso polar"@es ;
-  rdfs:label "Polar bear"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Polar_Bear_-_Alaska_(cropped).jpg?width=300> .
 
 <http://dbpedia.org/resource/German_Shepherd>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Pastor alemán"@es ;
   rdfs:label "German Shepherd"@en ;
+  rdfs:label "Berger allemand"@fr ;
+  rdfs:label "Pastor-alemão"@pt ;
+  rdfs:label "Deutscher Schäferhund"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/German_Shepherd_-_DSC_0346_(10096362833).jpg?width=300> .
 
 <http://dbpedia.org/resource/Labrador_Retriever>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Labrador retriever"@es ;
   rdfs:label "Labrador Retriever"@en ;
+  rdfs:label "Labrador retriever"@fr ;
+  rdfs:label "Labrador retriever"@pt ;
+  rdfs:label "Labrador Retriever"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Labrador_on_Quantock_(2175262184).jpg?width=300> .
 
 <http://dbpedia.org/resource/Golden_Retriever>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Golden retriever"@es ;
   rdfs:label "Golden Retriever"@en ;
+  rdfs:label "Golden retriever"@fr ;
+  rdfs:label "Golden retriever"@pt ;
+  rdfs:label "Golden Retriever"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Golden_Retriever_Dukedestiny01_drvd.jpg?width=300> .
 
 <http://dbpedia.org/resource/Poodle>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Caniche"@es ;
   rdfs:label "Poodle"@en ;
+  rdfs:label "Caniche"@fr ;
+  rdfs:label "Poodle"@pt ;
+  rdfs:label "Pudel"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Full_attention_(8067543690).jpg?width=300> .
 
 <http://dbpedia.org/resource/Bulldog>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Bulldog"@es ;
   rdfs:label "Bulldog"@en ;
+  rdfs:label "Bulldog anglais"@fr ;
+  rdfs:label "Buldogue"@pt ;
+  rdfs:label "Englische Bulldogge"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bulldog_inglese.jpg?width=300> .
 
 <http://dbpedia.org/resource/Beagle>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Beagle"@es ;
   rdfs:label "Beagle"@en ;
+  rdfs:label "Beagle"@fr ;
+  rdfs:label "Beagle"@pt ;
+  rdfs:label "Beagle (Hunderasse)"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Beagle_600.jpg?width=300> .
 
 <http://dbpedia.org/resource/Chihuahua>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Chihuahua"@es ;
-  rdfs:label "Chihuahua"@en .
+  rdfs:label "Chihuahua"@en ;
+  rdfs:label "Chihuahua"@fr ;
+  rdfs:label "Chihuahua (desambiguação)"@pt ;
+  rdfs:label "Chihuahua"@de .
 
 <http://dbpedia.org/resource/Rottweiler>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Rottweiler"@es ;
   rdfs:label "Rottweiler"@en ;
+  rdfs:label "Rottweiler"@fr ;
+  rdfs:label "Rottweiler"@pt ;
+  rdfs:label "Rottweiler"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rottweiler_standing_facing_left.jpg?width=300> .
 
 <http://dbpedia.org/resource/Siberian_Husky>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Husky siberiano"@es ;
   rdfs:label "Siberian Husky"@en ;
+  rdfs:label "Husky de Sibérie"@fr ;
+  rdfs:label "Husky siberiano"@pt ;
+  rdfs:label "Siberian Husky"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Husky_L.jpg?width=300> .
 
 <http://dbpedia.org/resource/Dachshund>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Dachshund"@es ;
   rdfs:label "Dachshund"@en ;
+  rdfs:label "Teckel"@fr ;
+  rdfs:label "Dachshund"@pt ;
+  rdfs:label "Dackel"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/닥스훈트(단모종)_(Dachshund_(Short)).jpg?width=300> .
+
+<http://dbpedia.org/resource/Shih_Tzu>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Shih Tzu"@es ;
+  rdfs:label "Shih Tzu"@en ;
+  rdfs:label "Shih tzu"@fr ;
+  rdfs:label "Shih-tzu"@pt ;
+  rdfs:label "Shih Tzu"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Shihtzu_(cropped).jpg?width=300> .
+
+<http://dbpedia.org/resource/Yorkshire_Terrier>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Yorkshire terrier"@es ;
+  rdfs:label "Yorkshire Terrier"@en ;
+  rdfs:label "Yorkshire terrier"@fr ;
+  rdfs:label "Yorkshire terrier"@pt ;
+  rdfs:label "Yorkshire Terrier"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/(2_version)_Grupp_3,_YORKSHIRETERRIER,_NO_UCH_SE_UCH_Oxzar_Amazing_Bel’s_Toffy_(24310212305).jpg?width=300> .
+
+<http://dbpedia.org/resource/Dobermann>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dóberman"@es ;
+  rdfs:label "Dobermann"@en ;
+  rdfs:label "Dobermann"@fr ;
+  rdfs:label "Dobermann"@pt ;
+  rdfs:label "Dobermann"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dobermann_handling.jpg?width=300> .
+
+<http://dbpedia.org/resource/Great_Dane>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gran danés"@es ;
+  rdfs:label "Great Dane"@en ;
+  rdfs:label "Dogue allemand"@fr ;
+  rdfs:label "Dogue alemão"@pt ;
+  rdfs:label "Deutsche Dogge"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dog_niemiecki_żółty_LM980.jpg?width=300> .
+
+<http://dbpedia.org/resource/Border_Collie>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Border collie"@es ;
+  rdfs:label "Border Collie"@en ;
+  rdfs:label "Border collie"@fr ;
+  rdfs:label "Border collie"@pt ;
+  rdfs:label "Border Collie"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Border_Collie_600.jpg?width=300> .
+
+<http://dbpedia.org/resource/Australian_Shepherd>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pastor ovejero australiano"@es ;
+  rdfs:label "Australian Shepherd"@en ;
+  rdfs:label "Berger australien"@fr ;
+  rdfs:label "Pastor-australiano"@pt ;
+  rdfs:label "Australian Shepherd"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Australian_Shepherd_red_bi.jpg?width=300> .
+
+<http://dbpedia.org/resource/Dalmatian_dog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dálmata"@es ;
+  rdfs:label "Dalmatian dog"@en ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sun_Dog_Dalmatian.jpg?width=300> .
+
+<http://dbpedia.org/resource/Cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gato"@es ;
+  rdfs:label "Cat"@en ;
+  rdfs:label "Chat"@fr ;
+  rdfs:label "Gato"@pt ;
+  rdfs:label "Hauskatze"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cat_August_2010-4.jpg?width=300> .
 
 <http://dbpedia.org/resource/Persian_cat>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Gato persa"@es ;
   rdfs:label "Persian cat"@en ;
+  rdfs:label "Persan (chat)"@fr ;
+  rdfs:label "Persa (gato)"@pt ;
+  rdfs:label "Perserkatze"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Persialainen.jpg?width=300> .
 
 <http://dbpedia.org/resource/Siamese_cat>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Gato siamés"@es ;
   rdfs:label "Siamese cat"@en ;
+  rdfs:label "Siamois (chat)"@fr ;
+  rdfs:label "Siamês (gato)"@pt ;
+  rdfs:label "Siamkatze"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Siam_lilacpoint.jpg?width=300> .
 
 <http://dbpedia.org/resource/Maine_Coon>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Maine Coon"@es ;
   rdfs:label "Maine Coon"@en ;
+  rdfs:label "Maine coon"@fr ;
+  rdfs:label "Maine Coon"@pt ;
+  rdfs:label "Maine-Coon-Katze"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Maine_Coon_cat_by_Tomitheos.jpg?width=300> .
 
 <http://dbpedia.org/resource/Bengal_cat>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Gato de Bengala"@es ;
   rdfs:label "Bengal cat"@en ;
+  rdfs:label "Bengal"@fr ;
+  rdfs:label "Gato-de-bengala"@pt ;
+  rdfs:label "Bengal (Katzenrasse)"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Paintedcats_Red_Star_standing.jpg?width=300> .
+
+<http://dbpedia.org/resource/Sphynx_cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Sphynx"@es ;
+  rdfs:label "Sphynx cat"@en ;
+  rdfs:label "Sphynx"@fr ;
+  rdfs:label "Sphynx"@pt ;
+  rdfs:label "Sphynx-Katze"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sphynx_-_cat._img_031.jpg?width=300> .
+
+<http://dbpedia.org/resource/British_Shorthair>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "British Shorthair"@es ;
+  rdfs:label "British Longhair"@en ;
+  rdfs:label "British shorthair"@fr ;
+  rdfs:label "Gato de pelo curto inglês"@pt ;
+  rdfs:label "Britisch Kurzhaar"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mystica_from_British_Empire_Cattery.jpg?width=300> .
+
+<http://dbpedia.org/resource/Scottish_Fold>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Scottish Fold"@es ;
+  rdfs:label "Scottish Fold"@en ;
+  rdfs:label "Scottish fold & Highland Fold"@fr ;
+  rdfs:label "Scottish Fold"@pt ;
+  rdfs:label "Schottische Faltohrkatze"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue_Scottish_Fold_Cat.png?width=300> .
+
+<http://dbpedia.org/resource/Abyssinian_cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Abisinio (gato)"@es ;
+  rdfs:label "Abyssinian cat"@en ;
+  rdfs:label "Abyssin"@fr ;
+  rdfs:label "Gato abissínio"@pt ;
+  rdfs:label "Abessinierkatze"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav_chocolate.jpg?width=300> .
+
+<http://dbpedia.org/resource/Lion>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "León"@es ;
+  rdfs:label "Lion"@en ;
+  rdfs:label "Lion"@fr ;
+  rdfs:label "Leão"@pt ;
+  rdfs:label "Löwe"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?width=300> .
+
+<http://dbpedia.org/resource/Tiger>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tigre"@es ;
+  rdfs:label "Tiger"@en ;
+  rdfs:label "Tigre"@fr ;
+  rdfs:label "Tigre"@pt ;
+  rdfs:label "Tiger"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bengal_tiger>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tigre de Bengala"@es ;
+  rdfs:label "Bengal tiger"@en ;
+  rdfs:label "Tigre du Bengale"@fr ;
+  rdfs:label "Tigre-de-bengala"@pt ;
+  rdfs:label "Königstiger"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Adult_male_Royal_Bengal_tiger.jpg?width=300> .
+
+<http://dbpedia.org/resource/Cheetah>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Guepardo"@es ;
+  rdfs:label "Cheetah"@en ;
+  rdfs:label "Guépard"@fr ;
+  rdfs:label "Acinonyx jubatus"@pt ;
+  rdfs:label "Gepard"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Male_cheetah_facing_left_in_South_Africa.jpg?width=300> .
+
+<http://dbpedia.org/resource/Leopard>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Leopardo"@es ;
+  rdfs:label "Leopard"@en ;
+  rdfs:label "Léopard"@fr ;
+  rdfs:label "Panthera pardus"@pt ;
+  rdfs:label "Leopard"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/African_leopard_male_(cropped).jpg?width=300> .
+
+<http://dbpedia.org/resource/Jaguar>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Jaguar"@es ;
+  rdfs:label "Jaguar"@en ;
+  rdfs:label "Jaguar"@fr ;
+  rdfs:label "Panthera onca"@pt ;
+  rdfs:label "Jaguar"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Standing_jaguar.jpg?width=300> .
+
+<http://dbpedia.org/resource/Puma>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Puma"@es ;
+  rdfs:label "Puma"@en ;
+  rdfs:label "Puma (homonymie)"@fr ;
+  rdfs:label "Puma (desambiguação)"@pt ;
+  rdfs:label "Puma (Begriffsklärung)"@de .
+
+<http://dbpedia.org/resource/Snow_leopard>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Leopardo de las nieves"@es ;
+  rdfs:label "Snow leopard"@en ;
+  rdfs:label "Panthère des neiges"@fr ;
+  rdfs:label "Leopardo-das-neves"@pt ;
+  rdfs:label "Schneeleopard"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Irbis4.jpg?width=300> .
+
+<http://dbpedia.org/resource/Clouded_leopard>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Leopardo nebuloso"@es ;
+  rdfs:label "Clouded leopard"@en ;
+  rdfs:label "Panthère nébuleuse"@fr ;
+  rdfs:label "Neofelis nebulosa"@pt ;
+  rdfs:label "Nebelparder"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Neofelis_nebulosa,_Clouded_leopard.jpg?width=300> .
+
+<http://dbpedia.org/resource/Caracal>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caracal"@es ;
+  rdfs:label "Caracal"@en ;
+  rdfs:label "Caracal"@fr ;
+  rdfs:label "Caracal caracal"@pt ;
+  rdfs:label "Karakal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Caracal_on_the_road,_early_morning_in_Kgalagadi_(36173878220)_(cropped).jpg?width=300> .
+
+<http://dbpedia.org/resource/Bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso"@es ;
+  rdfs:label "Bear"@en ;
+  rdfs:label "Ours blanc"@fr ;
+  rdfs:label "Ursidae"@pt ;
+  rdfs:label "Bären"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ours_brun_parcanimalierpyrenees_1.jpg?width=300> .
+
+<http://dbpedia.org/resource/Polar_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso polar"@es ;
+  rdfs:label "Polar bear"@en ;
+  rdfs:label "Ours blanc"@fr ;
+  rdfs:label "Ursidae"@pt ;
+  rdfs:label "Bären"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Polar_Bear_-_Alaska_(cropped).jpg?width=300> .
+
+<http://dbpedia.org/resource/Giant_panda>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso panda gigante"@es ;
+  rdfs:label "Giant panda"@en ;
+  rdfs:label "Ours blanc"@fr ;
+  rdfs:label "Ursidae"@pt ;
+  rdfs:label "Bären"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Grosser_Panda.jpg?width=300> .
+
+<http://dbpedia.org/resource/Red_panda>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Panda rojo"@es ;
+  rdfs:label "Red panda"@en ;
+  rdfs:label "Ailurus fulgens"@fr ;
+  rdfs:label "Panda-vermelho"@pt ;
+  rdfs:label "Westlicher Kleiner Panda"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Panda_(24986761703).jpg?width=300> .
+
+<http://dbpedia.org/resource/Brown_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ailuropoda melanoleuca"@es ;
+  rdfs:label "Brown bear"@en ;
+  rdfs:label "Ours blanc"@fr ;
+  rdfs:label "Ursidae"@pt ;
+  rdfs:label "Bären"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2010-kodiak-bear-1.jpg?width=300> .
+
+<http://dbpedia.org/resource/Black_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso negro"@es ;
+  rdfs:label "Black bear"@en ;
+  rdfs:label "Black Bear"@de .
+
+<http://dbpedia.org/resource/Grizzly_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso grizzly"@es ;
+  rdfs:label "Grizzly bear"@en ;
+  rdfs:label "Ours blanc"@fr ;
+  rdfs:label "Ursidae"@pt ;
+  rdfs:label "Bären"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/GrizzlyBearJeanBeaufort.jpg?width=300> .
+
+<http://dbpedia.org/resource/Sun_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso malayo"@es ;
+  rdfs:label "Sun bear"@en ;
+  rdfs:label "Ours malais"@fr ;
+  rdfs:label "Helarctos malayanus"@pt ;
+  rdfs:label "Malaienbär"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sun-bear.jpg?width=300> .
+
+<http://dbpedia.org/resource/Spectacled_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tremarctos ornatus"@es ;
+  rdfs:label "Spectacled bear"@en ;
+  rdfs:label "Ours à lunettes"@fr ;
+  rdfs:label "Tremarctos ornatus"@pt ;
+  rdfs:label "Brillenbär"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Urso_de_óculos.jpg?width=300> .
 
 <http://dbpedia.org/resource/Great_white_shark>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Tiburón blanco"@es ;
   rdfs:label "Great white shark"@en ;
+  rdfs:label "Grand requin blanc"@fr ;
+  rdfs:label "Tubarão-branco"@pt ;
+  rdfs:label "Grüne Mosaikjungfer"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/White_shark.jpg?width=300> .
 
 <http://dbpedia.org/resource/Whale_shark>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Tiburón ballena"@es ;
   rdfs:label "Whale shark"@en ;
+  rdfs:label "Requin-baleine"@fr ;
+  rdfs:label "Tubarão-baleia"@pt ;
+  rdfs:label "Walhai"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Similan_Dive_Center_-_great_whale_shark.jpg?width=300> .
 
 <http://dbpedia.org/resource/Hammerhead_shark>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Tiburón martillo"@es ;
   rdfs:label "Hammerhead shark"@en ;
+  rdfs:label "Sphyrnidae"@fr ;
+  rdfs:label "Sphyrnidae"@pt ;
+  rdfs:label "Hammerhaie"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Scalloped_Hammerhead_Shark_Sphyrna_Lewini_(226845659).jpeg?width=300> .
 
 <http://dbpedia.org/resource/Bull_shark>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Tiburón toro"@es ;
   rdfs:label "Bull shark"@en ;
+  rdfs:label "Requin-bouledogue"@fr ;
+  rdfs:label "Tubarão-cabeça-chata"@pt ;
+  rdfs:label "Bullenhai"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Carcharhinus_leucas_TPWD.jpg?width=300> .
 
 <http://dbpedia.org/resource/Tiger_shark>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Tiburón tigre"@es ;
   rdfs:label "Tiger shark"@en ;
+  rdfs:label "Requin-tigre"@fr ;
+  rdfs:label "Tubarão-tigre"@pt ;
+  rdfs:label "Tigerhai"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tiger_shark.jpg?width=300> .
 
-<http://dbpedia.org/resource/Octopus>
+<http://dbpedia.org/resource/Nurse_shark>
   a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Pulpo"@es ;
-  rdfs:label "Octopus"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Octopus2.jpg?width=300> .
+  rdfs:label "Ginglymostoma cirratum"@es ;
+  rdfs:label "Nurse shark"@en ;
+  rdfs:label "Ginglymostoma cirratum"@fr ;
+  rdfs:label "Tubarão-lixa"@pt ;
+  rdfs:label "Atlantischer Ammenhai"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/nurse_shark.jpg?width=300> .
 
-<http://dbpedia.org/resource/Giant_squid>
+<http://dbpedia.org/resource/Blue_shark>
   a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Architeuthis"@es ;
-  rdfs:label "Architeuthis"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giant_squid_Ranheim.jpg?width=300> .
+  rdfs:label "Prionace glauca"@es ;
+  rdfs:label "Blue shark"@en ;
+  rdfs:label "Requin bleu"@fr ;
+  rdfs:label "Prionace glauca"@pt ;
+  rdfs:label "Blauhai"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tiburón_azul_(Prionace_glauca),_canal_Fayal-Pico,_islas_Azores,_Portugal,_2020-07-27,_DD_28.jpg?width=300> .
 
-<http://dbpedia.org/resource/Green_sea_turtle>
+<http://dbpedia.org/resource/Lemon_shark>
   a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Tortuga verde"@es ;
-  rdfs:label "Green sea turtle"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg?width=300> .
+  rdfs:label "Negaprion brevirostris"@es ;
+  rdfs:label "Lemon shark"@en ;
+  rdfs:label "Negaprion"@fr ;
+  rdfs:label "Tubarão-limão"@pt ;
+  rdfs:label "Zitronenhaie"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lemonshark.jpg?width=300> .
 
-<http://dbpedia.org/resource/Leatherback_sea_turtle>
+<http://dbpedia.org/resource/Reef_shark>
   a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Tortuga laúd"@es ;
-  rdfs:label "Leatherback sea turtle"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Leatherback_sea_turtle_Tinglar,_USVI_(5839996547).jpg?width=300> .
+  rdfs:label "Tiburón de arrecife"@es ;
+  rdfs:label "Reef shark"@en ;
+  rdfs:label "Riffhai"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Caribbean_reef_shark.jpg?width=300> .
+
+<http://dbpedia.org/resource/Blue_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ballena azul"@es ;
+  rdfs:label "Blue whale"@en ;
+  rdfs:label "Baleine bleue"@fr ;
+  rdfs:label "Baleia-azul"@pt ;
+  rdfs:label "Blauwal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg?width=300> .
+
+<http://dbpedia.org/resource/Humpback_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ballena jorobada"@es ;
+  rdfs:label "Humpback whale"@en ;
+  rdfs:label "Baleine à bosse"@fr ;
+  rdfs:label "Baleia-jubarte"@pt ;
+  rdfs:label "Buckelwal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Humpback_Whale_underwater_shot.jpg?width=300> .
+
+<http://dbpedia.org/resource/Sperm_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cachalote"@es ;
+  rdfs:label "Sperm whale"@en ;
+  rdfs:label "Grand cachalot"@fr ;
+  rdfs:label "Cachalote"@pt ;
+  rdfs:label "Pottwal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mother_and_baby_sperm_whale.jpg?width=300> .
+
+<http://dbpedia.org/resource/Orca>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Orca"@es ;
+  rdfs:label "Orca"@en ;
+  rdfs:label "Orque"@fr ;
+  rdfs:label "Orca"@pt ;
+  rdfs:label "Schwertwal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Killerwhales_jumping.jpg?width=300> .
+
+<http://dbpedia.org/resource/Narwhal>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Narval"@es ;
+  rdfs:label "Narwhal"@en ;
+  rdfs:label "Narval"@fr ;
+  rdfs:label "Narval"@pt ;
+  rdfs:label "Narwal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Нарвал_в_российской_Арктике.jpg?width=300> .
+
+<http://dbpedia.org/resource/Beluga_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ballena beluga"@es ;
+  rdfs:label "Beluga whale"@en ;
+  rdfs:label "Béluga (cétacé)"@fr ;
+  rdfs:label "Baleia-branca"@pt ;
+  rdfs:label "Weißwal"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oceanogràfic_29102004.jpg?width=300> .
+
+<http://dbpedia.org/resource/Dolphin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Delfín"@es ;
+  rdfs:label "Dolphin"@en ;
+  rdfs:label "Dauphin"@fr ;
+  rdfs:label "Golfinho"@pt ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tursiops_truncatus_01.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bottlenose_dolphin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Delfín mular"@es ;
+  rdfs:label "Bottlenose dolphin"@en ;
+  rdfs:label "Tursiops"@fr ;
+  rdfs:label "Tursiops"@pt ;
+  rdfs:label "Tursiops"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tursiops_truncatus_01.jpg?width=300> .
+
+<http://dbpedia.org/resource/Spinner_dolphin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Delfín tornillo"@es ;
+  rdfs:label "Spinner dolphin"@en ;
+  rdfs:label "Dauphin à long bec"@fr ;
+  rdfs:label "Golfinho-rotador"@pt ;
+  rdfs:label "Ostpazifischer Delfin"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/A_spinner_dolphin_in_the_Red_Sea.jpg?width=300> .
+
+<http://dbpedia.org/resource/Common_dolphin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Delfín común"@es ;
+  rdfs:label "Common dolphin"@en ;
+  rdfs:label "Delphinus"@fr ;
+  rdfs:label "Delphinus (gênero)"@pt ;
+  rdfs:label "Delphinus (Gattung)"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Common_dolphin_noaa.jpg?width=300> .
+
+<http://dbpedia.org/resource/Golden_eagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Águila real"@es ;
+  rdfs:label "Golden eagle"@en ;
+  rdfs:label "Aigle royal"@fr ;
+  rdfs:label "Águia-real"@pt ;
+  rdfs:label "Steinadler"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bald_eagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Águila calva"@es ;
+  rdfs:label "Bald eagle"@en ;
+  rdfs:label "Pygargue à tête blanche"@fr ;
+  rdfs:label "Haliaeetus leucocephalus"@pt ;
+  rdfs:label "Weißkopfseeadler"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bald_eagle_about_to_fly_in_Alaska_(2016).jpg?width=300> .
+
+<http://dbpedia.org/resource/Harpy_eagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Águila harpía"@es ;
+  rdfs:label "Harpy eagle"@en ;
+  rdfs:label "Harpie féroce"@fr ;
+  rdfs:label "Gavião-real"@pt ;
+  rdfs:label "Harpyie (Vogel)"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Harpia_harpyja_001_800.jpg?width=300> .
+
+<http://dbpedia.org/resource/Peregrine_falcon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Halcón peregrino"@es ;
+  rdfs:label "Peregrine falcon"@en ;
+  rdfs:label "Faucon pèlerin"@fr ;
+  rdfs:label "Falcão-peregrino"@pt ;
+  rdfs:label "Wanderfalke"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg?width=300> .
+
+<http://dbpedia.org/resource/Great_horned_owl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Búho real"@es ;
+  rdfs:label "Great horned owl"@en ;
+  rdfs:label "Grand-duc d'Amérique"@fr ;
+  rdfs:label "Corujão-orelhudo"@pt ;
+  rdfs:label "Virginia-Uhu"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bubo_virginianus_06.jpg?width=300> .
+
+<http://dbpedia.org/resource/Barn_owl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lechuza común"@es ;
+  rdfs:label "Barn owl"@en ;
+  rdfs:label "Chouette effraie"@fr ;
+  rdfs:label "Coruja-das-torres"@pt ;
+  rdfs:label "Schleiereule"@de .
+
+<http://dbpedia.org/resource/Snowy_owl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Bubo scandiacus"@es ;
+  rdfs:label "Snowy owl"@en ;
+  rdfs:label "Harfang des neiges"@fr ;
+  rdfs:label "Coruja-das-neves"@pt ;
+  rdfs:label "Schnee-Eule"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SnowyOwlAmericanBlackDuck.jpg?width=300> .
+
+<http://dbpedia.org/resource/Flamingo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Flamenco"@es ;
+  rdfs:label "Flamingo"@en ;
+  rdfs:label "Phoenicopterus"@fr ;
+  rdfs:label "Flamingo"@pt ;
+  rdfs:label "Flamingos"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Flamingos_Laguna_Colorada.jpg?width=300> .
+
+<http://dbpedia.org/resource/Toucan>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tucán"@es ;
+  rdfs:label "Toucan"@en ;
+  rdfs:label "Ramphastidae"@fr ;
+  rdfs:label "Tucano"@pt ;
+  rdfs:label "Tukane"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Toucans_(Ramphastidae).jpg?width=300> .
+
+<http://dbpedia.org/resource/Ostrich>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Avestruz"@es ;
+  rdfs:label "Ostrich"@en ;
+  rdfs:label "Autruche"@fr ;
+  rdfs:label "Struthio"@pt ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Struthio_Diversity.jpg?width=300> .
+
+<http://dbpedia.org/resource/Emperor_penguin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pingüino emperador"@es ;
+  rdfs:label "Emperor penguin"@en ;
+  rdfs:label "Manchot empereur"@fr ;
+  rdfs:label "Pinguim-imperador"@pt ;
+  rdfs:label "Kaiserpinguin"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg?width=300> .
+
+<http://dbpedia.org/resource/African_penguin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Spheniscus demersus"@es ;
+  rdfs:label "African penguin"@en ;
+  rdfs:label "Manchot du Cap"@fr ;
+  rdfs:label "Pinguim-africano"@pt ;
+  rdfs:label "Brillenpinguin"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wikimania_2018,_Cape_Town_(_1050602),_crop.jpg?width=300> .
+
+<http://dbpedia.org/resource/Hummingbird>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Colibrí"@es ;
+  rdfs:label "Hummingbird"@en ;
+  rdfs:label "Trochilidae"@fr ;
+  rdfs:label "Beija-flor"@pt ;
+  rdfs:label "Kolibris"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Trinidad_and_Tobago_hummingbirds_composite.jpg?width=300> .
+
+<http://dbpedia.org/resource/Macaw>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Guacamayo"@es ;
+  rdfs:label "Macaw"@en ;
+  rdfs:label "Ara (oiseau)"@fr ;
+  rdfs:label "Arara"@pt ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue-and-Yellow-Macaw.jpg?width=300> .
+
+<http://dbpedia.org/resource/Parrot>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Psittaciformes"@es ;
+  rdfs:label "Parrot"@en ;
+  rdfs:label "Psittaciformes"@fr ;
+  rdfs:label "Psittaciformes"@pt ;
+  rdfs:label "Papageien"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Parrot_montage.jpg?width=300> .
+
+<http://dbpedia.org/resource/Cockatoo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cacatúa"@es ;
+  rdfs:label "Cockatoo"@en ;
+  rdfs:label "Calopsitte élégante"@fr ;
+  rdfs:label "Nymphicus hollandicus"@pt ;
+  rdfs:label "Kakadus"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cacatua_galerita_Tas_2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Nile_crocodile>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cocodrilo del Nilo"@es ;
+  rdfs:label "Nile crocodile"@en ;
+  rdfs:label "Crocodile du Nil"@fr ;
+  rdfs:label "Crocodilo-do-nilo"@pt ;
+  rdfs:label "Nilkrokodil"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/NileCrocodile.jpg?width=300> .
+
+<http://dbpedia.org/resource/Saltwater_crocodile>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cocodrilo marino"@es ;
+  rdfs:label "Saltwater crocodile"@en ;
+  rdfs:label "Crocodile marin"@fr ;
+  rdfs:label "Crocodilo-de-água-salgada"@pt ;
+  rdfs:label "Leistenkrokodil"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SaltwaterCrocodile('Maximo').jpg?width=300> .
+
+<http://dbpedia.org/resource/Green_iguana>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Iguana verde"@es ;
+  rdfs:label "Green iguana"@en ;
+  rdfs:label "Iguana iguana"@fr ;
+  rdfs:label "Iguana iguana"@pt ;
+  rdfs:label "Grüner Leguan"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Iguana_iguana_(male_resting).jpg?width=300> .
+
+<http://dbpedia.org/resource/Komodo_dragon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dragón de Komodo"@es ;
+  rdfs:label "Komodo dragon"@en ;
+  rdfs:label "Dragon de Komodo"@fr ;
+  rdfs:label "Dragão-de-komodo"@pt ;
+  rdfs:label "Komodowaran"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/202306_Varanus_komodoensis.jpg?width=300> .
 
 <http://dbpedia.org/resource/King_cobra>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Cobra real"@es ;
   rdfs:label "King cobra"@en ;
+  rdfs:label "Cobra royal"@fr ;
+  rdfs:label "Cobra-real"@pt ;
+  rdfs:label "Königskobra"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg?width=300> .
 
 <http://dbpedia.org/resource/Black_mamba>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Mamba negra"@es ;
   rdfs:label "Black mamba"@en ;
+  rdfs:label "Dendroaspis polylepis"@fr ;
+  rdfs:label "Mamba-negra"@pt ;
+  rdfs:label "Schwarze Mamba"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dendroaspis_polylepis_(14).jpg?width=300> .
 
 <http://dbpedia.org/resource/Anaconda>
@@ -282,388 +782,27 @@
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Boa constrictor"@es ;
   rdfs:label "Boa constrictor"@en ;
+  rdfs:label "Boa constricteur"@fr ;
+  rdfs:label "Jiboia-constritora"@pt ;
+  rdfs:label "Abgottschlange"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Red-tailed_boa_(Boa_constrictor_constrictor)_Rio_Napo.jpg?width=300> .
 
 <http://dbpedia.org/resource/Reticulated_python>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Pitón reticulada"@es ;
   rdfs:label "Reticulated python"@en ;
+  rdfs:label "Python réticulé"@fr ;
+  rdfs:label "Píton-reticulada"@pt ;
+  rdfs:label "Netzpython"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Python_reticulatus_сетчатый_питон-2.jpg?width=300> .
-
-<http://dbpedia.org/resource/Komodo_dragon>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Dragón de Komodo"@es ;
-  rdfs:label "Komodo dragon"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/202306_Varanus_komodoensis.jpg?width=300> .
-
-<http://dbpedia.org/resource/African_elephant>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Elefante africano"@es ;
-  rdfs:label "African elephant"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/African_Elephant_(Loxodonta_africana)_male_(17289351322).jpg?width=300> .
-
-<http://dbpedia.org/resource/Asian_elephant>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Elefante asiático"@es ;
-  rdfs:label "Asian elephant"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Elephas_maximus_(Bandipur).jpg?width=300> .
-
-<http://dbpedia.org/resource/Giraffe>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Jirafa"@es ;
-  rdfs:label "Giraffe"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_Mikumi_National_Park.jpg?width=300> .
-
-<http://dbpedia.org/resource/Zebra>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Cebra"@es ;
-  rdfs:label "Zebra"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Plains_Zebra_Equus_quagga_cropped.jpg?width=300> .
-
-<http://dbpedia.org/resource/Hippopotamus>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Hipopótamo"@es ;
-  rdfs:label "Hippopotamus"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait_Hippopotamus_in_the_water.jpg?width=300> .
-
-<http://dbpedia.org/resource/White_rhinoceros>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Rinoceronte blanco"@es ;
-  rdfs:label "White rhinoceros"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/White_Rhino_at_Working_with_Wildlife.jpg?width=300> .
-
-<http://dbpedia.org/resource/Black_rhinoceros>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Rinoceronte negro"@es ;
-  rdfs:label "Black rhinoceros"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Black_Rhino_at_Working_with_Wildlife.jpg?width=300> .
-
-<http://dbpedia.org/resource/Cheetah>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Guepardo"@es ;
-  rdfs:label "Cheetah"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Male_cheetah_facing_left_in_South_Africa.jpg?width=300> .
-
-<http://dbpedia.org/resource/Leopard>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Leopardo"@es ;
-  rdfs:label "Leopard"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/African_leopard_male_(cropped).jpg?width=300> .
-
-<http://dbpedia.org/resource/Jaguar>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Jaguar"@es ;
-  rdfs:label "Jaguar"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Standing_jaguar.jpg?width=300> .
-
-<http://dbpedia.org/resource/Puma>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Puma"@es ;
-  rdfs:label "Puma"@en .
-
-<http://dbpedia.org/resource/Snow_leopard>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Leopardo de las nieves"@es ;
-  rdfs:label "Snow leopard"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Irbis4.jpg?width=300> .
-
-<http://dbpedia.org/resource/Chimpanzee>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Chimpancé"@es ;
-  rdfs:label "Chimpanzee"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg?width=300> .
-
-<http://dbpedia.org/resource/Orangutan>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Orangután"@es ;
-  rdfs:label "Orangutan"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Orang_Utan,_Semenggok_Forest_Reserve,_Sarawak,_Borneo,_Malaysia.jpg?width=300> .
-
-<http://dbpedia.org/resource/Kangaroo>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Canguro"@es ;
-  rdfs:label "Kangaroo"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kangaroo_Australia_01_11_2008_-_retouch.jpg?width=300> .
-
-<http://dbpedia.org/resource/Koala>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Koala"@es ;
-  rdfs:label "Koala"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Koala_climbing_tree.jpg?width=300> .
-
-<http://dbpedia.org/resource/Platypus>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Ornitorrinco"@es ;
-  rdfs:label "Platypus"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg?width=300> .
-
-<http://dbpedia.org/resource/Clownfish>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Pez payaso"@es ;
-  rdfs:label "Clownfish"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Amphiprion_ocellaris_(Clown_anemonefish)_by_Nick_Hobgood.jpg?width=300> .
-
-<http://dbpedia.org/resource/Seahorse>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Caballito de mar"@es ;
-  rdfs:label "Seahorse"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg?width=300> .
-
-<http://dbpedia.org/resource/Piranha>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Piraña"@es ;
-  rdfs:label "Piranha"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg?width=300> .
-
-<http://dbpedia.org/resource/Swordfish>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Pez espada"@es ;
-  rdfs:label "Swordfish"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Xiphias_gladius_Linnaeus,_1758_2599925021.jpg?width=300> .
-
-<http://dbpedia.org/resource/Tuna>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Atún"@es ;
-  rdfs:label "Tuna"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/tuna_assortment.png?width=300> .
-
-<http://dbpedia.org/resource/Salmon>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Salmón"@es ;
-  rdfs:label "Salmon"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Salmo_salar.jpg?width=300> .
-
-<http://dbpedia.org/resource/Bald_eagle>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Águila calva"@es ;
-  rdfs:label "Bald eagle"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bald_eagle_about_to_fly_in_Alaska_(2016).jpg?width=300> .
-
-<http://dbpedia.org/resource/Harpy_eagle>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Águila harpía"@es ;
-  rdfs:label "Harpy eagle"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Harpia_harpyja_001_800.jpg?width=300> .
-
-<http://dbpedia.org/resource/Peregrine_falcon>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Halcón peregrino"@es ;
-  rdfs:label "Peregrine falcon"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg?width=300> .
-
-<http://dbpedia.org/resource/Great_horned_owl>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Búho real"@es ;
-  rdfs:label "Great horned owl"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bubo_virginianus_06.jpg?width=300> .
-
-<http://dbpedia.org/resource/Barn_owl>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Lechuza común"@es ;
-  rdfs:label "Barn owl"@en .
-
-<http://dbpedia.org/resource/Flamingo>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Flamenco"@es ;
-  rdfs:label "Flamingo"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Flamingos_Laguna_Colorada.jpg?width=300> .
-
-<http://dbpedia.org/resource/Toucan>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Tucán"@es ;
-  rdfs:label "Toucan"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Toucans_(Ramphastidae).jpg?width=300> .
-
-<http://dbpedia.org/resource/Ostrich>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Avestruz"@es ;
-  rdfs:label "Ostrich"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Struthio_Diversity.jpg?width=300> .
-
-<http://dbpedia.org/resource/Emperor_penguin>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Pingüino emperador"@es ;
-  rdfs:label "Emperor penguin"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg?width=300> .
-
-<http://dbpedia.org/resource/Hummingbird>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Colibrí"@es ;
-  rdfs:label "Hummingbird"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Trinidad_and_Tobago_hummingbirds_composite.jpg?width=300> .
-
-<http://dbpedia.org/resource/Giant_panda>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Oso panda gigante"@es ;
-  rdfs:label "Giant panda"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Grosser_Panda.jpg?width=300> .
-
-<http://dbpedia.org/resource/Red_panda>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Panda rojo"@es ;
-  rdfs:label "Red panda"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Panda_(24986761703).jpg?width=300> .
-
-<http://dbpedia.org/resource/Orca>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Orca"@es ;
-  rdfs:label "Orca"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Killerwhales_jumping.jpg?width=300> .
-
-<http://dbpedia.org/resource/Sperm_whale>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Cachalote"@es ;
-  rdfs:label "Sperm whale"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mother_and_baby_sperm_whale.jpg?width=300> .
-
-<http://dbpedia.org/resource/Humpback_whale>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Ballena jorobada"@es ;
-  rdfs:label "Humpback whale"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Humpback_Whale_underwater_shot.jpg?width=300> .
-
-<http://dbpedia.org/resource/Narwhal>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Narval"@es ;
-  rdfs:label "Narwhal"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Нарвал_в_российской_Арктике.jpg?width=300> .
-
-<http://dbpedia.org/resource/Sea_lion>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "León marino"@es ;
-  rdfs:label "Sea lion"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/California_sea_lion_in_La_Jolla_(70568).jpg?width=300> .
-
-<http://dbpedia.org/resource/Walrus>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Morsa"@es ;
-  rdfs:label "Walrus"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg?width=300> .
-
-<http://dbpedia.org/resource/Harbor_seal>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Foca común"@es ;
-  rdfs:label "Harbor seal"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Common_seal_(Phoca_vitulina)_2.jpg?width=300> .
-
-<http://dbpedia.org/resource/European_rabbit>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Conejo europeo"@es ;
-  rdfs:label "European rabbit"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg?width=300> .
-
-<http://dbpedia.org/resource/Red_fox>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Zorro rojo"@es ;
-  rdfs:label "Red fox"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_vulpes_ssp_fulvus.jpg?width=300> .
-
-<http://dbpedia.org/resource/Arctic_fox>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Zorro ártico"@es ;
-  rdfs:label "Arctic fox"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Iceland-1979445_(cropped_3).jpg?width=300> .
-
-<http://dbpedia.org/resource/Coyote>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Coyote"@es ;
-  rdfs:label "Coyote"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2009-Coyote-Yosemite.jpg?width=300> .
-
-<http://dbpedia.org/resource/Spotted_hyena>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Hiena manchada"@es ;
-  rdfs:label "Spotted hyena"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Spotted_hyena_(Crocuta_crocuta).jpg?width=300> .
-
-<http://dbpedia.org/resource/Moose>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Alce"@es ;
-  rdfs:label "Moose"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Alaska_moose.jpg?width=300> .
-
-<http://dbpedia.org/resource/Reindeer>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Reno"@es ;
-  rdfs:label "Reindeer"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Reinbukken_på_frisk_grønt_beite._-_panoramio.jpg?width=300> .
-
-<http://dbpedia.org/resource/American_bison>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Bisonte americano"@es ;
-  rdfs:label "American bison"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/American_bison_k5680-1.jpg?width=300> .
-
-<http://dbpedia.org/resource/Dromedary>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Dromedario"@es ;
-  rdfs:label "Dromedary"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Camelus_dromedarius_on_Sinai.jpg?width=300> .
-
-<http://dbpedia.org/resource/Llama>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Llama"@es ;
-  rdfs:label "Llama"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Llamas,_Vernagt-Stausee,_Italy.jpg?width=300> .
-
-<http://dbpedia.org/resource/Capybara>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Capibara"@es ;
-  rdfs:label "Capybara"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hydrochoeris_hydrochaeris_in_Brazil_in_Petrópolis,_Rio_de_Janeiro,_Brazil_09.jpg?width=300> .
-
-<http://dbpedia.org/resource/Beaver>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Castor"@es ;
-  rdfs:label "Beaver"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/American_Beaver.jpg?width=300> .
-
-<http://dbpedia.org/resource/Giant_otter>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Nutria gigante"@es ;
-  rdfs:label "Giant otter"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giant_otters_(Pteronura_brasiliensis).jpg?width=300> .
-
-<http://dbpedia.org/resource/Meerkat>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Suricata"@es ;
-  rdfs:label "Meerkat"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Meerkat_(Suricata_suricatta)_Tswalu.jpg?width=300> .
-
-<http://dbpedia.org/resource/Electric_eel>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Anguila eléctrica"@es ;
-  rdfs:label "Electric eel"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Electric-eel.jpg?width=300> .
-
-<http://dbpedia.org/resource/Axolotl>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Ajolote"@es ;
-  rdfs:label "Axolotl"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Axolotl_ganz.jpg?width=300> .
-
-<http://dbpedia.org/resource/Poison_dart_frog>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Rana dardo venenosa"@es ;
-  rdfs:label "Poison dart frog"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue-poison.dart.frog.and.Yellow-banded.dart.frog.arp.jpg?width=300> .
-
-<http://dbpedia.org/resource/Viper>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Víbora"@es ;
-  rdfs:label "Viper"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Viperidae-01.jpg?width=300> .
-
-<http://dbpedia.org/resource/Rattlesnake>
-  a owl:NamedIndividual, dbo:Animal ;
-  rdfs:label "Serpiente de cascabel"@es ;
-  rdfs:label "Rattlesnake"@en ;
-  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Crotalus_cerastes_mesquite_springs_CA-2.jpg?width=300> .
 
 <http://dbpedia.org/resource/Chameleon>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Camaleón"@es ;
   rdfs:label "Chameleon"@en ;
+  rdfs:label "Chamaeleonidae"@fr ;
+  rdfs:label "Camaleão"@pt ;
+  rdfs:label "Chamäleons"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Chamaeleonidae-01.jpg?width=300> .
 
 <http://dbpedia.org/resource/Gecko>
@@ -671,3 +810,591 @@
   rdfs:label "Gekkota"@es ;
   rdfs:label "Gekkota"@en ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Phelsuma_l._laticauda.jpg?width=300> .
+
+<http://dbpedia.org/resource/Gila_monster>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Heloderma suspectum"@es ;
+  rdfs:label "Gila monster"@en ;
+  rdfs:label "Monstre de Gila"@fr ;
+  rdfs:label "Monstro-de-gila"@pt ;
+  rdfs:label "Gila-Krustenechse"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gila_monster2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Monitor_lizard>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lagarto monitor"@es ;
+  rdfs:label "Monitor lizard"@en ;
+  rdfs:label "Varanus"@fr ;
+  rdfs:label "Lagarto Monitor"@pt ;
+  rdfs:label "Warane"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The_Genus_Varanus.png?width=300> .
+
+<http://dbpedia.org/resource/Tree_frog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rana arbórea"@es ;
+  rdfs:label "Tree frog"@en ;
+  rdfs:label "Grenouille arboricole"@fr ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Laubfrosch_cropped.jpg?width=300> .
+
+<http://dbpedia.org/resource/Poison_dart_frog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rana dardo venenosa"@es ;
+  rdfs:label "Poison dart frog"@en ;
+  rdfs:label "Dendrobatidae"@fr ;
+  rdfs:label "Dendrobatidae"@pt ;
+  rdfs:label "Baumsteigerfrösche"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue-poison.dart.frog.and.Yellow-banded.dart.frog.arp.jpg?width=300> .
+
+<http://dbpedia.org/resource/Axolotl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ajolote"@es ;
+  rdfs:label "Axolotl"@en ;
+  rdfs:label "Axolotl"@fr ;
+  rdfs:label "Ambystoma mexicanum"@pt ;
+  rdfs:label "Axolotl"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Axolotl_ganz.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bullfrog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rana toro"@es ;
+  rdfs:label "Bullfrog"@en ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/North-American-bullfrog1.jpg?width=300> .
+
+<http://dbpedia.org/resource/Red-eyed_tree_frog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rana arbórea de ojos rojos"@es ;
+  rdfs:label "Red-eyed tree frog"@en .
+
+<http://dbpedia.org/resource/Atlantic_salmon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Salmón atlántico"@es ;
+  rdfs:label "Atlantic salmon"@en ;
+  rdfs:label "Saumon atlantique"@fr ;
+  rdfs:label "Salmo salar"@pt ;
+  rdfs:label "Atlantischer Lachs"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Salmo_salar.jpg?width=300> .
+
+<http://dbpedia.org/resource/Clownfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pez payaso"@es ;
+  rdfs:label "Clownfish"@en ;
+  rdfs:label "Poisson-clown"@fr ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Amphiprion_ocellaris_(Clown_anemonefish)_by_Nick_Hobgood.jpg?width=300> .
+
+<http://dbpedia.org/resource/Piranha>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Piraña"@es ;
+  rdfs:label "Piranha"@en ;
+  rdfs:label "Piranha"@fr ;
+  rdfs:label "Piranha"@pt ;
+  rdfs:label "Piranhas"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg?width=300> .
+
+<http://dbpedia.org/resource/Swordfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pez espada"@es ;
+  rdfs:label "Swordfish"@en ;
+  rdfs:label "Espadon"@fr ;
+  rdfs:label "Espadarte"@pt ;
+  rdfs:label "Schwertfisch"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Xiphias_gladius_Linnaeus,_1758_2599925021.jpg?width=300> .
+
+<http://dbpedia.org/resource/Seahorse>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caballito de mar"@es ;
+  rdfs:label "Seahorse"@en ;
+  rdfs:label "Hippocampe (poisson)"@fr ;
+  rdfs:label "Cavalo-marinho"@pt ;
+  rdfs:label "Seepferdchen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg?width=300> .
+
+<http://dbpedia.org/resource/Manta_ray>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Manta raya"@es ;
+  rdfs:label "Manta ray"@en ;
+  rdfs:label "Manta (genre)"@fr ;
+  rdfs:label "Manta (gênero)"@pt ;
+  rdfs:label "Mantarochen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dharavandhoo_Thila_-_Manata_Black_Pearl.jpg?width=300> .
+
+<http://dbpedia.org/resource/Stingray>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Myliobatoidei"@es ;
+  rdfs:label "Stingray"@en ;
+  rdfs:label "Myliobatoidei"@fr ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SStringray.jpg?width=300> .
+
+<http://dbpedia.org/resource/Electric_eel>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Anguila eléctrica"@es ;
+  rdfs:label "Electric eel"@en ;
+  rdfs:label "Electrophorus"@fr ;
+  rdfs:label "Electrophorus"@pt ;
+  rdfs:label "Zitteraale"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Electric-eel.jpg?width=300> .
+
+<http://dbpedia.org/resource/Tuna>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Atún"@es ;
+  rdfs:label "Tuna"@en ;
+  rdfs:label "Thunnini"@fr ;
+  rdfs:label "Thunnini"@pt ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/tuna_assortment.png?width=300> .
+
+<http://dbpedia.org/resource/Monarch_butterfly>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mariposa monarca"@es ;
+  rdfs:label "Monarch butterfly"@en ;
+  rdfs:label "Danainae"@fr ;
+  rdfs:label "Danaus"@pt ;
+  rdfs:label "Danainae"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bumblebee>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Abejorro"@es ;
+  rdfs:label "Bumblebee"@en ;
+  rdfs:label "Bombus"@fr ;
+  rdfs:label "Mamangaba"@pt ;
+  rdfs:label "Hummeln"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?width=300> .
+
+<http://dbpedia.org/resource/Gorilla>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gorila"@es ;
+  rdfs:label "Gorilla"@en ;
+  rdfs:label "Gorille"@fr ;
+  rdfs:label "Gorila"@pt ;
+  rdfs:label "Gorillas"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gorille_des_plaines_de_l'ouest_à_l'Espace_Zoologique.jpg?width=300> .
+
+<http://dbpedia.org/resource/Chimpanzee>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Chimpancé"@es ;
+  rdfs:label "Chimpanzee"@en ;
+  rdfs:label "Pan troglodytes"@fr ;
+  rdfs:label "Chimpanzé-comum"@pt ;
+  rdfs:label "Gemeiner Schimpanse"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg?width=300> .
+
+<http://dbpedia.org/resource/Orangutan>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Orangután"@es ;
+  rdfs:label "Orangutan"@en ;
+  rdfs:label "Orang-outan"@fr ;
+  rdfs:label "Orangotango"@pt ;
+  rdfs:label "Orang-Utans"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Orang_Utan,_Semenggok_Forest_Reserve,_Sarawak,_Borneo,_Malaysia.jpg?width=300> .
+
+<http://dbpedia.org/resource/Gibbon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gibón"@es ;
+  rdfs:label "Gibbon"@en ;
+  rdfs:label "Hylobatidae"@fr ;
+  rdfs:label "Gibão"@pt ;
+  rdfs:label "Gibbons"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hylobates_lar_-_Kaeng_Krachan_WB.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bonobo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Bonobo"@es ;
+  rdfs:label "Bonobo"@en ;
+  rdfs:label "Bonobo"@fr ;
+  rdfs:label "Bonobo"@pt ;
+  rdfs:label "Bonobo"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Apeldoorn_Apenheul_zoo_Bonobo.jpg?width=300> .
+
+<http://dbpedia.org/resource/Mandrill>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mandril"@es ;
+  rdfs:label "Mandrill"@en ;
+  rdfs:label "Mandrillus sphinx"@fr ;
+  rdfs:label "Mandril"@pt ;
+  rdfs:label "Mandrill"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mandrill_Albert_September_2015_Zoo_Berlin_(2).jpg?width=300> .
+
+<http://dbpedia.org/resource/Baboon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Babuino"@es ;
+  rdfs:label "Baboon"@en ;
+  rdfs:label "Babouin"@fr ;
+  rdfs:label "Babuíno"@pt ;
+  rdfs:label "Paviane"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Olive_baboon_Ngorongoro.jpg?width=300> .
+
+<http://dbpedia.org/resource/African_elephant>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Elefante africano"@es ;
+  rdfs:label "African elephant"@en ;
+  rdfs:label "Éléphant d'Afrique"@fr ;
+  rdfs:label "Elefante-africano"@pt ;
+  rdfs:label "Afrikanische Elefanten"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/African_Elephant_(Loxodonta_africana)_male_(17289351322).jpg?width=300> .
+
+<http://dbpedia.org/resource/Asian_elephant>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Elefante asiático"@es ;
+  rdfs:label "Asian elephant"@en ;
+  rdfs:label "Éléphant d'Asie"@fr ;
+  rdfs:label "Elefante-indiano"@pt ;
+  rdfs:label "Indischer Elefant"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Elephas_maximus_(Bandipur).jpg?width=300> .
+
+<http://dbpedia.org/resource/Giraffe>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Jirafa"@es ;
+  rdfs:label "Giraffe"@en ;
+  rdfs:label "Girafe"@fr ;
+  rdfs:label "Girafa"@pt ;
+  rdfs:label "Giraffen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_Mikumi_National_Park.jpg?width=300> .
+
+<http://dbpedia.org/resource/Zebra>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cebra"@es ;
+  rdfs:label "Zebra"@en ;
+  rdfs:label "Zèbre"@fr ;
+  rdfs:label "Zebra"@pt ;
+  rdfs:label "Zebras"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Plains_Zebra_Equus_quagga_cropped.jpg?width=300> .
+
+<http://dbpedia.org/resource/Hippopotamus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Hipopótamo"@es ;
+  rdfs:label "Hippopotamus"@en ;
+  rdfs:label "Hippopotamus amphibius"@fr ;
+  rdfs:label "Hipopótamo-comum"@pt ;
+  rdfs:label "Flusspferd"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait_Hippopotamus_in_the_water.jpg?width=300> .
+
+<http://dbpedia.org/resource/White_rhinoceros>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rinoceronte blanco"@es ;
+  rdfs:label "White rhinoceros"@en ;
+  rdfs:label "Rhinocéros blanc"@fr ;
+  rdfs:label "Rinoceronte-branco"@pt ;
+  rdfs:label "Breitmaulnashorn"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/White_Rhino_at_Working_with_Wildlife.jpg?width=300> .
+
+<http://dbpedia.org/resource/Black_rhinoceros>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rinoceronte negro"@es ;
+  rdfs:label "Black rhinoceros"@en ;
+  rdfs:label "Rhinocéros noir"@fr ;
+  rdfs:label "Rinoceronte-negro"@pt ;
+  rdfs:label "Spitzmaulnashorn"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Black_Rhino_at_Working_with_Wildlife.jpg?width=300> .
+
+<http://dbpedia.org/resource/American_bison>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Bisonte americano"@es ;
+  rdfs:label "American bison"@en ;
+  rdfs:label "Bison d'Amérique"@fr ;
+  rdfs:label "Bisão-americano"@pt ;
+  rdfs:label "Amerikanischer Bison"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/American_bison_k5680-1.jpg?width=300> .
+
+<http://dbpedia.org/resource/Water_buffalo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Búfalo de agua"@es ;
+  rdfs:label "Water buffalo"@en ;
+  rdfs:label "Bubalus bubalis"@fr ;
+  rdfs:label "Búfalo-asiático"@pt ;
+  rdfs:label "Wasserbüffel"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Water_buffalo_at_Rinca.jpg?width=300> .
+
+<http://dbpedia.org/resource/Moose>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Alce"@es ;
+  rdfs:label "Moose"@en ;
+  rdfs:label "Alces alces"@fr ;
+  rdfs:label "Alce"@pt ;
+  rdfs:label "Elch"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Alaska_moose.jpg?width=300> .
+
+<http://dbpedia.org/resource/Reindeer>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Reno"@es ;
+  rdfs:label "Reindeer"@en ;
+  rdfs:label "Rangifer tarandus"@fr ;
+  rdfs:label "Rena"@pt ;
+  rdfs:label "Ren"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Reinbukken_på_frisk_grønt_beite._-_panoramio.jpg?width=300> .
+
+<http://dbpedia.org/resource/Dromedary>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dromedario"@es ;
+  rdfs:label "Dromedary"@en ;
+  rdfs:label "Chameau de Bactriane"@fr ;
+  rdfs:label "Camelo-bactriano"@pt ;
+  rdfs:label "Trampeltier"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Camelus_dromedarius_on_Sinai.jpg?width=300> .
+
+<http://dbpedia.org/resource/Bactrian_camel>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Camelus bactrianus"@es ;
+  rdfs:label "Bactrian camel"@en ;
+  rdfs:label "Chameau de Bactriane"@fr ;
+  rdfs:label "Camelo-bactriano"@pt ;
+  rdfs:label "Trampeltier"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2011_Trampeltier_1528.jpg?width=300> .
+
+<http://dbpedia.org/resource/Llama>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Llama"@es ;
+  rdfs:label "Llama"@en ;
+  rdfs:label "Lama (animal)"@fr ;
+  rdfs:label "Lhama"@pt ;
+  rdfs:label "Lama (Kamel)"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Llamas,_Vernagt-Stausee,_Italy.jpg?width=300> .
+
+<http://dbpedia.org/resource/Alpaca>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Vicugna pacos"@es ;
+  rdfs:label "Vicugna pacos"@en ;
+  rdfs:label "Alpaga"@fr ;
+  rdfs:label "Alpaca"@pt ;
+  rdfs:label "Alpaka"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Alpaca_(31562329701).jpg?width=300> .
+
+<http://dbpedia.org/resource/Wolf>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lobo"@es ;
+  rdfs:label "Wolf"@en ;
+  rdfs:label "Canis lupus"@fr ;
+  rdfs:label "Lobo"@pt ;
+  rdfs:label "Wolf"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_wolf_2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Fox>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Zorro"@es ;
+  rdfs:label "Fox"@en ;
+  rdfs:label "Renard"@fr ;
+  rdfs:label "Raposa"@pt ;
+  rdfs:label "Fuchs (Raubtier)"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_vulpes_ssp_fulvus.jpg?width=300> .
+
+<http://dbpedia.org/resource/Red_fox>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Zorro rojo"@es ;
+  rdfs:label "Red fox"@en ;
+  rdfs:label "Renard roux"@fr ;
+  rdfs:label "Raposa-vermelha"@pt ;
+  rdfs:label "Rotfuchs"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_vulpes_ssp_fulvus.jpg?width=300> .
+
+<http://dbpedia.org/resource/Arctic_fox>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Zorro ártico"@es ;
+  rdfs:label "Arctic fox"@en ;
+  rdfs:label "Renard polaire"@fr ;
+  rdfs:label "Raposa-do-ártico"@pt ;
+  rdfs:label "Polarfuchs"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Iceland-1979445_(cropped_3).jpg?width=300> .
+
+<http://dbpedia.org/resource/Coyote>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Coyote"@es ;
+  rdfs:label "Coyote"@en ;
+  rdfs:label "Coyote"@fr ;
+  rdfs:label "Coiote"@pt ;
+  rdfs:label "Kojote"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2009-Coyote-Yosemite.jpg?width=300> .
+
+<http://dbpedia.org/resource/Dingo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dingo"@es ;
+  rdfs:label "Dingo"@en ;
+  rdfs:label "Dingo (chien sauvage)"@fr ;
+  rdfs:label "Dingo"@pt ;
+  rdfs:label "Dingo"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dingo_(Canis_lupus_dingo)_Kakadu_2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Meerkat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Suricata"@es ;
+  rdfs:label "Meerkat"@en ;
+  rdfs:label "Suricate"@fr ;
+  rdfs:label "Suricata suricatta"@pt ;
+  rdfs:label "Erdmännchen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Meerkat_(Suricata_suricatta)_Tswalu.jpg?width=300> .
+
+<http://dbpedia.org/resource/Mongoose>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mangosta"@es ;
+  rdfs:label "Mongoose"@en ;
+  rdfs:label "Herpestidae"@fr ;
+  rdfs:label "Herpestidae"@pt ;
+  rdfs:label "Mangusten"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mongoose_collection.png?width=300> .
+
+<http://dbpedia.org/resource/Spotted_hyena>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Hiena manchada"@es ;
+  rdfs:label "Spotted hyena"@en ;
+  rdfs:label "Hyène tachetée"@fr ;
+  rdfs:label "Hiena-malhada"@pt ;
+  rdfs:label "Tüpfelhyäne"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Spotted_hyena_(Crocuta_crocuta).jpg?width=300> .
+
+<http://dbpedia.org/resource/Kangaroo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Canguro"@es ;
+  rdfs:label "Kangaroo"@en ;
+  rdfs:label "Kangourou"@fr ;
+  rdfs:label "Canguru"@pt ;
+  rdfs:label "Echte Kängurus"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kangaroo_Australia_01_11_2008_-_retouch.jpg?width=300> .
+
+<http://dbpedia.org/resource/Koala>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Koala"@es ;
+  rdfs:label "Koala"@en ;
+  rdfs:label "Koala"@fr ;
+  rdfs:label "Coala"@pt ;
+  rdfs:label "Koala"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Koala_climbing_tree.jpg?width=300> .
+
+<http://dbpedia.org/resource/Platypus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ornitorrinco"@es ;
+  rdfs:label "Platypus"@en ;
+  rdfs:label "Ornithorynque"@fr ;
+  rdfs:label "Ornitorrinco"@pt ;
+  rdfs:label "Schnabeltier"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg?width=300> .
+
+<http://dbpedia.org/resource/Wombat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Wombat"@es ;
+  rdfs:label "Wombat"@en ;
+  rdfs:label "Wombat"@fr ;
+  rdfs:label "Vombate"@pt ;
+  rdfs:label "Wombats"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vombatus_ursinus_-Maria_Island_National_Park.jpg?width=300> .
+
+<http://dbpedia.org/resource/Tasmanian_devil>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Demonio de Tasmania"@es ;
+  rdfs:label "Tasmanian devil"@en ;
+  rdfs:label "Diable de Tasmanie"@fr ;
+  rdfs:label "Diabo-da-tasmânia"@pt ;
+  rdfs:label "Beutelteufel"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sarcophilus_harrisii_taranna.jpg?width=300> .
+
+<http://dbpedia.org/resource/Capybara>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Capibara"@es ;
+  rdfs:label "Capybara"@en ;
+  rdfs:label "Hydrochoerus hydrochaeris"@fr ;
+  rdfs:label "Capivara"@pt ;
+  rdfs:label "Capybara"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hydrochoeris_hydrochaeris_in_Brazil_in_Petrópolis,_Rio_de_Janeiro,_Brazil_09.jpg?width=300> .
+
+<http://dbpedia.org/resource/Beaver>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Castor"@es ;
+  rdfs:label "Beaver"@en ;
+  rdfs:label "Castor (genre)"@fr ;
+  rdfs:label "Castor"@pt ;
+  rdfs:label "Castor (Gattung)"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/American_Beaver.jpg?width=300> .
+
+<http://dbpedia.org/resource/Giant_otter>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Nutria gigante"@es ;
+  rdfs:label "Giant otter"@en ;
+  rdfs:label "Loutre géante"@fr ;
+  rdfs:label "Ariranha"@pt ;
+  rdfs:label "Riesenotter"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giant_otters_(Pteronura_brasiliensis).jpg?width=300> .
+
+<http://dbpedia.org/resource/Sea_otter>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Enhydra lutris"@es ;
+  rdfs:label "Sea otter"@en ;
+  rdfs:label "Loutre de mer"@fr ;
+  rdfs:label "Lontra-marinha"@pt ;
+  rdfs:label "Seeotter"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg?width=300> .
+
+<http://dbpedia.org/resource/Sea_lion>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "León marino"@es ;
+  rdfs:label "Sea lion"@en ;
+  rdfs:label "Otariinae"@fr ;
+  rdfs:label "Leão-marinho"@pt ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/California_sea_lion_in_La_Jolla_(70568).jpg?width=300> .
+
+<http://dbpedia.org/resource/Walrus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Morsa"@es ;
+  rdfs:label "Walrus"@en ;
+  rdfs:label "Morse (animal)"@fr ;
+  rdfs:label "Morsa"@pt ;
+  rdfs:label "Walross"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Harbor_seal>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Foca común"@es ;
+  rdfs:label "Harbor seal"@en ;
+  rdfs:label "Phoque commun"@fr ;
+  rdfs:label "Foca-comum"@pt ;
+  rdfs:label "Seehund"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Common_seal_(Phoca_vitulina)_2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Elephant_seal>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mirounga"@es ;
+  rdfs:label "Elephant seal"@en ;
+  rdfs:label "Éléphant de mer"@fr ;
+  rdfs:label "Elefante-marinho"@pt ;
+  rdfs:label "See-Elefanten"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/See_elefanten_edit.jpg?width=300> .
+
+<http://dbpedia.org/resource/European_rabbit>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Conejo europeo"@es ;
+  rdfs:label "European rabbit"@en ;
+  rdfs:label "Lapin domestique"@fr ;
+  rdfs:label "Coelho-europeu"@pt ;
+  rdfs:label "Wildkaninchen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oryctolagus_cuniculus_Tasmania_2_(cropped).jpg?width=300> .
+
+<http://dbpedia.org/resource/Snowshoe_hare>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Liebre americana"@es ;
+  rdfs:label "Snowshoe hare"@en ;
+  rdfs:label "Lièvre d'Amérique"@fr ;
+  rdfs:label "Lepus americanus"@pt ;
+  rdfs:label "Schneeschuhhase"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lepus_americanus_5459_cropped.jpg?width=300> .
+
+<http://dbpedia.org/resource/Horse>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caballo"@es ;
+  rdfs:label "Horse"@en ;
+  rdfs:label "Cheval"@fr ;
+  rdfs:label "Cavalo"@pt ;
+  rdfs:label "Wildpferd"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mares_and_Foals.jpg?width=300> .
+
+<http://dbpedia.org/resource/Donkey>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Burro"@es ;
+  rdfs:label "Donkey"@en ;
+  rdfs:label "Âne commun"@fr ;
+  rdfs:label "Asno"@pt ;
+  rdfs:label "Hausesel"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Donkey_in_Clovelly,_North_Devon,_England.jpg?width=300> .
+
+<http://dbpedia.org/resource/Mule>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mula"@es ;
+  rdfs:label "Mule"@en ;
+  rdfs:label "Mulet"@fr ;
+  rdfs:label "Mula"@pt ;
+  rdfs:label "Maultier"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Momo_260905.jpg?width=300> .

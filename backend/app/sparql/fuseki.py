@@ -38,6 +38,11 @@ TRADUCCIONES_EN = {
     "ornitorrinco": "platypus", "pavo real": "peacock",
     "tucan": "toucan", "tucán": "toucan", "piraña": "piranha",
     "anaconda": "anaconda", "cobra": "cobra",
+    "dalmata": "dalmatian",
+    "dálmata": "dalmatian",
+    "bóxer": "boxer",
+    "boxer": "boxer",
+    "pomerania": "pomeranian",
 }
 
 def _normalizar(texto):
@@ -57,6 +62,41 @@ def search_fuseki(query, lang="es"):
     query_lower = query.lower()
     query_en_lower = query_en.lower()
 
+    # Para búsquedas de tipo "perro", también buscar por clase/tipo
+    CLASES_EXTRA = {
+        "perro": ["dog", "shepherd", "retriever", "terrier", "hound",
+                  "spaniel", "bulldog", "poodle", "husky", "collie",
+                  "dachshund", "rottweiler", "chihuahua", "beagle",
+                  "dalmatian", "dobermann", "schnauzer"],
+        "gato":  ["cat", "persian", "siamese", "maine coon", "bengal",
+                  "sphynx", "british shorthair", "scottish fold"],
+        "tiburon": ["shark", "tiburón"],
+        "ballena": ["whale", "cetacean"],
+        "delfin":  ["dolphin", "tursiops", "spinner"],
+        "aguila":  ["eagle", "águila"],
+        "buho":    ["owl", "búho"],
+        "serpiente": ["snake", "viper", "cobra", "python", "anaconda", "mamba"],
+        "vibora":  ["viper", "snake", "cobra"],
+        "oso":     ["bear", "panda"],
+        "mono":    ["monkey", "primate", "gorilla", "chimp", "orangutan"],
+        "pingüino": ["penguin"],
+        "loro":    ["parrot", "macaw", "cockatoo"],
+        "dalmata": ["dalmatian"],
+        "dalmatian": ["dalmatian"],
+    }
+
+    # Construir filtros adicionales
+    extras = CLASES_EXTRA.get(query_lower, CLASES_EXTRA.get(_normalizar(query_lower), []))
+    
+    filtros_extra = ""
+    if extras:
+        condiciones = " ||\n            ".join([
+            f'CONTAINS(LCASE(str(?labelEn)), "{t}")' for t in extras
+        ])
+        filtros_extra = f"|| {condiciones}"
+
+    query_norm = _normalizar(query_lower)
+
     sparql_query = f"""
     PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX owl:   <http://www.w3.org/2002/07/owl#>
@@ -74,7 +114,10 @@ def search_fuseki(query, lang="es"):
         OPTIONAL {{ ?animal foaf:depiction ?thumbnail . }}
         FILTER(
             CONTAINS(LCASE(str(?label)), "{query_lower}") ||
-            CONTAINS(LCASE(str(?labelEn)), "{query_en_lower}")
+            CONTAINS(LCASE(str(?label)), "{query_norm}") ||
+            CONTAINS(LCASE(str(?labelEn)), "{query_en_lower}") ||
+            CONTAINS(LCASE(str(?labelEn)), "{query_norm}")
+            {filtros_extra}
         )
     }}
     ORDER BY ?label
