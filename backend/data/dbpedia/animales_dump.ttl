@@ -1,0 +1,563 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Dog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Perro"@es ;
+  rdfs:label "Dog"@en .
+
+<http://dbpedia.org/resource/Cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gato"@es ;
+  rdfs:label "Cat"@en .
+
+<http://dbpedia.org/resource/Lion>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "León"@es ;
+  rdfs:label "Lion"@en .
+
+<http://dbpedia.org/resource/Tiger>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tigre"@es ;
+  rdfs:label "Tiger"@en .
+
+<http://dbpedia.org/resource/Bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso"@es ;
+  rdfs:label "Bear"@en .
+
+<http://dbpedia.org/resource/Wolf>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lobo"@es ;
+  rdfs:label "Wolf"@en .
+
+<http://dbpedia.org/resource/Fox>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Zorro"@es ;
+  rdfs:label "Fox"@en .
+
+<http://dbpedia.org/resource/Dolphin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Delfín"@es ;
+  rdfs:label "Dolphin"@en .
+
+<http://dbpedia.org/resource/Blue_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ballena azul"@es ;
+  rdfs:label "Blue whale"@en .
+
+<http://dbpedia.org/resource/Gorilla>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gorila"@es ;
+  rdfs:label "Gorilla"@en .
+
+<http://dbpedia.org/resource/Horse>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caballo"@es ;
+  rdfs:label "Horse"@en .
+
+<http://dbpedia.org/resource/Golden_eagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Águila real"@es ;
+  rdfs:label "Golden eagle"@en .
+
+<http://dbpedia.org/resource/Penguin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pingüino"@es ;
+  rdfs:label "Penguin"@en .
+
+<http://dbpedia.org/resource/Nile_crocodile>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cocodrilo del Nilo"@es ;
+  rdfs:label "Nile crocodile"@en .
+
+<http://dbpedia.org/resource/Green_iguana>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Iguana verde"@es ;
+  rdfs:label "Green iguana"@en .
+
+<http://dbpedia.org/resource/Tree_frog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rana arbórea"@es ;
+  rdfs:label "Tree frog"@en .
+
+<http://dbpedia.org/resource/Atlantic_salmon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Salmón atlántico"@es ;
+  rdfs:label "Atlantic salmon"@en .
+
+<http://dbpedia.org/resource/Monarch_butterfly>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mariposa monarca"@es ;
+  rdfs:label "Monarch butterfly"@en .
+
+<http://dbpedia.org/resource/Bengal_tiger>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tigre de Bengala"@es ;
+  rdfs:label "Bengal tiger"@en .
+
+<http://dbpedia.org/resource/Polar_bear>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso polar"@es ;
+  rdfs:label "Polar bear"@en .
+
+<http://dbpedia.org/resource/German_Shepherd>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pastor alemán"@es ;
+  rdfs:label "German Shepherd"@en .
+
+<http://dbpedia.org/resource/Labrador_Retriever>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Labrador retriever"@es ;
+  rdfs:label "Labrador Retriever"@en .
+
+<http://dbpedia.org/resource/Golden_Retriever>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Golden retriever"@es ;
+  rdfs:label "Golden Retriever"@en .
+
+<http://dbpedia.org/resource/Poodle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caniche"@es ;
+  rdfs:label "Poodle"@en .
+
+<http://dbpedia.org/resource/Bulldog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Bulldog"@es ;
+  rdfs:label "Bulldog"@en .
+
+<http://dbpedia.org/resource/Beagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Beagle"@es ;
+  rdfs:label "Beagle"@en .
+
+<http://dbpedia.org/resource/Chihuahua>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Chihuahua"@es ;
+  rdfs:label "Chihuahua"@en .
+
+<http://dbpedia.org/resource/Rottweiler>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rottweiler"@es ;
+  rdfs:label "Rottweiler"@en .
+
+<http://dbpedia.org/resource/Siberian_Husky>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Husky siberiano"@es ;
+  rdfs:label "Siberian Husky"@en .
+
+<http://dbpedia.org/resource/Dachshund>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dachshund"@es ;
+  rdfs:label "Dachshund"@en .
+
+<http://dbpedia.org/resource/Persian_cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gato persa"@es ;
+  rdfs:label "Persian cat"@en .
+
+<http://dbpedia.org/resource/Siamese_cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gato siamés"@es ;
+  rdfs:label "Siamese cat"@en .
+
+<http://dbpedia.org/resource/Maine_Coon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Maine Coon"@es ;
+  rdfs:label "Maine Coon"@en .
+
+<http://dbpedia.org/resource/Bengal_cat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gato de Bengala"@es ;
+  rdfs:label "Bengal cat"@en .
+
+<http://dbpedia.org/resource/Great_white_shark>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tiburón blanco"@es ;
+  rdfs:label "Great white shark"@en .
+
+<http://dbpedia.org/resource/Whale_shark>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tiburón ballena"@es ;
+  rdfs:label "Whale shark"@en .
+
+<http://dbpedia.org/resource/Hammerhead_shark>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tiburón martillo"@es ;
+  rdfs:label "Hammerhead shark"@en .
+
+<http://dbpedia.org/resource/Bull_shark>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tiburón toro"@es ;
+  rdfs:label "Bull shark"@en .
+
+<http://dbpedia.org/resource/Tiger_shark>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tiburón tigre"@es ;
+  rdfs:label "Tiger shark"@en .
+
+<http://dbpedia.org/resource/Octopus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pulpo"@es ;
+  rdfs:label "Octopus"@en .
+
+<http://dbpedia.org/resource/Giant_squid>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Architeuthis"@es ;
+  rdfs:label "Architeuthis"@en .
+
+<http://dbpedia.org/resource/Green_sea_turtle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tortuga verde"@es ;
+  rdfs:label "Green sea turtle"@en .
+
+<http://dbpedia.org/resource/Leatherback_sea_turtle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tortuga laúd"@es ;
+  rdfs:label "Leatherback sea turtle"@en .
+
+<http://dbpedia.org/resource/King_cobra>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cobra real"@es ;
+  rdfs:label "King cobra"@en .
+
+<http://dbpedia.org/resource/Black_mamba>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Mamba negra"@es ;
+  rdfs:label "Black mamba"@en .
+
+<http://dbpedia.org/resource/Anaconda>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Anaconda"@es ;
+  rdfs:label "Anaconda"@en .
+
+<http://dbpedia.org/resource/Boa_constrictor>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Boa constrictor"@es ;
+  rdfs:label "Boa constrictor"@en .
+
+<http://dbpedia.org/resource/Reticulated_python>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pitón reticulada"@es ;
+  rdfs:label "Reticulated python"@en .
+
+<http://dbpedia.org/resource/Komodo_dragon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dragón de Komodo"@es ;
+  rdfs:label "Komodo dragon"@en .
+
+<http://dbpedia.org/resource/African_elephant>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Elefante africano"@es ;
+  rdfs:label "African elephant"@en .
+
+<http://dbpedia.org/resource/Asian_elephant>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Elefante asiático"@es ;
+  rdfs:label "Asian elephant"@en .
+
+<http://dbpedia.org/resource/Giraffe>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Jirafa"@es ;
+  rdfs:label "Giraffe"@en .
+
+<http://dbpedia.org/resource/Zebra>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cebra"@es ;
+  rdfs:label "Zebra"@en .
+
+<http://dbpedia.org/resource/Hippopotamus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Hipopótamo"@es ;
+  rdfs:label "Hippopotamus"@en .
+
+<http://dbpedia.org/resource/White_rhinoceros>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rinoceronte blanco"@es ;
+  rdfs:label "White rhinoceros"@en .
+
+<http://dbpedia.org/resource/Black_rhinoceros>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rinoceronte negro"@es ;
+  rdfs:label "Black rhinoceros"@en .
+
+<http://dbpedia.org/resource/Cheetah>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Guepardo"@es ;
+  rdfs:label "Cheetah"@en .
+
+<http://dbpedia.org/resource/Leopard>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Leopardo"@es ;
+  rdfs:label "Leopard"@en .
+
+<http://dbpedia.org/resource/Jaguar>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Jaguar"@es ;
+  rdfs:label "Jaguar"@en .
+
+<http://dbpedia.org/resource/Puma>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Puma"@es ;
+  rdfs:label "Puma"@en .
+
+<http://dbpedia.org/resource/Snow_leopard>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Leopardo de las nieves"@es ;
+  rdfs:label "Snow leopard"@en .
+
+<http://dbpedia.org/resource/Chimpanzee>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Chimpancé"@es ;
+  rdfs:label "Chimpanzee"@en .
+
+<http://dbpedia.org/resource/Orangutan>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Orangután"@es ;
+  rdfs:label "Orangutan"@en .
+
+<http://dbpedia.org/resource/Kangaroo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Canguro"@es ;
+  rdfs:label "Kangaroo"@en .
+
+<http://dbpedia.org/resource/Koala>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Koala"@es ;
+  rdfs:label "Koala"@en .
+
+<http://dbpedia.org/resource/Platypus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ornitorrinco"@es ;
+  rdfs:label "Platypus"@en .
+
+<http://dbpedia.org/resource/Clownfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pez payaso"@es ;
+  rdfs:label "Clownfish"@en .
+
+<http://dbpedia.org/resource/Seahorse>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caballito de mar"@es ;
+  rdfs:label "Seahorse"@en .
+
+<http://dbpedia.org/resource/Piranha>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Piraña"@es ;
+  rdfs:label "Piranha"@en .
+
+<http://dbpedia.org/resource/Swordfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pez espada"@es ;
+  rdfs:label "Swordfish"@en .
+
+<http://dbpedia.org/resource/Tuna>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Atún"@es ;
+  rdfs:label "Tuna"@en .
+
+<http://dbpedia.org/resource/Salmon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Salmón"@es ;
+  rdfs:label "Salmon"@en .
+
+<http://dbpedia.org/resource/Bald_eagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Águila calva"@es ;
+  rdfs:label "Bald eagle"@en .
+
+<http://dbpedia.org/resource/Harpy_eagle>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Águila harpía"@es ;
+  rdfs:label "Harpy eagle"@en .
+
+<http://dbpedia.org/resource/Peregrine_falcon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Halcón peregrino"@es ;
+  rdfs:label "Peregrine falcon"@en .
+
+<http://dbpedia.org/resource/Great_horned_owl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Búho real"@es ;
+  rdfs:label "Great horned owl"@en .
+
+<http://dbpedia.org/resource/Barn_owl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lechuza común"@es ;
+  rdfs:label "Barn owl"@en .
+
+<http://dbpedia.org/resource/Flamingo>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Flamenco"@es ;
+  rdfs:label "Flamingo"@en .
+
+<http://dbpedia.org/resource/Toucan>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tucán"@es ;
+  rdfs:label "Toucan"@en .
+
+<http://dbpedia.org/resource/Ostrich>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Avestruz"@es ;
+  rdfs:label "Ostrich"@en .
+
+<http://dbpedia.org/resource/Emperor_penguin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pingüino emperador"@es ;
+  rdfs:label "Emperor penguin"@en .
+
+<http://dbpedia.org/resource/Hummingbird>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Colibrí"@es ;
+  rdfs:label "Hummingbird"@en .
+
+<http://dbpedia.org/resource/Giant_panda>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Oso panda gigante"@es ;
+  rdfs:label "Giant panda"@en .
+
+<http://dbpedia.org/resource/Red_panda>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Panda rojo"@es ;
+  rdfs:label "Red panda"@en .
+
+<http://dbpedia.org/resource/Orca>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Orca"@es ;
+  rdfs:label "Orca"@en .
+
+<http://dbpedia.org/resource/Sperm_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cachalote"@es ;
+  rdfs:label "Sperm whale"@en .
+
+<http://dbpedia.org/resource/Humpback_whale>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ballena jorobada"@es ;
+  rdfs:label "Humpback whale"@en .
+
+<http://dbpedia.org/resource/Narwhal>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Narval"@es ;
+  rdfs:label "Narwhal"@en .
+
+<http://dbpedia.org/resource/Sea_lion>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "León marino"@es ;
+  rdfs:label "Sea lion"@en .
+
+<http://dbpedia.org/resource/Walrus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Morsa"@es ;
+  rdfs:label "Walrus"@en .
+
+<http://dbpedia.org/resource/Harbor_seal>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Foca común"@es ;
+  rdfs:label "Harbor seal"@en .
+
+<http://dbpedia.org/resource/European_rabbit>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Conejo europeo"@es ;
+  rdfs:label "European rabbit"@en .
+
+<http://dbpedia.org/resource/Red_fox>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Zorro rojo"@es ;
+  rdfs:label "Red fox"@en .
+
+<http://dbpedia.org/resource/Arctic_fox>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Zorro ártico"@es ;
+  rdfs:label "Arctic fox"@en .
+
+<http://dbpedia.org/resource/Coyote>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Coyote"@es ;
+  rdfs:label "Coyote"@en .
+
+<http://dbpedia.org/resource/Spotted_hyena>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Hiena manchada"@es ;
+  rdfs:label "Spotted hyena"@en .
+
+<http://dbpedia.org/resource/Moose>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Alce"@es ;
+  rdfs:label "Moose"@en .
+
+<http://dbpedia.org/resource/Reindeer>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Reno"@es ;
+  rdfs:label "Reindeer"@en .
+
+<http://dbpedia.org/resource/American_bison>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Bisonte americano"@es ;
+  rdfs:label "American bison"@en .
+
+<http://dbpedia.org/resource/Dromedary>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Dromedario"@es ;
+  rdfs:label "Dromedary"@en .
+
+<http://dbpedia.org/resource/Llama>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Llama"@es ;
+  rdfs:label "Llama"@en .
+
+<http://dbpedia.org/resource/Capybara>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Capibara"@es ;
+  rdfs:label "Capybara"@en .
+
+<http://dbpedia.org/resource/Beaver>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Castor"@es ;
+  rdfs:label "Beaver"@en .
+
+<http://dbpedia.org/resource/Giant_otter>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Nutria gigante"@es ;
+  rdfs:label "Giant otter"@en .
+
+<http://dbpedia.org/resource/Meerkat>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Suricata"@es ;
+  rdfs:label "Meerkat"@en .
+
+<http://dbpedia.org/resource/Electric_eel>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Anguila eléctrica"@es ;
+  rdfs:label "Electric eel"@en .
+
+<http://dbpedia.org/resource/Axolotl>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Ajolote"@es ;
+  rdfs:label "Axolotl"@en .
+
+<http://dbpedia.org/resource/Poison_dart_frog>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Rana dardo venenosa"@es ;
+  rdfs:label "Poison dart frog"@en .
+
+<http://dbpedia.org/resource/Viper>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Víbora"@es ;
+  rdfs:label "Viper"@en .
+
+<http://dbpedia.org/resource/Rattlesnake>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Serpiente de cascabel"@es ;
+  rdfs:label "Rattlesnake"@en .
+
+<http://dbpedia.org/resource/Chameleon>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Camaleón"@es ;
+  rdfs:label "Chameleon"@en .
+
+<http://dbpedia.org/resource/Gecko>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gekkota"@es ;
+  rdfs:label "Gekkota"@en .

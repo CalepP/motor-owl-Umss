@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Pinguino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Ave"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Penguin"/>
+    <rdfs:label xml:lang="es">Pingüino</rdfs:label>
+    <rdfs:label xml:lang="en">Penguin</rdfs:label>
+    <rdfs:label xml:lang="fr">Manchot</rdfs:label>
+    <rdfs:label xml:lang="pt">Pinguim</rdfs:label>
+    <rdfs:label xml:lang="de">Pinguin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#BallenaAzul">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Blue_whale"/>
+    <rdfs:label xml:lang="es">Ballena Azul</rdfs:label>
+    <rdfs:label xml:lang="en">Blue Whale</rdfs:label>
+    <rdfs:label xml:lang="fr">Baleine bleue</rdfs:label>
+    <rdfs:label xml:lang="pt">Baleia-azul</rdfs:label>
+    <rdfs:label xml:lang="de">Blauwal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Insecto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Insecto</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#AguilaReal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Ave"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Golden_eagle"/>
+    <rdfs:label xml:lang="es">Águila Real</rdfs:label>
+    <rdfs:label xml:lang="en">Golden Eagle</rdfs:label>
+    <rdfs:label xml:lang="fr">Aigle royal</rdfs:label>
+    <rdfs:label xml:lang="pt">Águia-real</rdfs:label>
+    <rdfs:label xml:lang="de">Steinadler</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#MariposaMonarca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Insecto"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Monarch_butterfly"/>
+    <rdfs:label xml:lang="es">Mariposa Monarca</rdfs:label>
+    <rdfs:label xml:lang="en">Monarch Butterfly</rdfs:label>
+    <rdfs:label xml:lang="fr">Papillon monarque</rdfs:label>
+    <rdfs:label xml:lang="pt">Borboleta-monarca</rdfs:label>
+    <rdfs:label xml:lang="de">Monarchfalter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#TigreBengala">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Bengal_tiger"/>
+    <rdfs:label xml:lang="es">Tigre de Bengala</rdfs:label>
+    <rdfs:label xml:lang="en">Bengal Tiger</rdfs:label>
+    <rdfs:label xml:lang="fr">Tigre du Bengale</rdfs:label>
+    <rdfs:label xml:lang="pt">Tigre-de-bengala</rdfs:label>
+    <rdfs:label xml:lang="de">Bengalischer Tiger</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Delfin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dolphin"/>
+    <rdfs:label xml:lang="es">Delfín</rdfs:label>
+    <rdfs:label xml:lang="en">Dolphin</rdfs:label>
+    <rdfs:label xml:lang="fr">Dauphin</rdfs:label>
+    <rdfs:label xml:lang="pt">Golfinho</rdfs:label>
+    <rdfs:label xml:lang="de">Delfin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Perro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dog"/>
+    <rdfs:label xml:lang="es">Perro</rdfs:label>
+    <rdfs:label xml:lang="en">Dog</rdfs:label>
+    <rdfs:label xml:lang="fr">Chien</rdfs:label>
+    <rdfs:label xml:lang="pt">Cachorro</rdfs:label>
+    <rdfs:label xml:lang="de">Hund</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#SalmonAtlantico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Pez"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Atlantic_salmon"/>
+    <rdfs:label xml:lang="es">Salmón Atlántico</rdfs:label>
+    <rdfs:label xml:lang="en">Atlantic Salmon</rdfs:label>
+    <rdfs:label xml:lang="fr">Saumon atlantique</rdfs:label>
+    <rdfs:label xml:lang="pt">Salmão-do-atlântico</rdfs:label>
+    <rdfs:label xml:lang="de">Atlantischer Lachs</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#CocodriloNilo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Nile_crocodile"/>
+    <rdfs:label xml:lang="es">Cocodrilo del Nilo</rdfs:label>
+    <rdfs:label xml:lang="en">Nile Crocodile</rdfs:label>
+    <rdfs:label xml:lang="fr">Crocodile du Nil</rdfs:label>
+    <rdfs:label xml:lang="pt">Crocodilo-do-nilo</rdfs:label>
+    <rdfs:label xml:lang="de">Nilkrokodil</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#OsoPolar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Polar_bear"/>
+    <rdfs:label xml:lang="es">Oso Polar</rdfs:label>
+    <rdfs:label xml:lang="en">Polar Bear</rdfs:label>
+    <rdfs:label xml:lang="fr">Ours polaire</rdfs:label>
+    <rdfs:label xml:lang="pt">Urso-polar</rdfs:label>
+    <rdfs:label xml:lang="de">Eisbär</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Caballo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Horse"/>
+    <rdfs:label xml:lang="es">Caballo</rdfs:label>
+    <rdfs:label xml:lang="en">Horse</rdfs:label>
+    <rdfs:label xml:lang="fr">Cheval</rdfs:label>
+    <rdfs:label xml:lang="pt">Cavalo</rdfs:label>
+    <rdfs:label xml:lang="de">Pferd</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#IguanaVerde">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Green_iguana"/>
+    <rdfs:label xml:lang="es">Iguana Verde</rdfs:label>
+    <rdfs:label xml:lang="en">Green Iguana</rdfs:label>
+    <rdfs:label xml:lang="fr">Iguane vert</rdfs:label>
+    <rdfs:label xml:lang="pt">Iguana-verde</rdfs:label>
+    <rdfs:label xml:lang="de">Grüner Leguan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Pez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Pez</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Anfibio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Anfibio</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Leon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Lion"/>
+    <rdfs:label xml:lang="es">León</rdfs:label>
+    <rdfs:label xml:lang="en">Lion</rdfs:label>
+    <rdfs:label xml:lang="fr">Lion</rdfs:label>
+    <rdfs:label xml:lang="pt">Leão</rdfs:label>
+    <rdfs:label xml:lang="de">Löwe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Gorila">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gorilla"/>
+    <rdfs:label xml:lang="es">Gorila</rdfs:label>
+    <rdfs:label xml:lang="en">Gorilla</rdfs:label>
+    <rdfs:label xml:lang="fr">Gorille</rdfs:label>
+    <rdfs:label xml:lang="pt">Gorila</rdfs:label>
+    <rdfs:label xml:lang="de">Gorilla</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#RanaArborea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Anfibio"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Tree_frog"/>
+    <rdfs:label xml:lang="es">Rana Arbórea</rdfs:label>
+    <rdfs:label xml:lang="en">Tree Frog</rdfs:label>
+    <rdfs:label xml:lang="fr">Rainette</rdfs:label>
+    <rdfs:label xml:lang="pt">Perereca</rdfs:label>
+    <rdfs:label xml:lang="de">Laubfrosch</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Animal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Animal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Reptil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Reptil</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Mamifero">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Mamifero</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Ave">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Ave</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+</rdf:RDF>
