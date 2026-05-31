@@ -58,11 +58,12 @@ def search_fuseki(query, lang="es"):
     query_en_lower = query_en.lower()
 
     sparql_query = f"""
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX owl:  <http://www.w3.org/2002/07/owl#>
-    PREFIX dbo:  <http://dbpedia.org/ontology/>
+    PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+    PREFIX dbo:   <http://dbpedia.org/ontology/>
+    PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 
-    SELECT DISTINCT ?animal ?label ?labelEn ?sci ?abstract
+    SELECT DISTINCT ?animal ?label ?labelEn ?sci ?abstract ?thumbnail
     WHERE {{
         ?animal a owl:NamedIndividual .
         ?animal rdfs:label ?label .
@@ -70,6 +71,7 @@ def search_fuseki(query, lang="es"):
         OPTIONAL {{ ?animal rdfs:label ?labelEn . FILTER(lang(?labelEn) = "en") }}
         OPTIONAL {{ ?animal dbo:scientificName ?sci . }}
         OPTIONAL {{ ?animal dbo:abstract ?abstract . FILTER(lang(?abstract) = "{lang}") }}
+        OPTIONAL {{ ?animal foaf:depiction ?thumbnail . }}
         FILTER(
             CONTAINS(LCASE(str(?label)), "{query_lower}") ||
             CONTAINS(LCASE(str(?labelEn)), "{query_en_lower}")
@@ -150,11 +152,12 @@ def _parse_fuseki(data, lang):
     vistos   = set()
 
     for r in data.get("results", {}).get("bindings", []):
-        uri      = r.get("animal",   {}).get("value", "")
-        label    = r.get("label",    {}).get("value", "")
-        label_en = r.get("labelEn",  {}).get("value", "")
-        sci      = r.get("sci",      {}).get("value", "")
-        abstract = r.get("abstract", {}).get("value", "")
+        uri       = r.get("animal",    {}).get("value", "")
+        label     = r.get("label",     {}).get("value", "")
+        label_en  = r.get("labelEn",   {}).get("value", "")
+        sci       = r.get("sci",       {}).get("value", "")
+        abstract  = r.get("abstract",  {}).get("value", "")
+        thumbnail = r.get("thumbnail", {}).get("value", "")
 
         if not uri or uri in vistos:
             continue
@@ -169,6 +172,7 @@ def _parse_fuseki(data, lang):
             "labels":            {lang: label, "en": label_en} if label_en else {lang: label},
             "abstract":          abstract,
             "nombre_cientifico": sci,
+            "thumbnail":         thumbnail,
             "same_as":           uri,
             "fuente":            fuente
         })

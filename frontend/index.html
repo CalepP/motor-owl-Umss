@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotorBusqueda-ANIMALES-GR10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PANTALLA DE INICIO -->
+  <div class="app home" id="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo-text">
+          <span>M</span><span>o</span><span>t</span><span>o</span><span>r</span><span>OWL</span><span>-GR10</span>
+        </div>
+        <p class="brand-sub">Motor de búsqueda semántica · UMSS Grupo 10</p>
+      </div>
+    </header>
+
+    <!-- BARRA DE BÚSQUEDA -->
+    <section class="search-panel">
+      <form class="search-row" id="searchForm">
+        <select class="lang-select" id="langSelect">
+          <option value="es">🇧🇴 ES</option>
+          <option value="en">🇺🇸 EN</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="pt">🇧🇷 PT</option>
+          <option value="de">🇩🇪 DE</option>
+        </select>
+        <input class="search-input" id="query" type="search"
+          autocomplete="off" placeholder="Busca un animal... ej: perro, tiburón, víbora">
+        <button class="search-btn" type="submit">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2.5"/>
+            <path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <!-- SUGERENCIAS -->
+      <div class="chips" id="chips"></div>
+    </section>
+
+    <!-- DOMINIOS -->
+    <section class="domains-section">
+      <p class="section-label">Explorar por categoría</p>
+      <div class="domains" id="domains"></div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <main class="results-panel" id="output"></main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

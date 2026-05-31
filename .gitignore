@@ -30,3 +30,6 @@ Thumbs.db
 
 # Logs
 *.log
+# Fuseki (no subir al repo - es muy pesado)
+fuseki/
+fuseki4/

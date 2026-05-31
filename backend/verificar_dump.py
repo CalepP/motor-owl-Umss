@@ -42,7 +42,7 @@ for i, uri_id in enumerate(ANIMALES_URI):
     uri = f"http://dbpedia.org/resource/{uri_id}"
 
     q = f"""
-    SELECT ?labelEn ?labelEs ?abstract
+    SELECT ?labelEn ?labelEs ?abstract ?thumbnail
     WHERE {{
         <{uri}> rdfs:label ?labelEn .
         FILTER (lang(?labelEn) = "en")
@@ -53,6 +53,9 @@ for i, uri_id in enumerate(ANIMALES_URI):
         OPTIONAL {{
             <{uri}> <http://dbpedia.org/ontology/abstract> ?abstract .
             FILTER (lang(?abstract) = "es")
+        }}
+        OPTIONAL {{
+            <{uri}> <http://dbpedia.org/ontology/thumbnail> ?thumbnail .
         }}
     }} LIMIT 1
     """
@@ -84,6 +87,7 @@ for i, uri_id in enumerate(ANIMALES_URI):
                 "labels":            labels,
                 "abstract":          abstract,
                 "nombre_cientifico": "",
+                "thumbnail":         r.get("thumbnail", {}).get("value", ""),
                 "same_as":           uri,
                 "fuente":            "dbpedia"
             })
