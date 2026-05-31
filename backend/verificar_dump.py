@@ -43,13 +43,24 @@ ANIMALES_URI = [
     "Gecko", "Gila_monster", "Monitor_lizard",
     # Anfibios
     "Tree_frog", "Poison_dart_frog", "Axolotl", "Bullfrog",
-    "Red-eyed_tree_frog",
+    "Red-eyed_tree_frog", "Salamander",
     # Peces
     "Atlantic_salmon", "Clownfish", "Piranha", "Swordfish",
-    "Great_white_shark", "Seahorse", "Manta_ray", "Stingray",
-    "Electric_eel", "Tuna",
-    # Insectos
-    "Monarch_butterfly", "Honeybee", "Bumblebee",
+    "Seahorse", "Manta_ray", "Stingray", "Electric_eel", "Tuna",
+    "Great_white_shark",
+    # Insectos y artrópodos
+    "Monarch_butterfly", "Blue_morpho_butterfly", "Painted_lady",
+    "Honeybee", "Bumblebee", "Carpenter_bee", "Dragonfly",
+    "Praying_mantis", "Firefly", "Ant", "Termite",
+    "Goliath_beetle", "Stick_insect",
+    # Arácnidos
+    "Black_widow_spider", "Tarantula", "Scorpion", "Wolf_spider",
+    # Crustáceos y moluscos
+    "Mantis_shrimp", "Horseshoe_crab", "Japanese_spider_crab",
+    "Lobster", "Shrimp", "Crayfish", "Hermit_crab",
+    "Octopus", "Giant_squid", "Nautilus", "Giant_clam",
+    # Equinodermos y cnidarios
+    "Starfish", "Sea_urchin", "Jellyfish", "Box_jellyfish",
     # Primates
     "Gorilla", "Chimpanzee", "Orangutan", "Gibbon", "Bonobo",
     "Mandrill", "Baboon",
@@ -65,10 +76,9 @@ ANIMALES_URI = [
     "Capybara", "Beaver", "Giant_otter", "Sea_otter",
     "Sea_lion", "Walrus", "Harbor_seal", "Elephant_seal",
     "European_rabbit", "Snowshoe_hare",
-    # Caballos
-    "Horse", "Zebra", "Donkey", "Mule",
+    # Caballos y ungulados
+    "Horse", "Donkey", "Mule",
 ]
-
 # Quitar duplicados manteniendo orden
 vistos_uri = set()
 ANIMALES_URI_UNICOS = []

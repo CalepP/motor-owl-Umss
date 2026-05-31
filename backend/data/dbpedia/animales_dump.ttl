@@ -865,6 +865,15 @@
   rdfs:label "Rana arbórea de ojos rojos"@es ;
   rdfs:label "Red-eyed tree frog"@en .
 
+<http://dbpedia.org/resource/Salamander>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Caudata"@es ;
+  rdfs:label "Salamander"@en ;
+  rdfs:label "Caudata"@fr ;
+  rdfs:label "Urodelos"@pt ;
+  rdfs:label "Schwanzlurche"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SpottedSalamander.jpg?width=300> .
+
 <http://dbpedia.org/resource/Atlantic_salmon>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Salmón atlántico"@es ;
@@ -958,6 +967,216 @@
   rdfs:label "Mamangaba"@pt ;
   rdfs:label "Hummeln"@de ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?width=300> .
+
+<http://dbpedia.org/resource/Carpenter_bee>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Xylocopa"@es ;
+  rdfs:label "Carpenter bee"@en ;
+  rdfs:label "Xylocopa"@fr ;
+  rdfs:label "Xylocopini"@pt ;
+  rdfs:label "Holzbienen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Southern_Carpenter_Bee_(Xylocopa_micans)_♀_(7995162522).jpg?width=300> .
+
+<http://dbpedia.org/resource/Dragonfly>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Anisoptera"@es ;
+  rdfs:label "Dragonfly"@en ;
+  rdfs:label "Anisoptera"@fr ;
+  rdfs:label "Libélula"@pt ;
+  rdfs:label "Großlibellen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gemeine_Heidelibelle_(Sympetrum_vulgatum)_4.jpg?width=300> .
+
+<http://dbpedia.org/resource/Firefly>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lampyridae"@es ;
+  rdfs:label "Firefly"@en ;
+  rdfs:label "Lampyridae"@fr ;
+  rdfs:label "Vaga-lume"@pt ;
+  rdfs:label "Leuchtkäfer"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Photuris_lucicrescens.jpg?width=300> .
+
+<http://dbpedia.org/resource/Ant>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Formicidae"@es ;
+  rdfs:label "Ant"@en ;
+  rdfs:label "Fourmi"@fr ;
+  rdfs:label "Formiga"@pt ;
+  rdfs:label "Ameisen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fire_ants_01.jpg?width=300> .
+
+<http://dbpedia.org/resource/Termite>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Isoptera"@es ;
+  rdfs:label "Termite"@en ;
+  rdfs:label "Termite"@fr ;
+  rdfs:label "Isópteros"@pt ;
+  rdfs:label "Termiten"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Coptotermes_formosanus_shiraki_USGov_k8204-7.jpg?width=300> .
+
+<http://dbpedia.org/resource/Black_widow_spider>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Black widow spider"@es ;
+  rdfs:label "Black widow spider"@en .
+
+<http://dbpedia.org/resource/Tarantula>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Theraphosidae"@es ;
+  rdfs:label "Tarantula"@en ;
+  rdfs:label "Theraphosidae"@fr ;
+  rdfs:label "Tarântula"@pt ;
+  rdfs:label "Vogelspinnen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Brachypelma_vagans_p1.jpg?width=300> .
+
+<http://dbpedia.org/resource/Scorpion>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Scorpiones"@es ;
+  rdfs:label "Scorpion"@en ;
+  rdfs:label "Scorpiones"@fr ;
+  rdfs:label "Escorpião"@pt ;
+  rdfs:label "Skorpione"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Scorpion_Photograph_By_Shantanu_Kuveskar.jpg?width=300> .
+
+<http://dbpedia.org/resource/Wolf_spider>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Lycosidae"@es ;
+  rdfs:label "Wolf spider"@en ;
+  rdfs:label "Lycosidae"@fr ;
+  rdfs:label "Lycosidae"@pt ;
+  rdfs:label "Wolfspinnen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wolf_spider_tunnel.jpg?width=300> .
+
+<http://dbpedia.org/resource/Mantis_shrimp>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Stomatopoda"@es ;
+  rdfs:label "Mantis shrimp"@en ;
+  rdfs:label "Stomatopoda"@fr ;
+  rdfs:label "Stomatopoda"@pt ;
+  rdfs:label "Fangschreckenkrebse"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/OdontodactylusScyllarus2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Horseshoe_crab>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Limulidae"@es ;
+  rdfs:label "Horseshoe crab"@en ;
+  rdfs:label "Limulidae"@fr ;
+  rdfs:label "Limulidae"@pt ;
+  rdfs:label "Pfeilschwanzkrebse"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Feart-08-00098-g033.jpg?width=300> .
+
+<http://dbpedia.org/resource/Japanese_spider_crab>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Macrocheira kaempferi"@es ;
+  rdfs:label "Japanese spider crab"@en ;
+  rdfs:label "Macrocheira kaempferi"@fr ;
+  rdfs:label "Macrocheira kaempferi"@pt ;
+  rdfs:label "Japanische Riesenkrabbe"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Macrocheira_kaempferi.jpg?width=300> .
+
+<http://dbpedia.org/resource/Lobster>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Nephropidae"@es ;
+  rdfs:label "Lobster"@en ;
+  rdfs:label "Nephropidae"@fr ;
+  rdfs:label "Nephropidae"@pt ;
+  rdfs:label "Hummerartige"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/KreeftbijDenOsse.jpg?width=300> .
+
+<http://dbpedia.org/resource/Shrimp>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Gamba (crustáceo)"@es ;
+  rdfs:label "Shrimp"@en ;
+  rdfs:label "Macrura Reptantia"@fr ;
+  rdfs:label "Camarão"@pt ;
+  rdfs:label "Garnele"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Palaemon_serratus_Croazia.jpg?width=300> .
+
+<http://dbpedia.org/resource/Crayfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Astacus astacus"@es ;
+  rdfs:label "Crayfish"@en ;
+  rdfs:label "Écrevisse"@fr ;
+  rdfs:label "Astacoidea"@pt ;
+  rdfs:label "Edelkrebs"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Paranephrops.jpg?width=300> .
+
+<http://dbpedia.org/resource/Hermit_crab>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Paguroidea"@es ;
+  rdfs:label "Hermit crab"@en ;
+  rdfs:label "Paguroidea"@fr ;
+  rdfs:label "Paguroidea"@pt ;
+  rdfs:label "Einsiedlerkrebse"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Calliactis_and_Dardanus_001.jpg?width=300> .
+
+<http://dbpedia.org/resource/Octopus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Pulpo"@es ;
+  rdfs:label "Octopus"@en ;
+  rdfs:label "Octopoda"@fr ;
+  rdfs:label "Polvo"@pt ;
+  rdfs:label "Kraken"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Octopus2.jpg?width=300> .
+
+<http://dbpedia.org/resource/Giant_squid>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Architeuthis"@es ;
+  rdfs:label "Architeuthis"@en ;
+  rdfs:label "Calmar géant"@fr ;
+  rdfs:label "Lula-gigante"@pt ;
+  rdfs:label "Riesenkalmar"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giant_squid_Ranheim.jpg?width=300> .
+
+<http://dbpedia.org/resource/Nautilus>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Nautilina"@es ;
+  rdfs:label "Nautilus"@en ;
+  rdfs:label "Nautilidae"@fr ;
+  rdfs:label "Nautilidae"@pt ;
+  rdfs:label "Perlboote"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nautilus_belauensis_from_Palau.jpg?width=300> .
+
+<http://dbpedia.org/resource/Giant_clam>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Tridacna gigas"@es ;
+  rdfs:label "Giant clam"@en ;
+  rdfs:label "Tridacne géant"@fr ;
+  rdfs:label "Ostra-gigante"@pt ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giant_clam_(Tridacna_gigas)_Michaelmas_Cay.jpg?width=300> .
+
+<http://dbpedia.org/resource/Starfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Asteroidea"@es ;
+  rdfs:label "Starfish"@en ;
+  rdfs:label "Étoile de mer"@fr ;
+  rdfs:label "Estrela-do-mar"@pt ;
+  rdfs:label "Seesterne"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Starfish_montage.png?width=300> .
+
+<http://dbpedia.org/resource/Sea_urchin>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Echinoidea"@es ;
+  rdfs:label "Sea urchin"@en ;
+  rdfs:label "Echinoidea"@fr ;
+  rdfs:label "Echinoidea"@pt ;
+  rdfs:label "Seeigel"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tripneustes_ventricosus_(West_Indian_Sea_Egg-top)_and_Echinometra_viridis_(Reef_Urchin_-_bottom).jpg?width=300> .
+
+<http://dbpedia.org/resource/Jellyfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Medusa (animal)"@es ;
+  rdfs:label "Jellyfish"@en ;
+  rdfs:label "Méduse (animal)"@fr ;
+  rdfs:label "Qualle"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Jelly_cc11.jpg?width=300> .
+
+<http://dbpedia.org/resource/Box_jellyfish>
+  a owl:NamedIndividual, dbo:Animal ;
+  rdfs:label "Cubozoa"@es ;
+  rdfs:label "Box jellyfish"@en ;
+  rdfs:label "Cubozoa"@fr ;
+  rdfs:label "Cubozoa"@pt ;
+  rdfs:label "Würfelquallen"@de ;
+  foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Avispa_marina_cropped.png?width=300> .
 
 <http://dbpedia.org/resource/Gorilla>
   a owl:NamedIndividual, dbo:Animal ;

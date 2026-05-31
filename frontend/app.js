@@ -136,7 +136,7 @@ function renderCard(r) {
     : `<div class="card-img-placeholder">🐾</div>`;
 
   return `
-    <div class="card">
+    <div class="card" onclick='abrirModal(${JSON.stringify(r).replace(/'/g, "&#39;")})'>
       ${imgHtml}
       <div class="card-body">
         <div class="card-header">
@@ -162,4 +162,127 @@ function esc(str) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+// =====================
+// MODAL FICHA DETALLADA
+// =====================
+
+async function abrirModal(r) {
+  // Mostrar modal con datos básicos primero
+  document.getElementById("modal-overlay").style.display = "flex";
+  document.body.style.overflow = "hidden";
+  
+  document.getElementById("modal-overlay").innerHTML = `
+    <div class="modal" id="modal-box">
+      <button class="modal-close" onclick="cerrarModal()">✕</button>
+      <div class="modal-img-placeholder">⏳</div>
+      <div class="modal-content">
+        <h2 class="modal-nombre">${esc(r.nombre || r.id)}</h2>
+        <p style="color:var(--muted); font-size:14px;">Cargando detalles...</p>
+      </div>
+    </div>`;
+
+  // Intentar cargar detalles en vivo
+  let datos = r;
+  try {
+    const res = await fetch(`${API}/api/animals/details?uri=${encodeURIComponent(r.uri)}`);
+    if (res.ok) {
+      const detalle = await res.json();
+      // Combinar datos del dump con detalles en vivo
+      datos = {
+        ...r,
+        abstract:          detalle.abstract  || r.abstract  || "",
+        thumbnail:         detalle.thumbnail || r.thumbnail || "",
+        nombre_cientifico: detalle.nombre_cientifico || r.nombre_cientifico || "",
+        labels:            Object.keys(detalle.labels).length > 0 ? detalle.labels : r.labels,
+        clasificacion:     detalle.clasificacion || {},
+      };
+    }
+  } catch(e) {
+    console.log("Sin detalles en vivo, usando datos del dump");
+  }
+
+  renderModal(datos);
+}
+
+function renderModal(r) {
+  const nombre    = r.nombre || r.id || "Animal";
+  const fuente    = r.fuente || "dbpedia";
+  const sci       = r.nombre_cientifico || "";
+  const abstract  = r.abstract || "";
+  const labels    = r.labels || {};
+  const uri       = r.uri || "";
+  const thumbnail = r.thumbnail || "";
+  const clasif    = r.clasificacion || {};
+
+  const sourceClass = fuente === "local" ? "source-local" : "source-dbpedia";
+  const sourceLabel = fuente === "local" ? "Local OWL" : "DBpedia";
+
+  const labelsHtml = Object.entries(labels)
+    .filter(([, v]) => v)
+    .map(([k, v]) => `
+      <div class="modal-label-item">
+        <span class="modal-lang">${k.toUpperCase()}</span>
+        <span class="modal-label-val">${esc(v)}</span>
+      </div>`).join("");
+
+  const clasifHtml = Object.entries(clasif)
+    .filter(([, v]) => v)
+    .map(([k, v]) => `
+      <div class="modal-label-item">
+        <span class="modal-lang">${esc(k)}</span>
+        <span class="modal-label-val">${esc(v)}</span>
+      </div>`).join("");
+
+  const uriCorta = uri.replace("http://dbpedia.org/resource/", "dbr:")
+                      .replace("http://www.semanticweb.org/grupo10/animales#", "animal:");
+
+  const dbpediaLink = uri.includes("dbpedia.org")
+    ? `<a class="modal-link" href="${uri}" target="_blank" rel="noreferrer">Ver en DBpedia →</a>` : "";
+
+  const imgHtml = thumbnail
+    ? `<img class="modal-img" src="${thumbnail}" alt="${esc(nombre)}" onerror="this.style.display='none'">`
+    : `<div class="modal-img-placeholder">🐾</div>`;
+
+  document.getElementById("modal-overlay").innerHTML = `
+    <div class="modal" id="modal-box">
+      <button class="modal-close" onclick="cerrarModal()">✕</button>
+      ${imgHtml}
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-nombre">${esc(nombre)}</h2>
+          <span class="card-source ${sourceClass}">${sourceLabel}</span>
+        </div>
+        ${sci ? `<div class="modal-section">
+          <span class="modal-section-title">🔬 Nombre científico</span>
+          <p class="modal-sci">${esc(sci)}</p>
+        </div>` : ""}
+        ${abstract ? `<div class="modal-section">
+          <span class="modal-section-title">📖 Descripción</span>
+          <p class="modal-abstract">${esc(abstract)}</p>
+        </div>` : ""}
+        ${clasifHtml ? `<div class="modal-section">
+          <span class="modal-section-title">🧬 Clasificación taxonómica</span>
+          <div class="modal-labels">${clasifHtml}</div>
+        </div>` : ""}
+        <div class="modal-section">
+          <span class="modal-section-title">🌍 Nombres en otros idiomas</span>
+          <div class="modal-labels">${labelsHtml}</div>
+        </div>
+        <div class="modal-section">
+          <span class="modal-section-title">🔗 URI semántica</span>
+          <code class="modal-uri">${esc(uriCorta)}</code>
+        </div>
+        <div class="modal-section">
+          <span class="modal-section-title">📦 Fuente</span>
+          <p>${fuente === "local" ? "Ontología OWL local (Grupo 10 UMSS)" : "DBpedia — Linked Open Data"}</p>
+        </div>
+        ${dbpediaLink}
+      </div>
+    </div>`;
+}
+
+function cerrarModal() {
+  document.getElementById("modal-overlay").style.display = "none";
+  document.body.style.overflow = "";
 }
