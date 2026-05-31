@@ -68,87 +68,214 @@ def search_fuseki(query, lang="es"):
 
     # Para búsquedas de tipo "perro", también buscar por clase/tipo
     CLASES_EXTRA = {
-        "perro": ["dog", "shepherd", "retriever", "terrier", "hound",
-                  "spaniel", "bulldog", "poodle", "husky", "collie",
+        # Perros
+        "perro": ["dog", "shepherd", "retriever", "terrier",
+                  "bulldog", "poodle", "husky", "collie",
                   "dachshund", "rottweiler", "chihuahua", "beagle",
-                  "dalmatian", "dobermann", "schnauzer"],
-        "gato":  ["cat", "persian", "siamese", "maine coon", "bengal",
-                  "sphynx", "british shorthair", "scottish fold"],
-        "tiburon": ["shark", "tiburón"],
-        "ballena": ["whale", "cetacean"],
-        "delfin":  ["dolphin", "tursiops", "spinner"],
-        "aguila":  ["eagle", "águila"],
-        "buho":    ["owl", "búho"],
-        "serpiente": ["snake", "viper", "cobra", "python", "anaconda", "mamba"],
-        "vibora":  ["viper", "snake", "cobra"],
-        "oso":     ["bear", "panda"],
-        "mono":    ["monkey", "primate", "gorilla", "chimp", "orangutan"],
-        "pingüino": ["penguin"],
-        "loro":    ["parrot", "macaw", "cockatoo"],
-        "dalmata": ["dalmatian"],
+                  "dalmatian", "dobermann", "schnauzer", "shih tzu",
+                  "yorkshire", "border collie", "great dane"],
+        # Gatos
+        "gato": ["cat", "persian", "siamese", "maine coon", "bengal",
+                 "sphynx", "british shorthair", "scottish fold", "abyssinian"],
+        # Tiburones
+        "tiburon":  ["shark"],
+        "tiburones":["shark"],
+        # Ballenas
+        "ballena":  ["whale"],
+        "ballenas": ["whale"],
+        # Delfines
+        "delfin":   ["dolphin", "tursiops", "stenella", "delphinus"],
+        "delfines": ["dolphin", "tursiops", "stenella"],
+        # Águilas y aves rapaces
+        "aguila":  ["golden eagle", "bald eagle", "harpy eagle",
+                    "eagle", "aquila", "haliaeetus", "harpia"],
+        "aguilas": ["golden eagle", "bald eagle", "harpy eagle",
+                    "eagle", "aquila", "haliaeetus", "harpia"],
+        # Búhos
+        "buho":     ["owl", "bubo", "tyto", "strix"],
+        "buhos":    ["owl", "bubo", "tyto"],
+        # Serpientes
+        "serpiente":  ["snake", "viper", "cobra", "python", "anaconda",
+                       "mamba", "boa", "dendroaspis", "ophiophagus",
+                       "malayopython"],
+        "serpientes": ["snake", "viper", "cobra", "python", "anaconda",
+                       "mamba", "boa"],
+        # Víboras
+        "vibora":  ["viper", "dendroaspis", "cobra"],
+        "viboras": ["viper", "dendroaspis"],
+        # Osos
+        "oso":  ["bear", "ailuropoda", "helarctos", "tremarctos", "ailurus"],
+        "osos": ["bear", "ailuropoda", "helarctos"],
+        # Monos y primates
+        "mono":     ["gorilla", "chimpanzee", "orangutan", "gibbon",
+                     "bonobo", "mandrill", "baboon", "hylobatidae",
+                     "pan troglodytes", "pan paniscus", "mandrillus", "papio"],
+        "monos":    ["gorilla", "chimpanzee", "orangutan", "gibbon",
+                     "bonobo", "mandrill"],
+        "primate":  ["gorilla", "chimpanzee", "orangutan", "gibbon",
+                     "bonobo", "mandrill", "baboon", "hylobatidae",
+                     "pan troglodytes", "mandrillus", "papio"],
+        "primates": ["gorilla", "chimpanzee", "orangutan", "gibbon",
+                     "bonobo", "mandrill", "hylobatidae", "mandrillus"],
+        # Pingüinos
+        "pinguino":  ["penguin", "aptenodytes", "spheniscus"],
+        "pingüino":  ["penguin", "aptenodytes", "spheniscus"],
+        "pinguinos": ["penguin", "aptenodytes", "spheniscus"],
+        "pingüinos": ["penguin", "aptenodytes", "spheniscus"],
+        # Loros
+        "loro":  ["parrot", "macaw", "cockatoo", "psittaciformes", "cacatuidae"],
+        "loros": ["parrot", "macaw", "cockatoo", "psittaciformes"],
+        # Dálmata
+        "dalmata":   ["dalmatian"],
         "dalmatian": ["dalmatian"],
-        "carnivoro":     ["carnivore", "lion", "tiger", "wolf", "shark", "eagle",
-                  "crocodile", "snake", "leopard", "jaguar", "cheetah",
-                  "orca", "dolphin", "bear", "fox"],
-"carnivoros":    ["carnivore", "lion", "tiger", "wolf", "shark"],
-"herbivoro":     ["herbivore", "elephant", "giraffe", "zebra", "horse",
-                  "rabbit", "kangaroo", "koala", "bison", "deer", "camel"],
-"herbivoros":    ["herbivore", "elephant", "giraffe", "zebra"],
-"omnivoro":      ["omnivore", "bear", "dog", "pig", "chimpanzee", "gorilla"],
-"omnivoros":     ["omnivore", "bear", "dog"],
-"mamifero":      ["mammal", "dog", "cat", "lion", "whale", "dolphin",
-                  "elephant", "bear", "horse", "gorilla"],
-"mamiferos":     ["mammal", "dog", "cat", "lion", "whale"],
-"reptil":        ["reptile", "crocodile", "iguana", "gecko", "chameleon",
-                  "snake", "viper", "anaconda", "komodo"],
-"reptiles":      ["reptile", "crocodile", "iguana", "snake"],
-"anfibio":       ["amphibian", "frog", "toad", "axolotl", "salamander"],
-"anfibios":      ["amphibian", "frog", "axolotl"],
-"ave":           ["bird", "eagle", "owl", "penguin", "flamingo", "toucan",
-                  "parrot", "falcon", "hummingbird", "ostrich"],
-"aves":          ["bird", "eagle", "owl", "penguin", "flamingo"],
-"pez":           ["fish", "salmon", "tuna", "clownfish", "piranha",
-                  "swordfish", "seahorse"],
-"peces":         ["fish", "salmon", "tuna", "piranha"],
-"insecto":       ["insect", "bee", "butterfly", "bumblebee"],
-"insectos":      ["insect", "bee", "butterfly"],
-"felino":        ["felidae", "lion", "tiger", "leopard", "jaguar",
-                  "cheetah", "puma", "caracal"],
-"felinos":       ["felidae", "lion", "tiger", "leopard"],
-"primate":       ["primate", "gorilla", "chimpanzee", "orangutan",
-                  "gibbon", "bonobo", "mandrill"],
-"primates":      ["primate", "gorilla", "chimpanzee", "orangutan"],
-"roedor":        ["rodent", "beaver", "capybara", "rabbit"],
-"roedores":      ["rodent", "beaver", "capybara"],
-"cetaceo":       ["cetacean", "whale", "dolphin", "orca", "narwhal"],
-"cetaceos":      ["cetacean", "whale", "dolphin"],
-"herviboro":     ["herbivore", "elephant", "giraffe", "zebra", "horse",
-                  "rabbit", "kangaroo", "koala", "bison", "camel"],
-"herviboros":    ["herbivore", "elephant", "giraffe", "zebra", "horse"],
-"hierba":        ["herbivore", "elephant", "giraffe", "zebra"],
-"vertebrado":    ["fish", "bird", "mammal", "reptile", "amphibian",
-                  "salmon", "tuna", "eagle", "owl", "penguin", "dolphin",
-                  "whale", "lion", "tiger", "bear", "horse", "dog", "cat",
-                  "snake", "crocodile", "iguana", "frog", "shark"],
-"vertebrados":   ["fish", "bird", "mammal", "reptile", "amphibian",
-                  "salmon", "eagle", "dolphin", "whale", "lion", "tiger",
-                  "snake", "crocodile", "frog", "shark", "dog", "cat"],
-"invertebrado":  ["octopus", "crab", "bee", "butterfly", "squid",
-                  "bumblebee", "shrimp", "jellyfish", "spider", "mantis",
-                  "horseshoe", "clam", "snail", "starfish", "urchin"],
-"invertebrados": ["octopus", "crab", "bee", "butterfly", "squid",
-                  "bumblebee", "mantis", "horseshoe"],
+        # Carnívoros
+        "carnivoro":  ["lion", "tiger", "wolf", "shark", "eagle",
+                       "crocodile", "snake", "leopard", "jaguar", "cheetah",
+                       "orca", "dolphin", "bear", "fox", "hyena"],
+        "carnivoros": ["lion", "tiger", "wolf", "shark", "leopard",
+                       "jaguar", "cheetah", "orca", "crocodile"],
+        # Herbívoros
+        "herbivoro":  ["elephant", "giraffe", "zebra", "horse",
+                       "rabbit", "kangaroo", "koala", "bison", "camel",
+                       "llama", "alpaca", "donkey", "reindeer", "moose"],
+        "herbivoros": ["elephant", "giraffe", "zebra", "horse",
+                       "rabbit", "kangaroo", "koala", "bison", "camel"],
+        "herviboro":  ["elephant", "giraffe", "zebra", "horse",
+                       "rabbit", "kangaroo", "koala", "bison", "camel"],
+        "herviboros": ["elephant", "giraffe", "zebra", "horse",
+                       "rabbit", "kangaroo", "koala"],
+        # Omnívoros
+        "omnivoro":  ["bear", "chimpanzee", "gorilla", "bonobo"],
+        "omnivoros": ["bear", "chimpanzee", "gorilla"],
+        # Mamíferos
+        "mamifero":  ["dog", "cat", "lion", "whale", "dolphin", "elephant",
+                      "bear", "horse", "gorilla", "wolf", "fox", "kangaroo",
+                      "koala", "platypus", "seal", "walrus", "otter",
+                      "beaver", "capybara", "llama", "camel", "giraffe",
+                      "zebra", "rhinoceros", "hippopotamus", "chimpanzee",
+                      "orangutan", "gibbon", "meerkat", "hyena"],
+        "mamiferos": ["dog", "cat", "lion", "whale", "dolphin", "elephant",
+                      "bear", "horse", "gorilla", "wolf", "kangaroo",
+                      "koala", "platypus", "seal", "walrus", "giraffe",
+                      "zebra", "rhinoceros", "hippopotamus", "chimpanzee"],
+        # Reptiles
+        "reptil":   ["crocodile", "iguana", "gecko", "chameleon", "snake",
+                     "viper", "anaconda", "komodo", "varanus", "monitor",
+                     "heloderma", "boa", "python", "chamaeleonidae",
+                     "gekkota", "crocodylus"],
+        "reptiles": ["crocodile", "iguana", "gecko", "chameleon", "snake",
+                     "anaconda", "komodo", "varanus", "chamaeleonidae",
+                     "gekkota", "crocodylus"],
+        # Anfibios
+        "anfibio":  ["frog", "toad", "axolotl", "salamander", "caudata",
+                     "bullfrog", "dendrobatidae", "ambystoma"],
+        "anfibios": ["frog", "axolotl", "salamander", "caudata",
+                     "bullfrog", "dendrobatidae", "ambystoma"],
+        # Aves — SIN "bird" para evitar falsos positivos
+        "ave":  ["golden eagle", "bald eagle", "harpy eagle", "great horned owl",
+                 "barn owl", "snowy owl", "emperor penguin", "african penguin",
+                 "peregrine falcon", "flamingo", "toucan", "ostrich", "macaw",
+                 "cockatoo", "hummingbird", "aquila", "haliaeetus", "harpia",
+                 "falco", "bubo", "tyto", "phoenicopterus", "ramphastidae",
+                 "struthio", "aptenodytes", "spheniscus", "trochilidae",
+                 "psittaciformes", "cacatuidae"],
+        "aves": ["golden eagle", "bald eagle", "harpy eagle", "great horned owl",
+                 "barn owl", "snowy owl", "emperor penguin", "peregrine falcon",
+                 "flamingo", "toucan", "macaw", "cockatoo", "hummingbird",
+                 "aquila", "haliaeetus", "harpia", "falco", "bubo", "tyto",
+                 "phoenicopterus", "ramphastidae", "struthio", "aptenodytes",
+                 "spheniscus", "psittaciformes", "cacatuidae"],
+        # Peces — SIN "fish" para evitar falsos positivos
+        "pez":   ["salmon", "tuna", "clownfish", "piranha", "swordfish",
+                  "seahorse", "manta ray", "stingray", "electric eel",
+                  "salmo", "amphiprioninae", "xiphias", "hippocampus",
+                  "thunini", "myliobatoidei", "electrophorus"],
+        "peces": ["salmon", "tuna", "clownfish", "piranha", "swordfish",
+                  "seahorse", "salmo", "amphiprioninae", "xiphias",
+                  "thunini", "electrophorus"],
+        # Insectos — solo términos específicos de insectos
+        "insecto":  ["honeybee", "bumblebee", "carpenter bee", "dragonfly",
+                     "monarch butterfly", "formicidae", "isoptera",
+                     "lampyridae", "anisoptera", "xylocopa", "bombus",
+                     "danaus", "butterfly"],
+        "insectos": ["honeybee", "bumblebee", "dragonfly", "monarch butterfly",
+                     "formicidae", "isoptera", "lampyridae", "anisoptera",
+                     "xylocopa", "bombus", "danaus", "butterfly"],
+        # Arácnidos
+        "aracnido":  ["spider", "tarantula", "scorpion", "theraphosidae",
+                      "scorpiones", "lycosidae", "black widow"],
+        "aracnidos": ["spider", "tarantula", "scorpion", "theraphosidae",
+                      "scorpiones", "lycosidae"],
+        # Crustáceos
+        "crustaceo":  ["crab", "lobster", "shrimp", "crayfish",
+                       "stomatopoda", "limulidae", "macrocheira",
+                       "nephropidae", "astacus", "paguroidea"],
+        "crustaceos": ["crab", "lobster", "shrimp", "stomatopoda",
+                       "macrocheira", "nephropidae", "astacus"],
+        # Moluscos
+        "molusco":  ["octopus", "squid", "nautilus", "clam",
+                     "octopoda", "architeuthis", "nautilina", "tridacna"],
+        "moluscos": ["octopus", "squid", "nautilus", "clam",
+                     "octopoda", "architeuthis", "nautilina"],
+        # Invertebrados
+        "invertebrado":  ["octopus", "crab", "bee", "butterfly", "squid",
+                          "bumblebee", "jellyfish", "spider", "mantis",
+                          "horseshoe", "starfish", "urchin", "lobster",
+                          "shrimp", "scorpion", "tarantula", "stomatopoda",
+                          "limulidae", "macrocheira", "asteroidea",
+                          "echinoidea", "medusa", "cubozoa", "formicidae",
+                          "isoptera", "lampyridae", "anisoptera", "bombus"],
+        "invertebrados": ["octopus", "crab", "butterfly", "squid",
+                          "bumblebee", "jellyfish", "spider", "scorpion",
+                          "starfish", "lobster", "shrimp", "stomatopoda",
+                          "macrocheira", "asteroidea", "echinoidea",
+                          "medusa", "cubozoa", "formicidae", "bombus"],
+        # Vertebrados
+        "vertebrado":  ["salmon", "eagle", "owl", "penguin", "dolphin",
+                        "whale", "lion", "tiger", "bear", "horse", "dog",
+                        "cat", "snake", "crocodile", "iguana", "frog",
+                        "shark", "gorilla", "elephant", "giraffe", "zebra",
+                        "wolf", "fox", "kangaroo", "koala", "chimpanzee"],
+        "vertebrados": ["salmon", "eagle", "penguin", "dolphin", "whale",
+                        "lion", "tiger", "bear", "horse", "dog", "cat",
+                        "snake", "crocodile", "frog", "shark", "gorilla",
+                        "elephant", "giraffe", "wolf", "kangaroo"],
+        # Felinos
+        "felino":  ["lion", "tiger", "cheetah", "leopard", "jaguar",
+                    "puma", "snow leopard", "clouded leopard", "caracal",
+                    "bengal tiger"],
+        "felinos": ["lion", "tiger", "cheetah", "leopard", "jaguar",
+                    "puma", "snow leopard", "clouded leopard", "caracal",
+                    "bengal tiger"],
+        # Roedores
+        "roedor":  ["beaver", "capybara", "rabbit", "castor",
+                    "hydrochoerus"],
+        "roedores":["beaver", "capybara", "rabbit", "castor"],
+        # Cetáceos
+        "cetaceo":  ["whale", "dolphin", "orca", "narwhal", "beluga",
+                     "tursiops", "stenella", "delphinus", "delphinapterus",
+                     "monodon", "physeter", "megaptera", "balaenoptera"],
+        "cetaceos": ["whale", "dolphin", "orca", "narwhal", "tursiops",
+                     "stenella", "delphinapterus", "physeter", "balaenoptera"],
     }
 
     # Construir filtros adicionales
     extras = CLASES_EXTRA.get(query_lower, CLASES_EXTRA.get(_normalizar(query_lower), []))
     
+    # Construir filtros de CLASES_EXTRA con palabras completas
     filtros_extra = ""
     if extras:
-        condiciones = " ||\n            ".join([
-            f'CONTAINS(LCASE(str(?labelEn)), "{t}")' for t in extras
-        ])
-        filtros_extra = f"|| {condiciones}"
+        condiciones = []
+        for t in extras:
+            t_lower = t.lower()
+            condiciones.append(
+                f'(LCASE(str(?labelEn)) = "{t_lower}" || '
+                f'STRSTARTS(LCASE(str(?labelEn)), "{t_lower} ") || '
+                f'STRENDS(LCASE(str(?labelEn)), " {t_lower}") || '
+                f'CONTAINS(LCASE(str(?labelEn)), " {t_lower} ") || '
+                f'STRENDS(LCASE(str(?labelEn)), "({t_lower})"))'
+            )
+        filtros_extra = "|| " + " ||\n            ".join(condiciones)
 
     query_norm = _normalizar(query_lower)
 

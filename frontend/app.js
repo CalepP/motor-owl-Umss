@@ -6,18 +6,22 @@ const SUGERENCIAS = [
 ];
 
 const DOMINIOS = [
-  { emoji: "🐾", label: "Mamíferos",   q: "mamifero" },
-  { emoji: "🐦", label: "Aves",        q: "aguila" },
-  { emoji: "🐍", label: "Reptiles",    q: "serpiente" },
-  { emoji: "🐸", label: "Anfibios",    q: "rana" },
-  { emoji: "🐟", label: "Peces",       q: "salmon" },
-  { emoji: "🦋", label: "Insectos",    q: "mariposa" },
-  { emoji: "🦈", label: "Tiburones",   q: "tiburon" },
-  { emoji: "🐋", label: "Ballenas",    q: "ballena" },
-  { emoji: "🐕", label: "Perros",      q: "perro" },
-  { emoji: "🐈", label: "Gatos",       q: "gato" },
-  { emoji: "🦁", label: "Felinos",     q: "tigre" },
-  { emoji: "🐘", label: "Elefantes",   q: "elefante" },
+  { emoji: "🐾", label: "Mamíferos",     q: "mamiferos" },
+  { emoji: "🐦", label: "Aves",          q: "aves" },
+  { emoji: "🐍", label: "Reptiles",      q: "reptiles" },
+  { emoji: "🐸", label: "Anfibios",      q: "anfibios" },
+  { emoji: "🐟", label: "Peces",         q: "peces" },
+  { emoji: "🦋", label: "Insectos",      q: "insectos" },
+  { emoji: "🦈", label: "Tiburones",     q: "tiburon" },
+  { emoji: "🐋", label: "Ballenas",      q: "ballena" },
+  { emoji: "🐕", label: "Perros",        q: "perro" },
+  { emoji: "🐈", label: "Gatos",         q: "gato" },
+  { emoji: "🦁", label: "Felinos",       q: "felinos" },
+  { emoji: "🐘", label: "Elefantes",     q: "elefante" },
+  { emoji: "🦀", label: "Invertebrados", q: "invertebrados" },
+  { emoji: "🐒", label: "Primates",      q: "primates" },
+  { emoji: "🐊", label: "Cocodrilos",    q: "cocodrilo" },
+  { emoji: "🦅", label: "Águilas",       q: "aguila" },
 ];
 
 const appEl   = document.getElementById("app");
