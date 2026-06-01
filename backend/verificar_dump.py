@@ -126,7 +126,6 @@ for i, uri_id in enumerate(ANIMALES_URI_UNICOS):
             label_fr  = r.get("labelFr", {}).get("value", "")
             label_pt  = r.get("labelPt", {}).get("value", "")
             label_de  = r.get("labelDe", {}).get("value", "")
-            abstract  = r.get("abstract",  {}).get("value", "")
             thumbnail = r.get("thumbnail", {}).get("value", "")
 
             nombre = label_es if label_es else label_en
@@ -135,6 +134,29 @@ for i, uri_id in enumerate(ANIMALES_URI_UNICOS):
             if label_fr: labels["fr"] = label_fr
             if label_pt: labels["pt"] = label_pt
             if label_de: labels["de"] = label_de
+
+            # Descargar abstract de Wikipedia en español
+            abstract = ""
+            try:
+                import requests as req
+                wiki_resp = req.get(
+                    f"https://es.wikipedia.org/api/rest_v1/page/summary/{uri_id}",
+                    headers={"User-Agent": "MotorOWL/1.0 (UMSS Grupo10; contacto@umss.edu)"},
+                    timeout=8
+                )
+                if wiki_resp.status_code == 200:
+                    abstract = wiki_resp.json().get("extract", "")[:800]
+                    if not abstract:
+                        # Intentar en inglés
+                        wiki_en = req.get(
+                            f"https://en.wikipedia.org/api/rest_v1/page/summary/{uri_id}",
+                            headers={"User-Agent": "MotorOWL/1.0 (UMSS Grupo10; contacto@umss.edu)"},
+                            timeout=8
+                        )
+                        if wiki_en.status_code == 200:
+                            abstract = wiki_en.json().get("extract", "")[:800]
+            except Exception as we:
+                print(f"  ⚠️ DBpedia falló: {we}")
 
             animales.append({
                 "id":                uri_id,
@@ -147,13 +169,13 @@ for i, uri_id in enumerate(ANIMALES_URI_UNICOS):
                 "same_as":           uri,
                 "fuente":            "dbpedia"
             })
-            print(f"[{i+1}/{len(ANIMALES_URI_UNICOS)}] ✅ {nombre}")
+            print(f"[{i+1}/{len(ANIMALES_URI_UNICOS)}] ✅ {nombre} {'📖' if abstract else ''}")
         else:
             print(f"[{i+1}/{len(ANIMALES_URI_UNICOS)}] ⚠️  {uri_id} no encontrado")
     except Exception as e:
         print(f"[{i+1}/{len(ANIMALES_URI_UNICOS)}] ❌ {uri_id}: {e}")
 
-    time.sleep(0.5)
+    time.sleep(0.6)
 
 os.makedirs(os.path.dirname(DUMP_FILE), exist_ok=True)
 with open(DUMP_FILE, "w", encoding="utf-8") as f:

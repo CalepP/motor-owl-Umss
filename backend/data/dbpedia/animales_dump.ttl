@@ -10,6 +10,7 @@
   rdfs:label "Chien"@fr ;
   rdfs:label "Cão"@pt ;
   rdfs:label "Haushund"@de ;
+  dbo:abstract "Dog es un robot que aparece por primera vez en el juego Half-Life 2. El Dr. Eli Vance lo construyó hace una década para proteger a su hija, Alyx Vance cuando ella era joven. Al principio Dog era relativamente pequeño, como unos 4 pies de alto, pero como Alyx añade en el juego su padre lo fue mejorando y añadiendo más piezas y hasta alcanzar unos 10 pies de alto."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue_merle_koolie_short_coat_heading_sheep_(cropped).jpg?width=300> .
 
 <http://dbpedia.org/resource/German_Shepherd>
@@ -28,6 +29,7 @@
   rdfs:label "Labrador retriever"@fr ;
   rdfs:label "Labrador retriever"@pt ;
   rdfs:label "Labrador Retriever"@de ;
+  dbo:abstract "El labrador retriever es una raza de perro de origen canadiense que se desarrolló en el Dominio de Terranova. Es una de las razas más populares del mundo por la cantidad de ejemplares registrados."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Labrador_on_Quantock_(2175262184).jpg?width=300> .
 
 <http://dbpedia.org/resource/Golden_Retriever>
@@ -37,6 +39,7 @@
   rdfs:label "Golden retriever"@fr ;
   rdfs:label "Golden retriever"@pt ;
   rdfs:label "Golden Retriever"@de ;
+  dbo:abstract "El golden retriever es una raza de perro cobrador que se desarrolló alrededor de 1850 en el Reino Unido, concretamente en Escocia. Con sus características de perro cobrador, sabueso, bloodhound y spaniel de agua, es un hábil perro de caza con aptitudes para el rastreo. Posee una disposición amigable y una actitud que lo ha convertido en una de las razas familiares más populares en los Estados Unidos y en Canadá, el quinto más popular en Australia, y la octava raza más popular en el Reino Unido."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Golden_Retriever_Dukedestiny01_drvd.jpg?width=300> .
 
 <http://dbpedia.org/resource/Poodle>
@@ -46,6 +49,7 @@
   rdfs:label "Caniche"@fr ;
   rdfs:label "Poodle"@pt ;
   rdfs:label "Pudel"@de ;
+  dbo:abstract "El caniche es una raza canina que hasta el siglo XV se consideró de uso exclusivo de los aristócratas y nobles. Fue un perro cobrador de aguas hasta el Renacimiento: recuperaban las presas ya cazadas que habían caído al agua, como patos y cisnes. Hoy en día se les encuentra frecuentemente en las exposiciones caninas de belleza. Existen cuatro variedades: grande, mediano, enano y toy y en diferentes colores como por ejemplo rosa."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Full_attention_(8067543690).jpg?width=300> .
 
 <http://dbpedia.org/resource/Bulldog>
@@ -55,6 +59,7 @@
   rdfs:label "Bulldog anglais"@fr ;
   rdfs:label "Buldogue"@pt ;
   rdfs:label "Englische Bulldogge"@de ;
+  dbo:abstract "El bulldog, también conocido como bulldog inglés, es una raza de perro originaria de Inglaterra. Su ancestro, conocido como el Antiguo Bulldog Inglés, fue utilizado en peleas de perros con toros (bull-baiting) hasta mediados del siglo XVII, aunque en 1835 esta práctica fue prohibida. Hoy en día, esta raza de perro es uno de los símbolos de Inglaterra."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bulldog_inglese.jpg?width=300> .
 
 <http://dbpedia.org/resource/Beagle>
@@ -64,6 +69,7 @@
   rdfs:label "Beagle"@fr ;
   rdfs:label "Beagle"@pt ;
   rdfs:label "Beagle (Hunderasse)"@de ;
+  dbo:abstract "El beagle es una raza de perro de tamaño pequeño a mediano. Tiene un aspecto similar al foxhound, pero de menor tamaño, con patas más cortas y orejas más largas y caídas. Este perro, clasificado en el grupo 6, sección 1.3 por la Federación Cinológica Internacional, es un sabueso utilizado principalmente para rastrear liebres, conejos y otras piezas de caza. Su gran capacidad olfativa e instinto de rastreo hace que se utilicen como perros de detección de importaciones agrícolas prohibidas y produ"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Beagle_600.jpg?width=300> .
 
 <http://dbpedia.org/resource/Chihuahua>
@@ -72,7 +78,8 @@
   rdfs:label "Chihuahua"@en ;
   rdfs:label "Chihuahua"@fr ;
   rdfs:label "Chihuahua (desambiguação)"@pt ;
-  rdfs:label "Chihuahua"@de .
+  rdfs:label "Chihuahua"@de ;
+  dbo:abstract "Chihuahua,(en español: ) oficialmente Estado Libre y Soberano de Chihuahua, es uno de los treinta y un estados que, junto con la Ciudad de México, conforman México. Su capital es la ciudad homónima y su ciudad más poblada es Ciudad Juárez."@es .
 
 <http://dbpedia.org/resource/Rottweiler>
   a owl:NamedIndividual, dbo:Animal ;
@@ -81,6 +88,7 @@
   rdfs:label "Rottweiler"@fr ;
   rdfs:label "Rottweiler"@pt ;
   rdfs:label "Rottweiler"@de ;
+  dbo:abstract "El rottweiler es una raza de perro de tipo molosoide originaria de Alemania, aunque fue también usado en la antigua Roma. Era conocido como «perro carnicero de Rottweil» —en alemán: Rottweiler Metzgerhund— porque estaba acostumbrado a proteger y pastorear ganado y tirar de los carritos de carnicería cargados de carne, junto con otros productos para el mercado. Fue empleado en sus papeles tradicionales hasta mediados del siglo XIX, cuando el tren reemplazó que el ganado fuera arreado al mercado. "@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rottweiler_standing_facing_left.jpg?width=300> .
 
 <http://dbpedia.org/resource/Siberian_Husky>
@@ -90,6 +98,7 @@
   rdfs:label "Husky de Sibérie"@fr ;
   rdfs:label "Husky siberiano"@pt ;
   rdfs:label "Siberian Husky"@de ;
+  dbo:abstract "El husky siberiano es una raza de perro de trabajo originaria del norte de Siberia en Rusia. Este perro fue creado por la tribu Chukchi como perro de trabajo para tirar de los trineos a través de largas distancias durante sus partidas de caza, sirviendo así como vehículo de transporte rápido para las presas en la vuelta al poblado."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Husky_L.jpg?width=300> .
 
 <http://dbpedia.org/resource/Dachshund>
@@ -99,6 +108,7 @@
   rdfs:label "Teckel"@fr ;
   rdfs:label "Dachshund"@pt ;
   rdfs:label "Dackel"@de ;
+  dbo:abstract "El dachshund, también conocido como teckel y popularmente como perro salchicha, es una raza de perro originaria de Alemania. Su peculiar fisonomía se debe a una mutación genética conocida como bassetismo, que dota a los ejemplares de unas extremidades cortas en relación con el tamaño del cuerpo."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/닥스훈트(단모종)_(Dachshund_(Short)).jpg?width=300> .
 
 <http://dbpedia.org/resource/Shih_Tzu>
@@ -108,6 +118,7 @@
   rdfs:label "Shih tzu"@fr ;
   rdfs:label "Shih-tzu"@pt ;
   rdfs:label "Shih Tzu"@de ;
+  dbo:abstract "El shih tzu es una raza de perro originaria de Tíbet. Los asiáticos los criaban y arreglaban para que se parecieran a alfombras vivientes, de acuerdo con la cultura china, siendo muy apreciados como perros guardianes. Al igual que el Lhasa Apso, es una raza ligada estrechamente con la práctica budista, posiblemente procedente de un cruce entre el Lhasa Apso y el pekinés. Según una encuesta de la asociación de criadores de perros de Reino Unido Club Kennel, su esperanza de vida es de 15 años a 18"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Shihtzu_(cropped).jpg?width=300> .
 
 <http://dbpedia.org/resource/Yorkshire_Terrier>
@@ -117,6 +128,7 @@
   rdfs:label "Yorkshire terrier"@fr ;
   rdfs:label "Yorkshire terrier"@pt ;
   rdfs:label "Yorkshire Terrier"@de ;
+  dbo:abstract "El yorkshire terrier es una raza de perro con orígenes en Reino Unido de pequeño tamaño"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/(2_version)_Grupp_3,_YORKSHIRETERRIER,_NO_UCH_SE_UCH_Oxzar_Amazing_Bel’s_Toffy_(24310212305).jpg?width=300> .
 
 <http://dbpedia.org/resource/Dobermann>
@@ -126,6 +138,7 @@
   rdfs:label "Dobermann"@fr ;
   rdfs:label "Dobermann"@pt ;
   rdfs:label "Dobermann"@de ;
+  dbo:abstract "El dóberman es una raza de perro originaria de Alemania que debe su nombre a Karl Friedrich Louis Dobermann, un alemán que, a finales del siglo XIX, toma la iniciativa de crear una nueva raza de perro que sirviera eficazmente a su difícil trabajo como recaudador de impuestos. Para conseguir el nacimiento de esta nueva raza, mediante cruces de otras razas caninas como el Rottweiler, el Beauceron, el Weimaraner, el Manchester terrier, o el Pinscher, entre otros. La principal función de esta raza e"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dobermann_handling.jpg?width=300> .
 
 <http://dbpedia.org/resource/Great_Dane>
@@ -144,6 +157,7 @@
   rdfs:label "Border collie"@fr ;
   rdfs:label "Border collie"@pt ;
   rdfs:label "Border Collie"@de ;
+  dbo:abstract "El border collie es una raza de perro de trabajo incluido dentro de la denominación Collie. La raza surgió en la frontera entre Escocia e Inglaterra como perro pastor, sobre todo para trabajar con rebaños de ovejas. El border collie fue seleccionado sobre todo para enfatizar su inteligencia y su obediencia."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Border_Collie_600.jpg?width=300> .
 
 <http://dbpedia.org/resource/Australian_Shepherd>
@@ -168,6 +182,7 @@
   rdfs:label "Chat"@fr ;
   rdfs:label "Gato"@pt ;
   rdfs:label "Hauskatze"@de ;
+  dbo:abstract "El comando cat es un programa de Unix usado para concatenar y mostrar archivos"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cat_August_2010-4.jpg?width=300> .
 
 <http://dbpedia.org/resource/Persian_cat>
@@ -195,6 +210,7 @@
   rdfs:label "Maine coon"@fr ;
   rdfs:label "Maine Coon"@pt ;
   rdfs:label "Maine-Coon-Katze"@de ;
+  dbo:abstract "El Maine Coon es una gran raza de gato domesticado. Tiene una apariencia física distintiva y valiosas habilidades de caza. Es una de las razas naturales más antiguas de América del Norte. La raza se originó en el estado de Maine."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Maine_Coon_cat_by_Tomitheos.jpg?width=300> .
 
 <http://dbpedia.org/resource/Bengal_cat>
@@ -222,6 +238,7 @@
   rdfs:label "British shorthair"@fr ;
   rdfs:label "Gato de pelo curto inglês"@pt ;
   rdfs:label "Britisch Kurzhaar"@de ;
+  dbo:abstract "El británico de pelo corto o british shorthair es una raza de gato que desciende del cruce entre los gatos que llevaron a Britania los romanos y los nativos de la isla. Estos gatos se protegen muy bien del clima británico por su pelaje doble e impermeable."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mystica_from_British_Empire_Cattery.jpg?width=300> .
 
 <http://dbpedia.org/resource/Scottish_Fold>
@@ -231,6 +248,7 @@
   rdfs:label "Scottish fold & Highland Fold"@fr ;
   rdfs:label "Scottish Fold"@pt ;
   rdfs:label "Schottische Faltohrkatze"@de ;
+  dbo:abstract "El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura. Posee pies redondos y una cola gruesa de tamaño medio. Su cabeza es muy redondeada, con las pequeñas orejas plegadas. La nariz es chata y corta y posee unos pómulos salientes. Su pelaje es corto, aunque existe una versión llamada Highland Fold que lo tiene semilargo. No tienen un color específico, y poseen un carácter fuerte y un gran instinto cazador. Fue reconocida com"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blue_Scottish_Fold_Cat.png?width=300> .
 
 <http://dbpedia.org/resource/Abyssinian_cat>
@@ -249,6 +267,7 @@
   rdfs:label "Lion"@fr ;
   rdfs:label "Leão"@pt ;
   rdfs:label "Löwe"@de ;
+  dbo:abstract "Lyon hey"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?width=300> .
 
 <http://dbpedia.org/resource/Tiger>
@@ -258,6 +277,7 @@
   rdfs:label "Tigre"@fr ;
   rdfs:label "Tigre"@pt ;
   rdfs:label "Tiger"@de ;
+  dbo:abstract "La palabra Tiger puede referirse a:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg?width=300> .
 
 <http://dbpedia.org/resource/Bengal_tiger>
@@ -276,6 +296,7 @@
   rdfs:label "Guépard"@fr ;
   rdfs:label "Acinonyx jubatus"@pt ;
   rdfs:label "Gepard"@de ;
+  dbo:abstract "Cheetah es el nombre dado en inglés al guepardo, uno de los animales terrestres más rápidos y es un miembro de la familia Felidae. Cheetah también puede referirse a:el Miracinonyx, o guepardo americano, un género prehistórico de los grandes felinos."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Male_cheetah_facing_left_in_South_Africa.jpg?width=300> .
 
 <http://dbpedia.org/resource/Leopard>
@@ -285,6 +306,7 @@
   rdfs:label "Léopard"@fr ;
   rdfs:label "Panthera pardus"@pt ;
   rdfs:label "Leopard"@de ;
+  dbo:abstract "Leopard puede hacer referencia a:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/African_leopard_male_(cropped).jpg?width=300> .
 
 <http://dbpedia.org/resource/Jaguar>
@@ -294,6 +316,7 @@
   rdfs:label "Jaguar"@fr ;
   rdfs:label "Panthera onca"@pt ;
   rdfs:label "Jaguar"@de ;
+  dbo:abstract "El jaguar, yaguar, yaguareté, jaguareté, tigre o tecuán  es un mamífero carnívoro félido de la subfamilia de los Panterinos y género Panthera. Es la única de las cinco especies actuales de este género que se encuentra en América. También es el mayor félido de América y el tercero del mundo, después del tigre y el león. Su distribución actual se extiende desde el extremo sur de Estados Unidos continuando por parte de México, América Central y América del Sur hasta el norte y noreste de Argentina."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Standing_jaguar.jpg?width=300> .
 
 <http://dbpedia.org/resource/Puma>
@@ -302,7 +325,8 @@
   rdfs:label "Puma"@en ;
   rdfs:label "Puma (homonymie)"@fr ;
   rdfs:label "Puma (desambiguação)"@pt ;
-  rdfs:label "Puma (Begriffsklärung)"@de .
+  rdfs:label "Puma (Begriffsklärung)"@de ;
+  dbo:abstract "El puma, león de montaña o león americano es un mamífero carnívoro de la familia Felidae nativo de América. Este felino vive en más lugares que cualquier otro mamífero silvestre terrestre del continente, ya que su área de distribución se extiende desde el Yukón, en Canadá, hasta el sur de la cordillera de los Andes y la Patagonia en América del Sur. Con esta amplia distribución geográfica, el puma tiene decenas de nombres y es mencionado con diversas referencias en la mitología de los pueblos ab"@es .
 
 <http://dbpedia.org/resource/Snow_leopard>
   a owl:NamedIndividual, dbo:Animal ;
@@ -329,6 +353,7 @@
   rdfs:label "Caracal"@fr ;
   rdfs:label "Caracal caracal"@pt ;
   rdfs:label "Karakal"@de ;
+  dbo:abstract "Caracal puede referirse a:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Caracal_on_the_road,_early_morning_in_Kgalagadi_(36173878220)_(cropped).jpg?width=300> .
 
 <http://dbpedia.org/resource/Bear>
@@ -338,6 +363,7 @@
   rdfs:label "Ours blanc"@fr ;
   rdfs:label "Ursidae"@pt ;
   rdfs:label "Bären"@de ;
+  dbo:abstract "La comunidad de osos es una subcultura dentro de la comunidad gay. En el argot homosexual, se considera osos a los hombres de cuerpo fornido y con abundante vello facial y/o corporal. En la comunidad de los osos maduros no todos cumplen con la definición de oso en todas sus condiciones; incluso algunos no poseen ningún parecido a sus rasgos físicos y simplemente se sienten atraídos por ellos y se identifican con su comunidad. Por ello existe una terminología propia para describir a sus miembros "@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ours_brun_parcanimalierpyrenees_1.jpg?width=300> .
 
 <http://dbpedia.org/resource/Polar_bear>
@@ -443,6 +469,7 @@
   rdfs:label "Requin-bouledogue"@fr ;
   rdfs:label "Tubarão-cabeça-chata"@pt ;
   rdfs:label "Bullenhai"@de ;
+  dbo:abstract "El tiburón sarda, también llamado tiburón lamia o tiburón toro, es una especie de elasmobranquio carcarriniforme de la familia de los carcarrínidos. Tolera muy bien el agua dulce, por lo que es uno de los pocos tiburones que remonta los estuarios para alcanzar aguas dulces de los ríos. Llega a medir hasta 3,4 m de largo."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Carcharhinus_leucas_TPWD.jpg?width=300> .
 
 <http://dbpedia.org/resource/Tiger_shark>
@@ -522,6 +549,7 @@
   rdfs:label "Orque"@fr ;
   rdfs:label "Orca"@pt ;
   rdfs:label "Schwertwal"@de ;
+  dbo:abstract "La orca es una especie de cetáceo odontoceto perteneciente a la familia Delphinidae, que habita en todos los océanos del planeta. Es la especie más grande de delfínido y la única existente actual reconocida dentro del género Orcinus."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Killerwhales_jumping.jpg?width=300> .
 
 <http://dbpedia.org/resource/Narwhal>
@@ -548,6 +576,7 @@
   rdfs:label "Dolphin"@en ;
   rdfs:label "Dauphin"@fr ;
   rdfs:label "Golfinho"@pt ;
+  dbo:abstract "El término Dolphin puede referirse a:la palabra \"delfín\" en inglés; Dolphin (Smalltalk), una implementación comercial de Smalltalk, un lenguaje de programación; Dolphin (estación de trabajo), una estación de trabajo diseñada en Xerox Alto; Dolphin (emulador), un emulador de las consolas de Nintendo GameCube y Wii y que funciona en sistemas operativos Windows y Linux; Dolphin (explorador de archivos), un administrador de archivos de KDE; Dolphin (navegador) Dolphin (cohete), un cohete experimenta"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tursiops_truncatus_01.jpg?width=300> .
 
 <http://dbpedia.org/resource/Bottlenose_dolphin>
@@ -646,6 +675,7 @@
   rdfs:label "Phoenicopterus"@fr ;
   rdfs:label "Flamingo"@pt ;
   rdfs:label "Flamingos"@de ;
+  dbo:abstract "Flamingo puede referirse a:Flamenco, por la palabra del idioma inglés para referirse a esta ave. Capitán Flamingo, serie animada canadiense. Flamingo (álbum), primer álbum solista de Brandon Flowers. Flamingo (cómic), villano enemigo de Batman. Flamingo Road, carretera de Nevada, Estados Unidos. Flamingo Televisión, cadena de televisión venezolana."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Flamingos_Laguna_Colorada.jpg?width=300> .
 
 <http://dbpedia.org/resource/Toucan>
@@ -663,6 +693,7 @@
   rdfs:label "Ostrich"@en ;
   rdfs:label "Autruche"@fr ;
   rdfs:label "Struthio"@pt ;
+  dbo:abstract "Cividale del Friuli es una ciudad ubicada en la provincia de Údine, en la región autónoma de Friul-Venecia Julia. Se encuentra junto al río Natisone, próxima a la frontera de Eslovenia. En época romana y, sobre todo, durante la Alta Edad Media, fue una ciudad importante en la región. Cuenta con una población estimada de 11 515 habitantes.[cita requerida]"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Struthio_Diversity.jpg?width=300> .
 
 <http://dbpedia.org/resource/Emperor_penguin>
@@ -690,6 +721,7 @@
   rdfs:label "Trochilidae"@fr ;
   rdfs:label "Beija-flor"@pt ;
   rdfs:label "Kolibris"@de ;
+  dbo:abstract "Hummingbird es una película británico-estadounidense estrenada en 2013 del género Acción/Thriller, escrita y dirigida por Steven Knight y protagonizada por Jason Statham."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Trinidad_and_Tobago_hummingbirds_composite.jpg?width=300> .
 
 <http://dbpedia.org/resource/Macaw>
@@ -707,6 +739,7 @@
   rdfs:label "Psittaciformes"@fr ;
   rdfs:label "Psittaciformes"@pt ;
   rdfs:label "Papageien"@de ;
+  dbo:abstract "Parrot puede referirse a:Friedrich von Parrot, médico y naturalista alemán. La Máquina virtual Parrot. Parrot, palabra inglesa que significa loro o perico. La empresa Parrot, principal fabricante mundial de dispositivos manos libres para teléfonos móviles."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Parrot_montage.jpg?width=300> .
 
 <http://dbpedia.org/resource/Cockatoo>
@@ -716,6 +749,7 @@
   rdfs:label "Calopsitte élégante"@fr ;
   rdfs:label "Nymphicus hollandicus"@pt ;
   rdfs:label "Kakadus"@de ;
+  dbo:abstract "Cockatoo puede hacer referencia a:la isla Cockatoo (Australia Occidental); la isla Cockatoo (Nueva Gales del Sur); Cockatoo (cohete), una serie de cohetes sonda australianos; un loro de la familia Cacatuidae."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cacatua_galerita_Tas_2.jpg?width=300> .
 
 <http://dbpedia.org/resource/Nile_crocodile>
@@ -752,6 +786,7 @@
   rdfs:label "Dragon de Komodo"@fr ;
   rdfs:label "Dragão-de-komodo"@pt ;
   rdfs:label "Komodowaran"@de ;
+  dbo:abstract "El dragón de Komodo, también llamado monstruo de Komodo y varano de Komodo, es una especie de saurópsido de la familia de los varánidos, endémico de algunas islas de Indonesia central. Es el lagarto de mayor tamaño del mundo, con una longitud media de dos a tres metros y un peso de unos 70 kg. A consecuencia de su tamaño, son los superpredadores de los ecosistemas en los que viven. A pesar de que se alimentan principalmente de carroña, también cazan y tienden emboscadas a sus presas, que incluye"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/202306_Varanus_komodoensis.jpg?width=300> .
 
 <http://dbpedia.org/resource/King_cobra>
@@ -761,6 +796,7 @@
   rdfs:label "Cobra royal"@fr ;
   rdfs:label "Cobra-real"@pt ;
   rdfs:label "Königskobra"@de ;
+  dbo:abstract "La cobra real es una especie de serpiente de la familia Elapidae y único miembro del género Ophiophagus. Se distribuye por India, Bangladés, Birmania, sur de China, Vietnam, Laos, Camboya, Tailandia, Malasia, Indonesia y Filipinas."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg?width=300> .
 
 <http://dbpedia.org/resource/Black_mamba>
@@ -776,6 +812,7 @@
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Anaconda"@es ;
   rdfs:label "Anaconda"@en ;
+  dbo:abstract "Las anacondas son un género de serpientes no venenosas, todas ellas constrictoras, pertenecientes a la familia de las boas. Está integrado por una especie extinta y cinco especies vivientes, la mayoría con un tamaño de dos a doce metros de longitud total. Estas serpientes suelen recibir muchos nombres locales, como kuriyús, sucuríes o güios, pero su nombre más común es anaconda. Su nombre científico, Eunectes, deriva de la palabra griega Eυνήκτης, que significa 'buen nadador'."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eunectes_murinus2.jpg?width=300> .
 
 <http://dbpedia.org/resource/Boa_constrictor>
@@ -785,6 +822,7 @@
   rdfs:label "Boa constricteur"@fr ;
   rdfs:label "Jiboia-constritora"@pt ;
   rdfs:label "Abgottschlange"@de ;
+  dbo:abstract "La boa constrictora es una especie de serpiente grande de la familia Boidae que habita en América, principalmente en gran parte de la cuenca del Amazonas. Es la especie más ampliamente conocida y distribuida del género Boa."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Red-tailed_boa_(Boa_constrictor_constrictor)_Rio_Napo.jpg?width=300> .
 
 <http://dbpedia.org/resource/Reticulated_python>
@@ -803,12 +841,14 @@
   rdfs:label "Chamaeleonidae"@fr ;
   rdfs:label "Camaleão"@pt ;
   rdfs:label "Chamäleons"@de ;
+  dbo:abstract "«Chameleon» puede referirse a:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Chamaeleonidae-01.jpg?width=300> .
 
 <http://dbpedia.org/resource/Gecko>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Gekkota"@es ;
   rdfs:label "Gekkota"@en ;
+  dbo:abstract "Gekkota es un suborden de saurópsidos escamosos comúnmente conocidos como «geckos» o gecos. Se compone de más de 1500 especies clasificadas en unos 120 géneros y 7 familias. Se distribuyen en todas las zonas cálidas del mundo, donde viven en una variedad de hábitats diferentes, desde selvas muy densas hasta zonas desérticas. Los geckos no pueden sobrevivir en regiones templadas, como el norte de Europa, pero en el sur de Europa algunas especies son muy comunes."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Phelsuma_l._laticauda.jpg?width=300> .
 
 <http://dbpedia.org/resource/Gila_monster>
@@ -852,12 +892,14 @@
   rdfs:label "Axolotl"@fr ;
   rdfs:label "Ambystoma mexicanum"@pt ;
   rdfs:label "Axolotl"@de ;
+  dbo:abstract "El ajolote es una especie de anfibio caudado de la familia de los ambistomátidos relacionado con la salamandra tigre. Fue descrito originalmente por George Kearsley Shaw y Frederick Polydore Nodder bajo el sinónimo de Gyrinus mexicanus. Es endémico del sistema lacustre de la Cuenca de México y ha tenido una gran influencia en la cultura mexicana. Se encuentra en peligro crítico de extinción por la pérdida de hábitat, introducción de peces depredadores exóticos, sobreexplotación, contaminación, v"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Axolotl_ganz.jpg?width=300> .
 
 <http://dbpedia.org/resource/Bullfrog>
   a owl:NamedIndividual, dbo:Animal ;
   rdfs:label "Rana toro"@es ;
   rdfs:label "Bullfrog"@en ;
+  dbo:abstract "Bullfrog Productions, Ltd. fue una empresa de videojuegos con sede en Chertsey, Reino Unido fundada en 1987 por el diseñador Peter Molyneux y Les Edgar. Su primer juego fue Populous de 1989 donde el jugador tomaba el rol de un dios. En la década de los 90 se convirtió en una empresa de videojuegos muy importante tras el éxito de productos como Theme Park, Theme Hospital o Syndicate. En 1995 fue adquirida por Electronic Arts ocupando Peter Molyneux una vicepresidencia de EA."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/North-American-bullfrog1.jpg?width=300> .
 
 <http://dbpedia.org/resource/Red-eyed_tree_frog>
@@ -872,6 +914,7 @@
   rdfs:label "Caudata"@fr ;
   rdfs:label "Urodelos"@pt ;
   rdfs:label "Schwanzlurche"@de ;
+  dbo:abstract "Salamander puede referirse a:Heinkel He 162 Salamander un caza jet alemán de la Segunda Guerra Mundial. Salamander (videojuego), Salamander  es un matamarcianos desarrollado y producido por Konami. Salamander, es un personaje de Fairy Tail."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SpottedSalamander.jpg?width=300> .
 
 <http://dbpedia.org/resource/Atlantic_salmon>
@@ -897,6 +940,7 @@
   rdfs:label "Piranha"@fr ;
   rdfs:label "Piranha"@pt ;
   rdfs:label "Piranhas"@de ;
+  dbo:abstract "El término piraña puede referirse a:Las pirañas, un conjunto de géneros de peces carnívoros que viven en los ríos de América del Sur. Todas las pirañas son Serrasalminae, pero en esta subfamilia además de las especies carnívoras, también existen especies herbívoras y omnívoras. Club Atlético Piraña, un club deportivo argentino. MAA-1 Piranha, un misil aire-aire desarrollado por Brasil para su Fuerza Aérea y su Armada. MOWAG Piranha, una familia de vehículos blindados de combate diseñados por la "@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg?width=300> .
 
 <http://dbpedia.org/resource/Swordfish>
@@ -906,6 +950,7 @@
   rdfs:label "Espadon"@fr ;
   rdfs:label "Espadarte"@pt ;
   rdfs:label "Schwertfisch"@de ;
+  dbo:abstract "La palabra Swordfish significa pez espada en inglés, y puede referirse a:Fairey Swordfish, un avión torpedero británico utilizado en la Segunda Guerra Mundial. Swordfish, una película dirigida por Dominic Sena. swordfish, un gran pez perciforme de la familia Xiphiidae, muy valorado en la pesca deportiva extrema. swordfish, un pez de la familia de los pecílidos en el orden de los ciprinodontiformes muy usual en acuarios de agua dulce."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Xiphias_gladius_Linnaeus,_1758_2599925021.jpg?width=300> .
 
 <http://dbpedia.org/resource/Seahorse>
@@ -915,6 +960,7 @@
   rdfs:label "Hippocampe (poisson)"@fr ;
   rdfs:label "Cavalo-marinho"@pt ;
   rdfs:label "Seepferdchen"@de ;
+  dbo:abstract "Seahorse es una aplicación front-end de GNOME para la gestión de Claves PGP y SSH. Seahorse se integra con Nautilus, gedit y Evolution para el cifrado, descifrado y otras operaciones. Tiene soporte de claves HKP y LDAP. El programa se basa en GNU Privacy Guard (GPG) y se distribuye bajo la GNU General Public License."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg?width=300> .
 
 <http://dbpedia.org/resource/Manta_ray>
@@ -931,6 +977,7 @@
   rdfs:label "Myliobatoidei"@es ;
   rdfs:label "Stingray"@en ;
   rdfs:label "Myliobatoidei"@fr ;
+  dbo:abstract "El Music Man Stingray es un bajo eléctrico de la compañía Music Man presentado en 1976."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SStringray.jpg?width=300> .
 
 <http://dbpedia.org/resource/Electric_eel>
@@ -948,6 +995,7 @@
   rdfs:label "Tuna"@en ;
   rdfs:label "Thunnini"@fr ;
   rdfs:label "Thunnini"@pt ;
+  dbo:abstract "Una tuna es una agrupación o hermandad de estudiantes universitarios o miembros de una sociedad que, portando la vestimenta antigua de la universidad o vestimenta que represente su cultura de origen, se caracterizan por cantar, tocar y viajar por el mundo gracias a estas habilidades —a pesar de que no todos o muy pocos sean músicos de profesión— o por interpretar temas musicales haciendo uso generalmente de instrumentos de cuerda y percusión."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/tuna_assortment.png?width=300> .
 
 <http://dbpedia.org/resource/Monarch_butterfly>
@@ -966,6 +1014,7 @@
   rdfs:label "Bombus"@fr ;
   rdfs:label "Mamangaba"@pt ;
   rdfs:label "Hummeln"@de ;
+  dbo:abstract "Bumblebee puede referirse a:Bumblebee, personaje del universo Transformers. Bumblebee, heroína del universo de DC Comics. Bumblebee, película de 2018 basada en el personaje homónimo."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?width=300> .
 
 <http://dbpedia.org/resource/Carpenter_bee>
@@ -984,6 +1033,7 @@
   rdfs:label "Anisoptera"@fr ;
   rdfs:label "Libélula"@pt ;
   rdfs:label "Großlibellen"@de ;
+  dbo:abstract "  término Dragonfly —en español: Libélula— puede hacer referencia a:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gemeine_Heidelibelle_(Sympetrum_vulgatum)_4.jpg?width=300> .
 
 <http://dbpedia.org/resource/Firefly>
@@ -993,6 +1043,7 @@
   rdfs:label "Lampyridae"@fr ;
   rdfs:label "Vaga-lume"@pt ;
   rdfs:label "Leuchtkäfer"@de ;
+  dbo:abstract "Firefly es una serie de televisión estadounidense de ciencia ficción creada por el director y escritor Joss Whedon, creador también de las series Buffy, la cazavampiros y Ángel, a través de su productora Mutant Enemy Productions. Su ambientación, futurista y a la vez inspirada por películas tradicionales del Oeste, presentó un atípico trasfondo para la narrativa de ciencia ficción. Whedon ejerció como productor ejecutivo junto con Tim Minear."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Photuris_lucicrescens.jpg?width=300> .
 
 <http://dbpedia.org/resource/Ant>
@@ -1002,6 +1053,7 @@
   rdfs:label "Fourmi"@fr ;
   rdfs:label "Formiga"@pt ;
   rdfs:label "Ameisen"@de ;
+  dbo:abstract "Apache Ant es una herramienta usada en programación para la realización de tareas mecánicas y repetitivas, normalmente durante la fase de compilación y construcción (build). Es, por tanto, un software para procesos de automatización de compilación, similar a Make pero desarrollado en lenguaje Java y requiere la plataforma Java, así que es más apropiado para la construcción de proyectos Java."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fire_ants_01.jpg?width=300> .
 
 <http://dbpedia.org/resource/Termite>
@@ -1025,6 +1077,7 @@
   rdfs:label "Theraphosidae"@fr ;
   rdfs:label "Tarântula"@pt ;
   rdfs:label "Vogelspinnen"@de ;
+  dbo:abstract "Tarántula son arañas de gran tamaño, especialmente las de la familia Theraphosidae. Históricamente en Europa, se usó el nombre para la familia licósidos (Lycosidae), especialmente miembros del género Lycosa como Lycosa tarantula. Los colonizadores del Nuevo Mundo pasaron a llamar \"tarántulas\" a las arañas, mucho más grandes, de las familias americanas Theraphosidae y Dipluridae. En la literatura inglesa, la palabra tarantula se refiere solo a estas últimas."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Brachypelma_vagans_p1.jpg?width=300> .
 
 <http://dbpedia.org/resource/Scorpion>
@@ -1034,6 +1087,7 @@
   rdfs:label "Scorpiones"@fr ;
   rdfs:label "Escorpião"@pt ;
   rdfs:label "Skorpione"@de ;
+  dbo:abstract "Scorpion (equivalente en inglés del español ‘escorpión’) puede referirse a:Escorpión (historieta), el alias de varios personajes de historieta de la editorial Marvel Comics. FV101 Scorpion (1973‑1994), un carro de combate ligero británico. M56 Scorpion (1953‑1959), un cañón autopropulsado estadounidense. Scorpion Air (1990‑2007), una aerolínea búlgara. Scorpion (microordenador), una computadora rusa (1992) que «clonó» a la ZX Spectrum. Scorpion (Mortal Kombat), un personaje de la saga de videoju"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Scorpion_Photograph_By_Shantanu_Kuveskar.jpg?width=300> .
 
 <http://dbpedia.org/resource/Wolf_spider>
@@ -1115,6 +1169,7 @@
   rdfs:label "Octopoda"@fr ;
   rdfs:label "Polvo"@pt ;
   rdfs:label "Kraken"@de ;
+  dbo:abstract "Octopus es un género de moluscos cefalópodos de la familia Octopodidae; es el género más importante de pulpos, incluyendo más de 100 especies."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Octopus2.jpg?width=300> .
 
 <http://dbpedia.org/resource/Giant_squid>
@@ -1133,6 +1188,7 @@
   rdfs:label "Nautilidae"@fr ;
   rdfs:label "Nautilidae"@pt ;
   rdfs:label "Perlboote"@de ;
+  dbo:abstract "Nautilus es un género de moluscos cefalópodos del que sobreviven hoy en día tres especies. Reciben el nombre común de nautilos, nombre que comparten con las especies del género Allonautilus, de las que difieren de manera significativa. Su origen se remonta al final del Cámbrico, este género se diversificó enormemente durante el Paleozoico superior y sus especies se fueron extinguiendo progresivamente y casi de forma total durante el Cenozoico. Es por eso que se considera al Nautilus un fósil viv"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nautilus_belauensis_from_Palau.jpg?width=300> .
 
 <http://dbpedia.org/resource/Giant_clam>
@@ -1150,6 +1206,7 @@
   rdfs:label "Étoile de mer"@fr ;
   rdfs:label "Estrela-do-mar"@pt ;
   rdfs:label "Seesterne"@de ;
+  dbo:abstract "El Starfish Dos es una golondrina que cubre la línea de ferry entre el puerto de Fuengirola y el puerto deportivo de Benalmádena, ambos en la Costa del Sol de la provincia de Málaga, España. Es de propiedad privada y está operado por la empresa Costasol Cruceros."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Starfish_montage.png?width=300> .
 
 <http://dbpedia.org/resource/Sea_urchin>
@@ -1185,6 +1242,7 @@
   rdfs:label "Gorille"@fr ;
   rdfs:label "Gorila"@pt ;
   rdfs:label "Gorillas"@de ;
+  dbo:abstract "Los gorilas son primates herbívoros que habitan los bosques de África. Son los primates vivos más grandes. Un gorila promedio puede llegar a pesar entre 140 y 180 kg. El género se compone de dos especies: el gorila occidental y el oriental con dos subespecies cada una. Su ADN está compuesto de 3 041 976 159 pares de bases que codifican 20 962 genes proteicos compuestos de 237 216 exones y es un 97-98 % igual al humano, siendo sus parientes vivos más cercanos después de las dos especies del géner"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gorille_des_plaines_de_l'ouest_à_l'Espace_Zoologique.jpg?width=300> .
 
 <http://dbpedia.org/resource/Chimpanzee>
@@ -1203,6 +1261,7 @@
   rdfs:label "Orang-outan"@fr ;
   rdfs:label "Orangotango"@pt ;
   rdfs:label "Orang-Utans"@de ;
+  dbo:abstract "Los orangutanes (Pongo) son un género de primates homínidos que comprende tres especies de grandes simios originarios de Indonesia y Malasia. Al orangután de Borneo y al de Sumatra se sumó en noviembre de 2017 una tercera especie, cuando se identificó y describió el orangután de Tapanuli. Se distinguen de los simios africanos por el pelaje de color rojizo y una constitución más adaptada a la vida arbórea. Además, tienen el estilo de vida más solitario de todos los monos antropomorfos; únicamente"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Orang_Utan,_Semenggok_Forest_Reserve,_Sarawak,_Borneo,_Malaysia.jpg?width=300> .
 
 <http://dbpedia.org/resource/Gibbon>
@@ -1212,6 +1271,7 @@
   rdfs:label "Hylobatidae"@fr ;
   rdfs:label "Gibão"@pt ;
   rdfs:label "Gibbons"@de ;
+  dbo:abstract "Edward Emily Gibbon fue un historiador británico, considerado como el primer historiador moderno y uno de los historiadores más influyentes de todos los tiempos."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hylobates_lar_-_Kaeng_Krachan_WB.jpg?width=300> .
 
 <http://dbpedia.org/resource/Bonobo>
@@ -1221,6 +1281,7 @@
   rdfs:label "Bonobo"@fr ;
   rdfs:label "Bonobo"@pt ;
   rdfs:label "Bonobo"@de ;
+  dbo:abstract "El bonobo, también llamado chimpancé pigmeo, es uno de los grandes simios y una de las dos especies que componen el género Pan. La otra especie del género Pan es el chimpancé común. Si bien los bonobos son reconocidos ahora como una especie distinta por derecho propio, inicialmente se pensaba que eran una subespecie de chimpancé debido a las similitudes físicas entre las dos especies. Taxonómicamente, los miembros de la subtribu Panina chimpancés y bonobos son llamados colectivamente panines o p"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Apeldoorn_Apenheul_zoo_Bonobo.jpg?width=300> .
 
 <http://dbpedia.org/resource/Mandrill>
@@ -1275,6 +1336,7 @@
   rdfs:label "Zèbre"@fr ;
   rdfs:label "Zebra"@pt ;
   rdfs:label "Zebras"@de ;
+  dbo:abstract "Zebra es una banda estadounidense de rock formada en 1975 en la ciudad de Nueva Orleans. Sus componentes son Randy Jackson, Felix Hanemann y Guy Gelso.  Su debut en el mercado con la discográfica Atlantic Records tuvo lugar en 1983, con un LP homónimo, y fue apoyado por los sencillos \"Tell Me What You Want\" y \"Who's Behind the Door\".  Al igual que Twisted Sister, Zebra creció como grupo en los locales de la costa este de Estados Unidos, frecuentemente en Long Island."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Plains_Zebra_Equus_quagga_cropped.jpg?width=300> .
 
 <http://dbpedia.org/resource/Hippopotamus>
@@ -1284,6 +1346,7 @@
   rdfs:label "Hippopotamus amphibius"@fr ;
   rdfs:label "Hipopótamo-comum"@pt ;
   rdfs:label "Flusspferd"@de ;
+  dbo:abstract "Hippopotamus es un género de mamíferos artiodáctilos que contiene con una sola especie actual, Hippopotamus amphibius, que habita en África."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait_Hippopotamus_in_the_water.jpg?width=300> .
 
 <http://dbpedia.org/resource/White_rhinoceros>
@@ -1329,6 +1392,7 @@
   rdfs:label "Alces alces"@fr ;
   rdfs:label "Alce"@pt ;
   rdfs:label "Elch"@de ;
+  dbo:abstract "Quinn Ojinnaka es un jugador de fútbol americano retirado y luchador profesional estadounidense, que trabaja actualmente para la TNA Wrestling bajo el nombre de Moose. Trabaja en Impact Wrestling desde 2016, También ha trabajado para empresas como Ring of Honor, Revolution Pro Wrestling, Evolve y WhatCulture Pro Wrestling."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Alaska_moose.jpg?width=300> .
 
 <http://dbpedia.org/resource/Reindeer>
@@ -1365,6 +1429,7 @@
   rdfs:label "Lama (animal)"@fr ;
   rdfs:label "Lhama"@pt ;
   rdfs:label "Lama (Kamel)"@de ;
+  dbo:abstract "Llama hace referencia a varios artículos:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Llamas,_Vernagt-Stausee,_Italy.jpg?width=300> .
 
 <http://dbpedia.org/resource/Alpaca>
@@ -1374,6 +1439,7 @@
   rdfs:label "Alpaga"@fr ;
   rdfs:label "Alpaca"@pt ;
   rdfs:label "Alpaka"@de ;
+  dbo:abstract "La alpaca es una especie doméstica de mamífero artiodáctilo de la familia Camelidae. Evolutivamente está emparentada con la vicuña, aunque en las poblaciones actuales hay una fuerte introgresión genética de la llama. Su domesticación se viene realizando desde hace miles de años. Podemos encontrar restos arqueológicos de la cultura mochica del Perú con representaciones de alpacas."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Alpaca_(31562329701).jpg?width=300> .
 
 <http://dbpedia.org/resource/Wolf>
@@ -1383,6 +1449,7 @@
   rdfs:label "Canis lupus"@fr ;
   rdfs:label "Lobo"@pt ;
   rdfs:label "Wolf"@de ;
+  dbo:abstract "Wolf o Wolff o similar, puede hacer referencia a:"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_wolf_2.jpg?width=300> .
 
 <http://dbpedia.org/resource/Fox>
@@ -1392,6 +1459,7 @@
   rdfs:label "Renard"@fr ;
   rdfs:label "Raposa"@pt ;
   rdfs:label "Fuchs (Raubtier)"@de ;
+  dbo:abstract "Fox Corporation es un conglomerado estadounidense de medios de comunicación de alcance masivo. Fue fundada el 19 de marzo de 2019 tras la adquisición de 21st Century Fox por parte de The Walt Disney Company. Heredó de la primera todos los activos que no fueron incluidos en la compra, tales como su división deportiva, de noticias y de emisoras de televisión abierta."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vulpes_vulpes_ssp_fulvus.jpg?width=300> .
 
 <http://dbpedia.org/resource/Red_fox>
@@ -1419,6 +1487,7 @@
   rdfs:label "Coyote"@fr ;
   rdfs:label "Coiote"@pt ;
   rdfs:label "Kojote"@de ;
+  dbo:abstract "El coyote es una especie de mamífero carnívoro de la familia de los cánidos. Los coyotes solo se encuentran en América del Norte y América Central; desde Canadá hasta Panama. Habita en una gran diversidad de ecosistemas, tropicales, templados y áridos. Aunque a veces se reúnen en manadas, son por lo general solitarios. Viven en promedio 6 años. No se encuentran en riesgo. A pesar de haber sido intensamente cazados, los coyotes son unos de los pocos animales que han ampliado su hábitat desde la c"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2009-Coyote-Yosemite.jpg?width=300> .
 
 <http://dbpedia.org/resource/Dingo>
@@ -1428,6 +1497,7 @@
   rdfs:label "Dingo (chien sauvage)"@fr ;
   rdfs:label "Dingo"@pt ;
   rdfs:label "Dingo"@de ;
+  dbo:abstract "El dingo, es un antiguo linaje (basal) de perro que se encuentra en Australia. Su clasificación taxonómica es debatida, como indica la variedad de nombres científicos que se le aplican actualmente en diferentes publicaciones. Se le ha considerado una forma de perro doméstico que no merece ser reconocida como subespecie, como una subespecie de perro o de lobo, o como una especie completa por derecho propio."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dingo_(Canis_lupus_dingo)_Kakadu_2.jpg?width=300> .
 
 <http://dbpedia.org/resource/Meerkat>
@@ -1437,6 +1507,7 @@
   rdfs:label "Suricate"@fr ;
   rdfs:label "Suricata suricatta"@pt ;
   rdfs:label "Erdmännchen"@de ;
+  dbo:abstract "Meerkat fue una aplicación móvil que permitía a los usuarios retransmitir vídeo en directo a través de su dispositivo móvil, ya sea iOS o Android. La aplicación se lanzó en febrero de 2015 y se popularizó rápidamente durante el mes de marzo del mismo año."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Meerkat_(Suricata_suricatta)_Tswalu.jpg?width=300> .
 
 <http://dbpedia.org/resource/Mongoose>
@@ -1446,6 +1517,7 @@
   rdfs:label "Herpestidae"@fr ;
   rdfs:label "Herpestidae"@pt ;
   rdfs:label "Mangusten"@de ;
+  dbo:abstract "A mongoose is a small terrestrial carnivorous mammal belonging to the family Herpestidae. This family has two subfamilies, the Herpestinae and the Mungotinae. The Herpestinae comprises 23 living species that are native to southern Europe, Africa and Asia, whereas the Mungotinae comprises 11 species native to Africa. The Herpestidae originated about 21.8 ± 3.6 million years ago in the Early Miocene and genetically diverged into two main lineages between 19.1 and 18.5 ± 3.5 million years ago. Ther"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mongoose_collection.png?width=300> .
 
 <http://dbpedia.org/resource/Spotted_hyena>
@@ -1464,6 +1536,7 @@
   rdfs:label "Kangourou"@fr ;
   rdfs:label "Canguru"@pt ;
   rdfs:label "Echte Kängurus"@de ;
+  dbo:abstract "El Kangaroo era un transporte blindado de tropa de la Segunda Guerra Mundial. Creado por los canadienses a partir de los chasis de distintos carros de combate como el Ram o el Churchill. Pronto fue adoptado también por los británicos por su buena maniobrabilidad para acompañar a los carros de combate."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kangaroo_Australia_01_11_2008_-_retouch.jpg?width=300> .
 
 <http://dbpedia.org/resource/Koala>
@@ -1473,6 +1546,7 @@
   rdfs:label "Koala"@fr ;
   rdfs:label "Coala"@pt ;
   rdfs:label "Koala"@de ;
+  dbo:abstract "El koala es una especie de marsupial diprotodonto de la familia Phascolarctidae, endémico de Australia."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Koala_climbing_tree.jpg?width=300> .
 
 <http://dbpedia.org/resource/Platypus>
@@ -1482,6 +1556,7 @@
   rdfs:label "Ornithorynque"@fr ;
   rdfs:label "Ornitorrinco"@pt ;
   rdfs:label "Schnabeltier"@de ;
+  dbo:abstract "Platypus es una banda de metal progresivo integrada por miembros de Dream Theater, King's X y Dixie Dregs. El grupo se formó en 1997 y se deshizo en el 2000."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg?width=300> .
 
 <http://dbpedia.org/resource/Wombat>
@@ -1491,6 +1566,7 @@
   rdfs:label "Wombat"@fr ;
   rdfs:label "Vombate"@pt ;
   rdfs:label "Wombats"@de ;
+  dbo:abstract "Los vombátidos (Vombatidae) son una familia de marsupiales diprotodontos, conocidos comúnmente como wómbats. Se encuentran solo en Australia y Tasmania, tienen la apariencia de un oso, pequeño y de patas muy cortas. Actualmente existen tres especies de wómbats con vida, todas las cuales miden alrededor de un metro y pesan entre 25 y 55 kg. Su color de pelo varía del beige al marrón y del negro al gris. Se considera que el pariente vivo más cercano de estas especies de wómbats es el koala, el cua"@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vombatus_ursinus_-Maria_Island_National_Park.jpg?width=300> .
 
 <http://dbpedia.org/resource/Tasmanian_devil>
@@ -1509,6 +1585,7 @@
   rdfs:label "Hydrochoerus hydrochaeris"@fr ;
   rdfs:label "Capivara"@pt ;
   rdfs:label "Capybara"@de ;
+  dbo:abstract "El capibara, carpincho, chigüire, ronsoco o chigüiro, entre otras denominaciones, es una especie de roedor caviomorfo de la familia de los cávidos, nativa de Sudamérica. Se trata del roedor viviente de mayor tamaño y peso del mundo."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hydrochoeris_hydrochaeris_in_Brazil_in_Petrópolis,_Rio_de_Janeiro,_Brazil_09.jpg?width=300> .
 
 <http://dbpedia.org/resource/Beaver>
@@ -1518,6 +1595,7 @@
   rdfs:label "Castor (genre)"@fr ;
   rdfs:label "Castor"@pt ;
   rdfs:label "Castor (Gattung)"@de ;
+  dbo:abstract "Los Beaver o tsattine son una tribu na-dené, cuyo nombre significaba “pueblo del castor”, o bien Dunne-za, razón por la cual fueron llamados en inglés Beavers (castores). Vivían en zonas montañosas del Norte de Alberta (Canadá)."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/American_Beaver.jpg?width=300> .
 
 <http://dbpedia.org/resource/Giant_otter>
@@ -1598,6 +1676,7 @@
   rdfs:label "Cheval"@fr ;
   rdfs:label "Cavalo"@pt ;
   rdfs:label "Wildpferd"@de ;
+  dbo:abstract "Horse es una isla situada en Filipinas, adyacente a la de Busuanga, isla que forma parte del grupo de Calamianes. Administrativamente forma parte del barrio de Concepción del municipio filipino de tercera categoría de Busuanga perteneciente a la provincia de Paragua en Mimaro, Región IV-B."@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mares_and_Foals.jpg?width=300> .
 
 <http://dbpedia.org/resource/Donkey>
@@ -1616,4 +1695,5 @@
   rdfs:label "Mulet"@fr ;
   rdfs:label "Mula"@pt ;
   rdfs:label "Maultier"@de ;
+  dbo:abstract "Mule (‘mula’ en inglés) puede referirse a:M.U.L.E. (1983), videojuego de estrategia económica. «Mule» (canción), canción de 1994 del álbum simple Agoraphobic Nosebleed, de la banda estadounidense Agoraphobic Nosebleed. Mule (periódico), periódico independiente sin fines de lucro publicado en la ciudad de Mánchester (Reino Unido). «The mule» (canción), canción de 1971 del grupo británico de hard rock Deep Purple. The Mule (película de 2012), película estadounidense protagonizada por Sharon Stone "@es ;
   foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Momo_260905.jpg?width=300> .

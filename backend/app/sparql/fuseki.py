@@ -373,8 +373,7 @@ def search_dbpedia_live(query, lang="es"):
     return []
 
 def _parse_fuseki(data, lang):
-    animales = []
-    vistos   = set()
+    animales = {}  # uri -> datos
 
     for r in data.get("results", {}).get("bindings", []):
         uri       = r.get("animal",    {}).get("value", "")
@@ -384,25 +383,34 @@ def _parse_fuseki(data, lang):
         abstract  = r.get("abstract",  {}).get("value", "")
         thumbnail = r.get("thumbnail", {}).get("value", "")
 
-        if not uri or uri in vistos:
+        if not uri:
             continue
-        vistos.add(uri)
 
-        fuente = "local" if "semanticweb.org" in uri else "dbpedia"
+        if uri not in animales:
+            fuente = "local" if "semanticweb.org" in uri else "dbpedia"
+            animales[uri] = {
+                "id":                uri.split("#")[-1].split("/")[-1],
+                "uri":               uri,
+                "nombre":            label,
+                "labels":            {lang: label, "en": label_en} if label_en else {lang: label},
+                "abstract":          abstract,
+                "nombre_cientifico": sci,
+                "thumbnail":         thumbnail,
+                "same_as":           uri,
+                "fuente":            fuente
+            }
+        else:
+            # Actualizar campos vacíos si llegan en filas siguientes
+            if not animales[uri]["thumbnail"] and thumbnail:
+                animales[uri]["thumbnail"] = thumbnail
+            if not animales[uri]["abstract"] and abstract:
+                animales[uri]["abstract"] = abstract
+            if not animales[uri]["nombre_cientifico"] and sci:
+                animales[uri]["nombre_cientifico"] = sci
+            if label_en and "en" not in animales[uri]["labels"]:
+                animales[uri]["labels"]["en"] = label_en
 
-        animales.append({
-            "id":                uri.split("#")[-1].split("/")[-1],
-            "uri":               uri,
-            "nombre":            label,
-            "labels":            {lang: label, "en": label_en} if label_en else {lang: label},
-            "abstract":          abstract,
-            "nombre_cientifico": sci,
-            "thumbnail":         thumbnail,
-            "same_as":           uri,
-            "fuente":            fuente
-        })
-
-    return animales
+    return list(animales.values())
 
 def _parse_dbpedia(results, lang):
     animales = []

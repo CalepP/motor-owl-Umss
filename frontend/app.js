@@ -292,38 +292,35 @@ async function abrirModal(r) {
   document.getElementById("modal-overlay").style.display = "flex";
   document.body.style.overflow = "hidden";
 
-  document.getElementById("modal-overlay").innerHTML = `
-    <div class="modal" id="modal-box">
-      <button class="modal-close" onclick="cerrarModal()">✕</button>
-      <div class="modal-img-placeholder">⏳</div>
-      <div class="modal-content">
-        <h2 class="modal-nombre">${esc(r.nombre || r.id)}</h2>
-        <p style="color:var(--muted); font-size:14px;">Cargando detalles...</p>
-      </div>
-    </div>`;
+  // Mostrar datos básicos inmediatamente (del dump, funciona offline)
+  renderModal(r, langSel.value);
 
-  let datos = r;
+  // Intentar enriquecer con Wikipedia (solo si hay internet)
   try {
-    const res = await fetch(`${API}/api/animals/details?uri=${encodeURIComponent(r.uri)}`);
+    const lang = langSel.value;
+    const res = await fetch(
+      `${API}/api/animals/details?uri=${encodeURIComponent(r.uri)}&lang=${lang}`,
+      { signal: AbortSignal.timeout(8000) }
+    );
     if (res.ok) {
       const detalle = await res.json();
-      datos = {
+      const datos = {
         ...r,
-        abstract:          detalle.abstract          || r.abstract          || "",
-        thumbnail:         detalle.thumbnail         || r.thumbnail         || "",
+        abstract:          detalle.abstract          || r.abstract || "",
+        thumbnail:         detalle.thumbnail         || r.thumbnail || "",
         nombre_cientifico: detalle.nombre_cientifico || r.nombre_cientifico || "",
         labels:            Object.keys(detalle.labels || {}).length > 0 ? detalle.labels : r.labels,
         clasificacion:     detalle.clasificacion     || {},
       };
+      renderModal(datos, lang);
     }
   } catch(e) {
-    console.log("Sin detalles en vivo, usando datos del dump");
+    // Sin internet — ya se mostraron los datos del dump
+    console.log("Sin internet, usando datos locales del dump");
   }
-
-  renderModal(datos);
 }
 
-function renderModal(r) {
+function renderModal(r, lang_actual = "es") {
   const nombre    = r.nombre || r.id || "Animal";
   const fuente    = r.fuente || "dbpedia";
   const sci       = r.nombre_cientifico || "";
@@ -365,6 +362,23 @@ function renderModal(r) {
     ? `<img class="modal-img" src="${thumbnail}" alt="${esc(nombre)}" onerror="this.style.display='none'">`
     : `<div class="modal-img-placeholder">${emoji}</div>`;
 
+  const IDIOMAS = [
+    { code: "es", flag: `<img src="https://flagcdn.com/w20/es.png" alt="ES">`, label: "Español" },
+    { code: "en", flag: `<img src="https://flagcdn.com/w20/gb.png" alt="EN">`, label: "English" },
+    { code: "fr", flag: `<img src="https://flagcdn.com/w20/fr.png" alt="FR">`, label: "Français" },
+    { code: "pt", flag: `<img src="https://flagcdn.com/w20/pt.png" alt="PT">`, label: "Português" },
+    { code: "de", flag: `<img src="https://flagcdn.com/w20/de.png" alt="DE">`, label: "Deutsch" },
+  ];
+
+  const langBtns = IDIOMAS.map(l => `
+    <button class="modal-lang-btn ${lang_actual === l.code ? "active" : ""}"
+      onclick="recargarModal('${uri}', '${l.code}')"
+      title="${l.label}">
+      ${l.flag}
+    </button>`).join("");
+
+  window._modalAnimal = r;
+
   document.getElementById("modal-overlay").innerHTML = `
     <div class="modal" id="modal-box">
       <button class="modal-close" onclick="cerrarModal()">✕</button>
@@ -378,10 +392,14 @@ function renderModal(r) {
           <span class="modal-section-title">🔬 Nombre científico</span>
           <p class="modal-sci">${esc(sci)}</p>
         </div>` : ""}
-        ${abstract ? `<div class="modal-section">
+        <div class="modal-section">
           <span class="modal-section-title">📖 Descripción</span>
-          <p class="modal-abstract">${esc(abstract)}</p>
-        </div>` : ""}
+          <div class="modal-lang-btns">${langBtns}</div>
+          ${abstract
+            ? `<p class="modal-abstract" id="modal-abstract-text">${esc(abstract)}</p>`
+            : `<p class="modal-abstract" id="modal-abstract-text" style="color:var(--muted);font-style:italic;">Sin descripción disponible en este idioma.</p>`
+          }
+        </div>
         ${clasifHtml ? `<div class="modal-section">
           <span class="modal-section-title">🧬 Clasificación taxonómica</span>
           <div class="modal-labels">${clasifHtml}</div>
@@ -403,6 +421,28 @@ function renderModal(r) {
     </div>`;
 }
 
+async function recargarModal(uri, lang) {
+  document.querySelectorAll(".modal-lang-btn").forEach(btn => btn.classList.remove("active"));
+  event.target.classList.add("active");
+
+  const abstractEl = document.getElementById("modal-abstract-text");
+  if (abstractEl) abstractEl.innerHTML = "<em style='color:var(--muted)'>Cargando...</em>";
+
+  try {
+    const res = await fetch(`${API}/api/animals/details?uri=${encodeURIComponent(uri)}&lang=${lang}`);
+    if (res.ok) {
+      const detalle = await res.json();
+      const abstract = detalle.abstract || "";
+      if (abstractEl) {
+        abstractEl.innerHTML = abstract
+          ? esc(abstract)
+          : "<em style='color:var(--muted)'>Sin descripción disponible en este idioma.</em>";
+      }
+    }
+  } catch(e) {
+    if (abstractEl) abstractEl.innerHTML = "<em style='color:var(--muted)'>Error al cargar descripción.</em>";
+  }
+}
 function cerrarModal() {
   document.getElementById("modal-overlay").style.display = "none";
   document.body.style.overflow = "";
