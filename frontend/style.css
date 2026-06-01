@@ -290,12 +290,22 @@ body {
 
 .card-img-placeholder {
   width: 100%;
-  height: 130px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 52px;
-  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  font-size: 64px;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  border-radius: var(--radius) var(--radius) 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(37,99,235,0.08), transparent 70%);
 }
 
 .card-body { padding: 16px; }
@@ -555,4 +565,82 @@ body {
   .cards { grid-template-columns: 1fr; }
   .app:not(.home) .topbar { flex-direction: column; align-items: stretch; }
   .modal-nombre { font-size: 24px; }
+}
+/* HERO ANIMALES */
+.hero-animals {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.hero-animal {
+  font-size: 48px;
+  animation: float 3s ease-in-out infinite;
+  cursor: default;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.hero-animal:nth-child(2) { animation-delay: 0.3s; }
+.hero-animal:nth-child(3) { animation-delay: 0.6s; }
+.hero-animal:nth-child(4) { animation-delay: 0.9s; }
+.hero-animal:nth-child(5) { animation-delay: 1.2s; }
+.hero-animal:nth-child(6) { animation-delay: 1.5s; }
+.hero-animal:nth-child(7) { animation-delay: 1.8s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* ESTADÍSTICAS */
+.stats-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 32px;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-num {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--blue);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-div {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+/* Ocultar hero y stats en modo resultados */
+.app:not(.home) .hero-animals,
+.app:not(.home) .stats-bar {
+  display: none;
+}
+.app:not(.home) .chips,
+.app:not(.home) .domains-section {
+  display: none;
 }

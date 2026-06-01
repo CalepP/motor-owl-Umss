@@ -23,7 +23,16 @@ const DOMINIOS = [
   { emoji: "🐊", label: "Cocodrilos",    q: "cocodrilo" },
   { emoji: "🦅", label: "Águilas",       q: "aguila" },
 ];
-
+// Hero animales flotantes
+const HERO_EMOJIS = ["🦁", "🐘", "🦈", "🦅", "🐬", "🐍", "🦋"];
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.getElementById("heroAnimals");
+  if (hero) {
+    hero.innerHTML = HERO_EMOJIS.map(e =>
+      `<span class="hero-animal">${e}</span>`
+    ).join("");
+  }
+});
 const appEl   = document.getElementById("app");
 const form    = document.getElementById("searchForm");
 const input   = document.getElementById("query");
