@@ -1,0 +1,567 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.68:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 680-025-132
+127.0.0.1 - - [09/Jun/2026 12:09:49] "GET /api/search/?q=leon&lang=es&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:09:49] "GET /api/search/?q=lion&lang=en&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:09:49] "GET /api/search/?q=lion&lang=fr&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:09:49] "GET /api/search/?q=leao&lang=pt&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:09:49] "GET /api/search/?q=lowe&lang=de&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:41] "GET /api/search/?q=tiburon&lang=es&online=true HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:44] "GET /api/search/?q=perro&lang=es&online=true HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:44] "GET /api/search/?q=leon&lang=es&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:44] "GET /api/search/?q=lion&lang=en&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:44] "GET /api/search/?q=lion&lang=fr&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:44] "GET /api/search/?q=leao&lang=pt&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:13:44] "GET /api/search/?q=lowe&lang=de&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:14:54] "GET /api/search/?q=perro&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:15:14] "GET /api/search/?q=GATO&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:15:30] "GET /api/search/?q=delfin&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:15:49] "GET /api/animals/details?uri=http://dbpedia.org/resource/M\u0101ui_dolphin&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:15:52] "GET /api/animals/details?uri=http://dbpedia.org/resource/M\u0101ui_dolphin&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:16:26] "GET /api/search/?q=tiburon&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:16:36] "GET /api/animals/details?uri=http://dbpedia.org/resource/Red-tailed_black_shark&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:17:31] "GET /api/animals/details?uri=http://dbpedia.org/resource/Shark_Tale&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:17:36] "GET /api/animals/details?uri=http://dbpedia.org/resource/Shark_Tale&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:18:44] "GET /api/search/?q=pez%20payaso&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:19:06] "GET /api/search/?q=aguila&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:19:16] "GET /api/animals/details?uri=http://www.wikidata.org/entity/Q41181&lang=es HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:19:20] "GET /api/animals/details?uri=http://www.wikidata.org/entity/Q2092297&lang=es HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:19:24] "GET /api/animals/details?uri=http://dbpedia.org/resource/Pallas's_fish_eagle&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:19:42] "GET /api/animals/details?uri=http://dbpedia.org/resource/Haast's_eagle&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:21:18] "GET /api/search/?q=mamiferos&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:21:28] "GET /api/search/?q=aves&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:21:39] "GET /api/animals/details?uri=http://dbpedia.org/resource/Harpy_eagle&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:21:49] "GET /api/search/?q=reptiles&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:21:59] "GET /api/animals/details?uri=http://dbpedia.org/resource/Alice_Springs_Reptile_Centre&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:22:31] "GET /api/search/?q=delfín&lang=es&online=false&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:22:50] "GET /api/search/?q=manchot&lang=fr&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:22:56] "GET /api/animals/details?uri=http://dbpedia.org/resource/Emperor_penguin&lang=fr HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:22:59] "GET /api/animals/details?uri=http://dbpedia.org/resource/Emperor_penguin&lang=es HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:23:09] "GET /api/animals/details?uri=http://dbpedia.org/resource/Emperor_penguin&lang=en HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:23:10] "GET /api/animals/details?uri=http://dbpedia.org/resource/Emperor_penguin&lang=en HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 29, in get_details
+    print(f"\U0001f50d Buscando detalles para: {uri} en idioma: {lang}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Calep Patiño\Desktop\MotorWEB-SEMANTICA\motor-owl-Umss\backend\app\api\animals.py", line 120, in get_details
+    print(f"\u274c Error details: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+127.0.0.1 - - [09/Jun/2026 12:24:03] "GET /api/search/?q=invertebres&lang=fr&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:26:05] "GET /api/search/?q=invertebres&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:26:17] "GET /api/search/?q=perro&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:26:50] "GET /api/search/?q=invertebres&lang=es&online=true&per_page=100 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:27:26] "GET /api/search/?q=invertebrados&lang=es&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:27:52] "GET /api/search/?q=invertebrados&lang=es&online=true HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:28:07] "GET /api/search/?q=invertebrados%20&lang=es&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:30:23] "GET /api/search/?q=invertebrates&lang=en&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:30:23] "GET /api/search/?q=invertebres&lang=fr&online=false HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2026 12:30:23] "GET /api/search/?q=wirbellosen&lang=de&online=false HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Calep Patiño\\Desktop\\MotorWEB-SEMANTICA\\motor-owl-Umss\\backend\\app\\sparql\\fuseki.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 680-025-132

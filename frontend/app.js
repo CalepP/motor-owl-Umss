@@ -1,27 +1,139 @@
+// =====================
+// TRADUCCIONES DE INTERFAZ
+// =====================
+const I18N = {
+  es: {
+    placeholder: "Busca un animal... ej: perro, tiburón, víbora",
+    explorar: "EXPLORAR POR CATEGORÍA",
+    resultados: "Resultados para",
+    encontrados: "animales encontrados",
+    encontrado: "animal encontrado",
+    sinResultados: "Sin resultados",
+    sinResultadosMsg: "No encontramos animales para",
+    intentar: "Intenta con otra palabra.",
+    errorConexion: "Error de conexión",
+    errorMsg: "No se pudo conectar con el servidor. ¿Está corriendo Flask?",
+    cargando: "Cargando detalles...",
+    descripcion: "📖 Descripción",
+    nombreCientifico: "🔬 Nombre científico",
+    clasificacion: "🧬 Clasificación taxonómica",
+    nombresIdiomas: "🌍 Nombres en otros idiomas",
+    uriSemantica: "🔗 URI semántica",
+    fuente: "📦 Fuente",
+    fuenteLocal: "Ontología OWL local (Grupo 10 UMSS)",
+    fuenteDBpedia: "DBpedia — Linked Open Data",
+    verDBpedia: "Ver en DBpedia →",
+    sinDescripcion: "Sin descripción disponible en este idioma.",
+    localOwl: "Local OWL",
+    brandSub: "Motor de búsqueda semántica · UMSS 2026 · Grupo 10",
+    categorias: "Mamíferos,Aves,Reptiles,Anfibios,Peces,Insectos,Tiburones,Ballenas,Perros,Gatos,Felinos,Elefantes,Invertebrados,Primates,Cocodrilos,Águilas",
+    quisiste: "¿Quisiste decir:",
+  },
+  en: {
+    placeholder: "Search an animal... e.g: dog, shark, viper",
+    explorar: "EXPLORE BY CATEGORY",
+    resultados: "Results for",
+    encontrados: "animals found",
+    encontrado: "animal found",
+    sinResultados: "No results",
+    sinResultadosMsg: "We found no animals for",
+    intentar: "Try another word.",
+    errorConexion: "Connection error",
+    errorMsg: "Could not connect to the server. Is Flask running?",
+    cargando: "Loading details...",
+    descripcion: "📖 Description",
+    nombreCientifico: "🔬 Scientific name",
+    clasificacion: "🧬 Taxonomic classification",
+    nombresIdiomas: "🌍 Names in other languages",
+    uriSemantica: "🔗 Semantic URI",
+    fuente: "📦 Source",
+    fuenteLocal: "Local OWL Ontology (Group 10 UMSS)",
+    fuenteDBpedia: "DBpedia — Linked Open Data",
+    verDBpedia: "View on DBpedia →",
+    sinDescripcion: "No description available in this language.",
+    localOwl: "Local OWL",
+    brandSub: "Semantic search engine · UMSS 2026 · Group 10",
+    categorias: "Mammals,Birds,Reptiles,Amphibians,Fish,Insects,Sharks,Whales,Dogs,Cats,Felines,Elephants,Invertebrates,Primates,Crocodiles,Eagles",
+    quisiste: "Did you mean:",
+  },
+  fr: {
+    placeholder: "Chercher un animal... ex: chien, requin, vipère",
+    explorar: "EXPLORER PAR CATÉGORIE",
+    resultados: "Résultats pour",
+    encontrados: "animaux trouvés",
+    encontrado: "animal trouvé",
+    sinResultados: "Aucun résultat",
+    sinResultadosMsg: "Nous n'avons trouvé aucun animal pour",
+    intentar: "Essayez un autre mot.",
+    errorConexion: "Erreur de connexion",
+    errorMsg: "Impossible de se connecter au serveur. Flask est-il en cours d'exécution?",
+    cargando: "Chargement des détails...",
+    descripcion: "📖 Description",
+    nombreCientifico: "🔬 Nom scientifique",
+    clasificacion: "🧬 Classification taxonomique",
+    nombresIdiomas: "🌍 Noms dans d'autres langues",
+    uriSemantica: "🔗 URI sémantique",
+    fuente: "📦 Source",
+    fuenteLocal: "Ontologie OWL locale (Groupe 10 UMSS)",
+    fuenteDBpedia: "DBpedia — Linked Open Data",
+    verDBpedia: "Voir sur DBpedia →",
+    sinDescripcion: "Aucune description disponible dans cette langue.",
+    localOwl: "OWL Local",
+    brandSub: "Moteur de recherche sémantique · UMSS 2026 · Groupe 10",
+    categorias: "Mammifères,Oiseaux,Reptiles,Amphibiens,Poissons,Insectes,Requins,Baleines,Chiens,Chats,Félins,Éléphants,Invertébrés,Primates,Crocodiles,Aigles",
+    quisiste: "Vouliez-vous dire:",
+  }
+};
+
+let uiLang = "es"; // idioma de interfaz actual
+function t(key) { return I18N[uiLang][key] || I18N.es[key] || key; }
 const API = "http://127.0.0.1:5000";
 
-const SUGERENCIAS = [
-  "perro", "tiburón", "león", "serpiente", "águila",
-  "delfín", "oso polar", "mariposa monarca", "cocodrilo", "pingüino"
+const SUGERENCIAS = {
+  es: ["perro", "tiburón", "león", "serpiente", "águila", "delfín", "oso polar", "mariposa monarca", "cocodrilo", "pingüino"],
+  en: ["dog", "shark", "lion", "snake", "eagle", "dolphin", "polar bear", "monarch butterfly", "crocodile", "penguin"],
+  fr: ["chien", "requin", "lion", "serpent", "aigle", "dauphin", "ours polaire", "papillon monarque", "crocodile", "manchot"],
+  pt: ["cão", "tubarão", "leão", "cobra", "águia", "golfinho", "urso polar", "borboleta monarca", "crocodilo", "pinguim"],
+  de: ["Hund", "Hai", "Löwe", "Schlange", "Adler", "Delfin", "Eisbär", "Monarchfalter", "Krokodil", "Pinguin"],
+};
+
+// Color único por categoría — se aplica como --btn-c en el botón
+const DOMAIN_COLORS = [
+  "#f97316", // Mamíferos  – naranja
+  "#0ea5e9", // Aves       – cielo
+  "#22c55e", // Reptiles   – verde
+  "#06b6d4", // Anfibios   – cian
+  "#6366f1", // Peces      – índigo
+  "#eab308", // Insectos   – amarillo
+  "#0891b2", // Tiburones  – cian oscuro
+  "#7c3aed", // Ballenas   – violeta
+  "#d97706", // Perros     – ámbar
+  "#a855f7", // Gatos      – púrpura
+  "#dc2626", // Felinos    – rojo
+  "#78716c", // Elefantes  – piedra
+  "#f43f5e", // Invertebrados – rosa
+  "#92400e", // Primates   – marrón
+  "#15803d", // Cocodrilos – verde oscuro
+  "#ea580c", // Águilas    – naranja intenso
 ];
 
 const DOMINIOS = [
-  { emoji: "🐾", label: "Mamíferos",     q: "mamiferos" },
-  { emoji: "🐦", label: "Aves",          q: "aves" },
-  { emoji: "🐍", label: "Reptiles",      q: "reptiles" },
-  { emoji: "🐸", label: "Anfibios",      q: "anfibios" },
-  { emoji: "🐟", label: "Peces",         q: "peces" },
-  { emoji: "🦋", label: "Insectos",      q: "insectos" },
-  { emoji: "🦈", label: "Tiburones",     q: "tiburon" },
-  { emoji: "🐋", label: "Ballenas",      q: "ballena" },
-  { emoji: "🐕", label: "Perros",        q: "perro" },
-  { emoji: "🐈", label: "Gatos",         q: "gato" },
-  { emoji: "🦁", label: "Felinos",       q: "felinos" },
-  { emoji: "🐘", label: "Elefantes",     q: "elefante" },
-  { emoji: "🦀", label: "Invertebrados", q: "invertebrados" },
-  { emoji: "🐒", label: "Primates",      q: "primates" },
-  { emoji: "🐊", label: "Cocodrilos",    q: "cocodrilo" },
-  { emoji: "🦅", label: "Águilas",       q: "aguila" },
+  { emoji: "🐾", q: { es: "mamiferos",    en: "mammals",       fr: "mammiferes",  pt: "mamiferos",    de: "mammals"    } },
+  { emoji: "🐦", q: { es: "aves",         en: "birds",         fr: "oiseaux",     pt: "aves",         de: "vogel"      } },
+  { emoji: "🐍", q: { es: "reptiles",     en: "reptiles",      fr: "reptiles",    pt: "repteis",      de: "reptilien"  } },
+  { emoji: "🐸", q: { es: "anfibios",     en: "amphibians",    fr: "amphibiens",  pt: "anfibios",     de: "amphibien"  } },
+  { emoji: "🐟", q: { es: "peces",        en: "fish",          fr: "poissons",    pt: "peixes",       de: "fische"     } },
+  { emoji: "🦋", q: { es: "insectos",     en: "insects",       fr: "insectes",    pt: "insetos",      de: "insekten"   } },
+  { emoji: "🦈", q: { es: "tiburon",      en: "shark",         fr: "requin",      pt: "tubarao",      de: "hai"        } },
+  { emoji: "🐋", q: { es: "ballena",      en: "whale",         fr: "baleine",     pt: "baleia",       de: "wal"        } },
+  { emoji: "🐕", q: { es: "perro",        en: "dog",           fr: "chien",       pt: "cao",          de: "hund"       } },
+  { emoji: "🐈", q: { es: "gato",         en: "cat",           fr: "chat",        pt: "gato",         de: "katze"      } },
+  { emoji: "🦁", q: { es: "felinos",      en: "felines",       fr: "felins",      pt: "felinos",      de: "felinen"    } },
+  { emoji: "🐘", q: { es: "elefante",     en: "elephant",      fr: "elephant",    pt: "elefante",     de: "elefant"    } },
+  { emoji: "🦀", q: { es: "invertebrados",en: "invertebrates", fr: "invertebres", pt: "invertebrados",de: "wirbellosen"} },
+  { emoji: "🐒", q: { es: "primates",     en: "primates",      fr: "primates",    pt: "primatas",     de: "primaten"   } },
+  { emoji: "🐊", q: { es: "cocodrilo",    en: "crocodile",     fr: "crocodile",   pt: "crocodilo",    de: "krokodil"   } },
+  { emoji: "🦅", q: { es: "aguila",       en: "eagle",         fr: "aigle",       pt: "aguia",        de: "adler"      } },
 ];
 // Hero animales flotantes
 const HERO_EMOJIS = ["🦁", "🐘", "🦈", "🦅", "🐬", "🐍", "🦋"];
@@ -39,13 +151,28 @@ const input   = document.getElementById("query");
 const langSel = document.getElementById("langSelect");
 const output  = document.getElementById("output");
 
-document.getElementById("chips").innerHTML = SUGERENCIAS.map(s =>
-  `<button class="chip" type="button" data-q="${s}">${s}</button>`
-).join("");
+function actualizarChips() {
+  const sugs = SUGERENCIAS[uiLang] || SUGERENCIAS.es;
+  document.getElementById("chips").innerHTML = sugs.map(s =>
+    `<button class="chip" type="button" data-q="${s}">${s}</button>`
+  ).join("");
+}
 
-document.getElementById("domains").innerHTML = DOMINIOS.map(d =>
-  `<button class="domain-btn" type="button" data-q="${d.q}">${d.emoji} ${d.label}</button>`
-).join("");
+function actualizarDominios() {
+  const cats = t("categorias").split(",");
+  document.getElementById("domains").innerHTML = DOMINIOS.map((d, i) =>
+    `<button class="domain-btn" type="button" data-q="${d.q[uiLang] || d.q.es}"
+      style="--btn-c:${DOMAIN_COLORS[i] || '#58a6ff'}">${d.emoji} ${cats[i] || ""}</button>`
+  ).join("");
+}
+
+actualizarChips();
+actualizarDominios();
+
+// Sincronizar el selector de idioma con los botones de UI
+langSel.addEventListener("change", (e) => {
+  cambiarIdiomaUI(e.target.value);
+});
 
 document.addEventListener("click", e => {
   const btn = e.target.closest("[data-q]");
@@ -61,18 +188,18 @@ form.addEventListener("submit", e => {
 });
 
 async function buscar(q) {
-  const lang = langSel.value;
   appEl.classList.remove("home");
   output.innerHTML = `<div class="loader-wrap"><div class="loader"></div></div>`;
   try {
-    const res  = await fetch(`${API}/api/search/?q=${encodeURIComponent(q)}&lang=${lang}`);
+    const lang = langSel.value;
+    const res  = await fetch(`${API}/api/search/?q=${encodeURIComponent(q)}&lang=${lang}&online=${modoOnline}&per_page=100`);
     const data = await res.json();
     renderResultados(data, q);
   } catch (err) {
     output.innerHTML = `
       <div class="empty">
-        <h3>Error de conexión</h3>
-        <p>No se pudo conectar con el servidor. ¿Está corriendo Flask?</p>
+        <h3>${t("errorConexion")}</h3>
+        <p>${t("errorMsg")}</p>
       </div>`;
   }
 }
@@ -84,20 +211,20 @@ function renderResultados(data, q) {
 
   let html = `
     <div class="results-header">
-      <div class="results-title">Resultados para "${q}"</div>
-      <div class="results-count">${total} animal${total !== 1 ? "es" : ""} encontrado${total !== 1 ? "s" : ""}</div>
+      <div class="results-title">${t("resultados")} "${esc(q)}"</div>
+      <div class="results-count">${total} ${total !== 1 ? t("encontrados") : t("encontrado")}</div>
     </div>`;
 
   if (sugerencia) {
     const palabra = sugerencia.match(/:\s*(.+)\?/)?.[1] || "";
-    html += `<div class="sugerencia">¿Quisiste decir: <span onclick="corregir('${palabra}')">${palabra}</span>?</div>`;
+    html += `<div class="sugerencia">${t("quisiste")} <span onclick="corregir('${esc(palabra)}')">${esc(palabra)}</span>?</div>`;
   }
 
   if (resultados.length === 0) {
     html += `
       <div class="empty">
-        <h3>Sin resultados</h3>
-        <p>No encontramos animales para "${q}". Intenta con otra palabra.</p>
+        <h3>${t("sinResultados")}</h3>
+        <p>${t("sinResultadosMsg")} "${esc(q)}". ${t("intentar")}</p>
       </div>`;
   } else {
     html += `<div class="cards">`;
@@ -238,9 +365,14 @@ function renderCard(r) {
   const thumbnail = r.thumbnail || "";
   const labelEn   = labels["en"] || "";
 
-  const sourceClass = fuente === "local" ? "source-local" : "source-dbpedia";
-  const sourceLabel = fuente === "local" ? "Local OWL" : "DBpedia";
-
+  const sourceClass = fuente === "local" ? "source-local"
+    : fuente === "wikidata" ? "source-wikidata"
+    : fuente === "dbpedia_owl" ? "source-dbpedia"
+    : "source-dbpedia";
+  const sourceLabel = fuente === "local" ? "Local OWL"
+    : fuente === "wikidata" ? "Wikidata"
+    : fuente === "dbpedia_owl" ? "DBpedia OWL"
+    : "DBpedia";
   const labelsHtml = Object.entries(labels)
     .filter(([, v]) => v)
     .map(([k, v]) => `<span class="label-tag">${k}: ${esc(v)}</span>`)
@@ -389,34 +521,34 @@ function renderModal(r, lang_actual = "es") {
           <span class="card-source ${sourceClass}">${sourceLabel}</span>
         </div>
         ${sci ? `<div class="modal-section">
-          <span class="modal-section-title">🔬 Nombre científico</span>
+          <span class="modal-section-title">${t("nombreCientifico")}</span>
           <p class="modal-sci">${esc(sci)}</p>
         </div>` : ""}
         <div class="modal-section">
-          <span class="modal-section-title">📖 Descripción</span>
+          <span class="modal-section-title">${t("descripcion")}</span>
           <div class="modal-lang-btns">${langBtns}</div>
           ${abstract
             ? `<p class="modal-abstract" id="modal-abstract-text">${esc(abstract)}</p>`
-            : `<p class="modal-abstract" id="modal-abstract-text" style="color:var(--muted);font-style:italic;">Sin descripción disponible en este idioma.</p>`
+            : `<p class="modal-abstract" id="modal-abstract-text" style="color:var(--muted);font-style:italic;">${t("sinDescripcion")}</p>`
           }
         </div>
         ${clasifHtml ? `<div class="modal-section">
-          <span class="modal-section-title">🧬 Clasificación taxonómica</span>
+          <span class="modal-section-title">${t("clasificacion")}</span>
           <div class="modal-labels">${clasifHtml}</div>
         </div>` : ""}
         <div class="modal-section">
-          <span class="modal-section-title">🌍 Nombres en otros idiomas</span>
+          <span class="modal-section-title">${t("nombresIdiomas")}</span>
           <div class="modal-labels">${labelsHtml}</div>
         </div>
         <div class="modal-section">
-          <span class="modal-section-title">🔗 URI semántica</span>
+          <span class="modal-section-title">${t("uriSemantica")}</span>
           <code class="modal-uri">${esc(uriCorta)}</code>
         </div>
         <div class="modal-section">
-          <span class="modal-section-title">📦 Fuente</span>
-          <p>${fuente === "local" ? "Ontología OWL local (Grupo 10 UMSS)" : "DBpedia — Linked Open Data"}</p>
+          <span class="modal-section-title">${t("fuente")}</span>
+          <p>${fuente === "local" ? t("fuenteLocal") : t("fuenteDBpedia")}</p>
         </div>
-        ${dbpediaLink}
+        ${dbpediaLink ? `<a class="modal-link" href="${uri}" target="_blank" rel="noreferrer">${t("verDBpedia")}</a>` : ""}
       </div>
     </div>`;
 }
@@ -426,7 +558,7 @@ async function recargarModal(uri, lang) {
   event.target.classList.add("active");
 
   const abstractEl = document.getElementById("modal-abstract-text");
-  if (abstractEl) abstractEl.innerHTML = "<em style='color:var(--muted)'>Cargando...</em>";
+  if (abstractEl) abstractEl.innerHTML = `<em style='color:var(--muted)'>${t("cargando")}</em>`;
 
   try {
     const res = await fetch(`${API}/api/animals/details?uri=${encodeURIComponent(uri)}&lang=${lang}`);
@@ -446,4 +578,53 @@ async function recargarModal(uri, lang) {
 function cerrarModal() {
   document.getElementById("modal-overlay").style.display = "none";
   document.body.style.overflow = "";
+}
+function cambiarIdiomaUI(lang) {
+  uiLang = lang;
+
+  // Sincronizar el selector de búsqueda con el idioma de UI
+  langSel.value = lang;
+
+  // Actualizar botones activos (matchea por el onclick attr)
+  document.querySelectorAll(".ui-lang-btn").forEach(btn => {
+    const m = (btn.getAttribute("onclick") || "").match(/cambiarIdiomaUI\('(\w+)'\)/);
+    btn.classList.toggle("active", m && m[1] === lang);
+  });
+
+  // Actualizar textos de interfaz
+  document.getElementById("query").placeholder = t("placeholder");
+  const brandSub = document.getElementById("brandSub");
+  if (brandSub) brandSub.textContent = t("brandSub");
+  const sectionLabel = document.querySelector(".section-label");
+  if (sectionLabel) sectionLabel.textContent = t("explorar");
+
+  // Actualizar chips y dominios con términos del idioma seleccionado
+  actualizarChips();
+  actualizarDominios();
+
+  // Si hay resultados visibles, re-buscar en el nuevo idioma
+  const resultsTitle = document.querySelector(".results-title");
+  if (resultsTitle) {
+    const q = document.getElementById("query").value;
+    if (q) buscar(q);
+  }
+}
+let modoOnline = true;
+
+function volverInicio() {
+  appEl.classList.add("home");
+  output.innerHTML = "";
+  input.value = "";
+}
+
+function toggleConexion() {
+  modoOnline = document.getElementById("onlineToggle").checked;
+  const label = document.getElementById("connLabel");
+  if (modoOnline) {
+    label.textContent = "🌐 Online";
+    label.classList.remove("offline");
+  } else {
+    label.textContent = "📡 Offline";
+    label.classList.add("offline");
+  }
 }

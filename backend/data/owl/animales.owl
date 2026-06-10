@@ -4,94 +4,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Pinguino">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Ave"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Penguin"/>
-    <rdfs:label xml:lang="es">Pingüino</rdfs:label>
-    <rdfs:label xml:lang="en">Penguin</rdfs:label>
-    <rdfs:label xml:lang="fr">Manchot</rdfs:label>
-    <rdfs:label xml:lang="pt">Pinguim</rdfs:label>
-    <rdfs:label xml:lang="de">Pinguin</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#BallenaAzul">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Blue_whale"/>
-    <rdfs:label xml:lang="es">Ballena Azul</rdfs:label>
-    <rdfs:label xml:lang="en">Blue Whale</rdfs:label>
-    <rdfs:label xml:lang="fr">Baleine bleue</rdfs:label>
-    <rdfs:label xml:lang="pt">Baleia-azul</rdfs:label>
-    <rdfs:label xml:lang="de">Blauwal</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Insecto">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Insecto</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#AguilaReal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Ave"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Golden_eagle"/>
-    <rdfs:label xml:lang="es">Águila Real</rdfs:label>
-    <rdfs:label xml:lang="en">Golden Eagle</rdfs:label>
-    <rdfs:label xml:lang="fr">Aigle royal</rdfs:label>
-    <rdfs:label xml:lang="pt">Águia-real</rdfs:label>
-    <rdfs:label xml:lang="de">Steinadler</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#MariposaMonarca">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Insecto"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Monarch_butterfly"/>
-    <rdfs:label xml:lang="es">Mariposa Monarca</rdfs:label>
-    <rdfs:label xml:lang="en">Monarch Butterfly</rdfs:label>
-    <rdfs:label xml:lang="fr">Papillon monarque</rdfs:label>
-    <rdfs:label xml:lang="pt">Borboleta-monarca</rdfs:label>
-    <rdfs:label xml:lang="de">Monarchfalter</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#TigreBengala">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Bengal_tiger"/>
-    <rdfs:label xml:lang="es">Tigre de Bengala</rdfs:label>
-    <rdfs:label xml:lang="en">Bengal Tiger</rdfs:label>
-    <rdfs:label xml:lang="fr">Tigre du Bengale</rdfs:label>
-    <rdfs:label xml:lang="pt">Tigre-de-bengala</rdfs:label>
-    <rdfs:label xml:lang="de">Bengalischer Tiger</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Delfin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dolphin"/>
-    <rdfs:label xml:lang="es">Delfín</rdfs:label>
-    <rdfs:label xml:lang="en">Dolphin</rdfs:label>
-    <rdfs:label xml:lang="fr">Dauphin</rdfs:label>
-    <rdfs:label xml:lang="pt">Golfinho</rdfs:label>
-    <rdfs:label xml:lang="de">Delfin</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Perro">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dog"/>
-    <rdfs:label xml:lang="es">Perro</rdfs:label>
-    <rdfs:label xml:lang="en">Dog</rdfs:label>
-    <rdfs:label xml:lang="fr">Chien</rdfs:label>
-    <rdfs:label xml:lang="pt">Cachorro</rdfs:label>
-    <rdfs:label xml:lang="de">Hund</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#SalmonAtlantico">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Pez"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Atlantic_salmon"/>
-    <rdfs:label xml:lang="es">Salmón Atlántico</rdfs:label>
-    <rdfs:label xml:lang="en">Atlantic Salmon</rdfs:label>
-    <rdfs:label xml:lang="fr">Saumon atlantique</rdfs:label>
-    <rdfs:label xml:lang="pt">Salmão-do-atlântico</rdfs:label>
-    <rdfs:label xml:lang="de">Atlantischer Lachs</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#CocodriloNilo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Cocodrilo"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Nile_crocodile"/>
     <rdfs:label xml:lang="es">Cocodrilo del Nilo</rdfs:label>
     <rdfs:label xml:lang="en">Nile Crocodile</rdfs:label>
@@ -99,59 +15,78 @@
     <rdfs:label xml:lang="pt">Crocodilo-do-nilo</rdfs:label>
     <rdfs:label xml:lang="de">Nilkrokodil</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#OsoPolar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Polar_bear"/>
-    <rdfs:label xml:lang="es">Oso Polar</rdfs:label>
-    <rdfs:label xml:lang="en">Polar Bear</rdfs:label>
-    <rdfs:label xml:lang="fr">Ours polaire</rdfs:label>
-    <rdfs:label xml:lang="pt">Urso-polar</rdfs:label>
-    <rdfs:label xml:lang="de">Eisbär</rdfs:label>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#descripcion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Descripción</rdfs:label>
+    <rdfs:label xml:lang="en">Description</rdfs:label>
+    <rdfs:label xml:lang="fr">Description</rdfs:label>
+    <rdfs:label xml:lang="pt">Descrição</rdfs:label>
+    <rdfs:label xml:lang="de">Beschreibung</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/abstract"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Caballo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Horse"/>
-    <rdfs:label xml:lang="es">Caballo</rdfs:label>
-    <rdfs:label xml:lang="en">Horse</rdfs:label>
-    <rdfs:label xml:lang="fr">Cheval</rdfs:label>
-    <rdfs:label xml:lang="pt">Cavalo</rdfs:label>
-    <rdfs:label xml:lang="de">Pferd</rdfs:label>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Ontologia_Animales">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="es">Ontología de Animales - Grupo 10 UMSS</rdfs:label>
+    <rdfs:comment xml:lang="es">Ontología OWL que modela el reino animal con 22 clases, 18 propiedades y 15 individuos. Alineada con DBpedia mediante owl:equivalentClass y owl:sameAs.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#IguanaVerde">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Green_iguana"/>
-    <rdfs:label xml:lang="es">Iguana Verde</rdfs:label>
-    <rdfs:label xml:lang="en">Green Iguana</rdfs:label>
-    <rdfs:label xml:lang="fr">Iguane vert</rdfs:label>
-    <rdfs:label xml:lang="pt">Iguana-verde</rdfs:label>
-    <rdfs:label xml:lang="de">Grüner Leguan</rdfs:label>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#familiaTaxonomica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Familia Taxonómica</rdfs:label>
+    <rdfs:label xml:lang="en">Taxonomic Family</rdfs:label>
+    <rdfs:label xml:lang="fr">Famille Taxonomique</rdfs:label>
+    <rdfs:label xml:lang="pt">Família Taxonômica</rdfs:label>
+    <rdfs:label xml:lang="de">Taxonomische Familie</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Pez">
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#TigreBengala">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Felino"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Bengal_tiger"/>
+    <rdfs:label xml:lang="es">Tigre de Bengala</rdfs:label>
+    <rdfs:label xml:lang="en">Bengal Tiger</rdfs:label>
+    <rdfs:label xml:lang="fr">Tigre du Bengale</rdfs:label>
+    <rdfs:label xml:lang="pt">Tigre-de-bengala</rdfs:label>
+    <rdfs:label xml:lang="de">Bengalischer Tiger</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#SalmonAtlantico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Pez"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Atlantic_salmon"/>
+    <rdfs:label xml:lang="es">Salmón Atlántico</rdfs:label>
+    <rdfs:label xml:lang="en">Atlantic Salmon</rdfs:label>
+    <rdfs:label xml:lang="fr">Saumon atlantique</rdfs:label>
+    <rdfs:label xml:lang="pt">Salmão-do-atlântico</rdfs:label>
+    <rdfs:label xml:lang="de">Atlantischer Lachs</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Reptil">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Pez</rdfs:label>
+    <rdfs:label xml:lang="es">Reptil</rdfs:label>
+    <rdfs:label xml:lang="en">Reptile</rdfs:label>
+    <rdfs:label xml:lang="fr">Reptile</rdfs:label>
+    <rdfs:label xml:lang="pt">Réptil</rdfs:label>
+    <rdfs:label xml:lang="de">Reptil</rdfs:label>
+    <rdfs:comment xml:lang="es">Vertebrado ectotermo con escamas o placas córneas.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Reptile"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Anfibio">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Anfibio</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Leon">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
-    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Lion"/>
-    <rdfs:label xml:lang="es">León</rdfs:label>
-    <rdfs:label xml:lang="en">Lion</rdfs:label>
-    <rdfs:label xml:lang="fr">Lion</rdfs:label>
-    <rdfs:label xml:lang="pt">Leão</rdfs:label>
-    <rdfs:label xml:lang="de">Löwe</rdfs:label>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#longitudPromedio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Longitud Promedio</rdfs:label>
+    <rdfs:label xml:lang="en">Average Length</rdfs:label>
+    <rdfs:label xml:lang="fr">Longueur Moyenne</rdfs:label>
+    <rdfs:label xml:lang="pt">Comprimento Médio</rdfs:label>
+    <rdfs:label xml:lang="de">Durchschnittslänge</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Gorila">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Primate"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Herbivoro"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Gorilla"/>
     <rdfs:label xml:lang="es">Gorila</rdfs:label>
     <rdfs:label xml:lang="en">Gorilla</rdfs:label>
@@ -159,9 +94,455 @@
     <rdfs:label xml:lang="pt">Gorila</rdfs:label>
     <rdfs:label xml:lang="de">Gorilla</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#estadoConservacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Estado de Conservación</rdfs:label>
+    <rdfs:label xml:lang="en">Conservation Status</rdfs:label>
+    <rdfs:label xml:lang="fr">Statut de Conservation</rdfs:label>
+    <rdfs:label xml:lang="pt">Estado de Conservação</rdfs:label>
+    <rdfs:label xml:lang="de">Erhaltungszustand</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/conservationStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#vivenEn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Viven en</rdfs:label>
+    <rdfs:label xml:lang="en">Live in</rdfs:label>
+    <rdfs:label xml:lang="fr">Vivent dans</rdfs:label>
+    <rdfs:label xml:lang="pt">Vivem em</rdfs:label>
+    <rdfs:label xml:lang="de">Leben in</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/habitat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Pez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Pez</rdfs:label>
+    <rdfs:label xml:lang="en">Fish</rdfs:label>
+    <rdfs:label xml:lang="fr">Poisson</rdfs:label>
+    <rdfs:label xml:lang="pt">Peixe</rdfs:label>
+    <rdfs:label xml:lang="de">Fisch</rdfs:label>
+    <rdfs:comment xml:lang="es">Vertebrado acuático con branquias y aletas.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Fish"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#ordenTaxonomico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Orden Taxonómico</rdfs:label>
+    <rdfs:label xml:lang="en">Taxonomic Order</rdfs:label>
+    <rdfs:label xml:lang="fr">Ordre Taxonomique</rdfs:label>
+    <rdfs:label xml:lang="pt">Ordem Taxonômica</rdfs:label>
+    <rdfs:label xml:lang="de">Taxonomische Ordnung</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#AguilaReal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#AveRapaz"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Golden_eagle"/>
+    <rdfs:label xml:lang="es">Águila Real</rdfs:label>
+    <rdfs:label xml:lang="en">Golden Eagle</rdfs:label>
+    <rdfs:label xml:lang="fr">Aigle royal</rdfs:label>
+    <rdfs:label xml:lang="pt">Águia-real</rdfs:label>
+    <rdfs:label xml:lang="de">Steinadler</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#AveRapaz">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Ave Rapaz</rdfs:label>
+    <rdfs:label xml:lang="en">Bird of Prey</rdfs:label>
+    <rdfs:label xml:lang="fr">Rapace</rdfs:label>
+    <rdfs:label xml:lang="pt">Ave de Rapina</rdfs:label>
+    <rdfs:label xml:lang="de">Greifvogel</rdfs:label>
+    <rdfs:comment xml:lang="es">Ave carnívora con pico ganchudo y garras afiladas; ej. águilas y halcones.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Ave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#BallenaAzul">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Cetaceo"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Blue_whale"/>
+    <rdfs:label xml:lang="es">Ballena Azul</rdfs:label>
+    <rdfs:label xml:lang="en">Blue Whale</rdfs:label>
+    <rdfs:label xml:lang="fr">Baleine bleue</rdfs:label>
+    <rdfs:label xml:lang="pt">Baleia-azul</rdfs:label>
+    <rdfs:label xml:lang="de">Blauwal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Anfibio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Anfibio</rdfs:label>
+    <rdfs:label xml:lang="en">Amphibian</rdfs:label>
+    <rdfs:label xml:lang="fr">Amphibien</rdfs:label>
+    <rdfs:label xml:lang="pt">Anfíbio</rdfs:label>
+    <rdfs:label xml:lang="de">Amphibie</rdfs:label>
+    <rdfs:comment xml:lang="es">Vertebrado ectotermo que puede vivir en agua y en tierra.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Amphibian"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Serpiente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Serpiente</rdfs:label>
+    <rdfs:label xml:lang="en">Snake</rdfs:label>
+    <rdfs:label xml:lang="fr">Serpent</rdfs:label>
+    <rdfs:label xml:lang="pt">Serpente</rdfs:label>
+    <rdfs:label xml:lang="de">Schlange</rdfs:label>
+    <rdfs:comment xml:lang="es">Reptil escamoso sin extremidades del suborden Serpentes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Cocodrilo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Cocodrilo</rdfs:label>
+    <rdfs:label xml:lang="en">Crocodilian</rdfs:label>
+    <rdfs:label xml:lang="fr">Crocodilien</rdfs:label>
+    <rdfs:label xml:lang="pt">Crocodiliano</rdfs:label>
+    <rdfs:label xml:lang="de">Krokodil</rdfs:label>
+    <rdfs:comment xml:lang="es">Reptil del orden Crocodilia; semiacuático y de gran tamaño.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#esPresa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Es Presa de</rdfs:label>
+    <rdfs:label xml:lang="en">Is Prey of</rdfs:label>
+    <rdfs:label xml:lang="fr">Est la Proie de</rdfs:label>
+    <rdfs:label xml:lang="pt">É Presa de</rdfs:label>
+    <rdfs:label xml:lang="de">Ist Beute von</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Molusco">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Molusco</rdfs:label>
+    <rdfs:label xml:lang="en">Mollusk</rdfs:label>
+    <rdfs:label xml:lang="fr">Mollusque</rdfs:label>
+    <rdfs:label xml:lang="pt">Molusco</rdfs:label>
+    <rdfs:label xml:lang="de">Weichtier</rdfs:label>
+    <rdfs:comment xml:lang="es">Invertebrado de cuerpo blando, frecuentemente protegido por una concha; ej. pulpos y caracoles.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Invertebrado"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#OsoPolar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Polar_bear"/>
+    <rdfs:label xml:lang="es">Oso Polar</rdfs:label>
+    <rdfs:label xml:lang="en">Polar Bear</rdfs:label>
+    <rdfs:label xml:lang="fr">Ours polaire</rdfs:label>
+    <rdfs:label xml:lang="pt">Urso-polar</rdfs:label>
+    <rdfs:label xml:lang="de">Eisbär</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Cetaceo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Cetáceo</rdfs:label>
+    <rdfs:label xml:lang="en">Cetacean</rdfs:label>
+    <rdfs:label xml:lang="fr">Cétacé</rdfs:label>
+    <rdfs:label xml:lang="pt">Cetáceo</rdfs:label>
+    <rdfs:label xml:lang="de">Wal</rdfs:label>
+    <rdfs:comment xml:lang="es">Mamífero marino del orden Cetacea; incluye ballenas, delfines y marsopas.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#esperanzaVida">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Esperanza de Vida</rdfs:label>
+    <rdfs:label xml:lang="en">Life Expectancy</rdfs:label>
+    <rdfs:label xml:lang="fr">Espérance de Vie</rdfs:label>
+    <rdfs:label xml:lang="pt">Expectativa de Vida</rdfs:label>
+    <rdfs:label xml:lang="de">Lebenserwartung</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/lifeExpectancy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#comportamientoSocial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Comportamiento Social</rdfs:label>
+    <rdfs:label xml:lang="en">Social Behaviour</rdfs:label>
+    <rdfs:label xml:lang="fr">Comportement Social</rdfs:label>
+    <rdfs:label xml:lang="pt">Comportamento Social</rdfs:label>
+    <rdfs:label xml:lang="de">Sozialverhalten</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Insecto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Insecto</rdfs:label>
+    <rdfs:label xml:lang="en">Insect</rdfs:label>
+    <rdfs:label xml:lang="fr">Insecte</rdfs:label>
+    <rdfs:label xml:lang="pt">Inseto</rdfs:label>
+    <rdfs:label xml:lang="de">Insekt</rdfs:label>
+    <rdfs:comment xml:lang="es">Artrópodo con tres pares de patas y cuerpo dividido en cabeza, tórax y abdomen.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Insect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Felino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Felino</rdfs:label>
+    <rdfs:label xml:lang="en">Feline</rdfs:label>
+    <rdfs:label xml:lang="fr">Félin</rdfs:label>
+    <rdfs:label xml:lang="pt">Felino</rdfs:label>
+    <rdfs:label xml:lang="de">Felide</rdfs:label>
+    <rdfs:comment xml:lang="es">Mamífero carnívoro de la familia Felidae; incluye leones, tigres y gatos.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Mamifero">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Mamífero</rdfs:label>
+    <rdfs:label xml:lang="en">Mammal</rdfs:label>
+    <rdfs:label xml:lang="fr">Mammifère</rdfs:label>
+    <rdfs:label xml:lang="pt">Mamífero</rdfs:label>
+    <rdfs:label xml:lang="de">Säugetier</rdfs:label>
+    <rdfs:comment xml:lang="es">Vertebrado de sangre caliente que alimenta a sus crías con leche materna.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Mammal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Perro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Omnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dog"/>
+    <rdfs:label xml:lang="es">Perro</rdfs:label>
+    <rdfs:label xml:lang="en">Dog</rdfs:label>
+    <rdfs:label xml:lang="fr">Chien</rdfs:label>
+    <rdfs:label xml:lang="pt">Cachorro</rdfs:label>
+    <rdfs:label xml:lang="de">Hund</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#filumTaxonomico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Filo Taxonómico</rdfs:label>
+    <rdfs:label xml:lang="en">Taxonomic Phylum</rdfs:label>
+    <rdfs:label xml:lang="fr">Phylum Taxonomique</rdfs:label>
+    <rdfs:label xml:lang="pt">Filo Taxonômico</rdfs:label>
+    <rdfs:label xml:lang="de">Taxonomisches Phylum</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#MariposaMonarca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Insecto"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Herbivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Monarch_butterfly"/>
+    <rdfs:label xml:lang="es">Mariposa Monarca</rdfs:label>
+    <rdfs:label xml:lang="en">Monarch Butterfly</rdfs:label>
+    <rdfs:label xml:lang="fr">Papillon monarque</rdfs:label>
+    <rdfs:label xml:lang="pt">Borboleta-monarca</rdfs:label>
+    <rdfs:label xml:lang="de">Monarchfalter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Omnivoro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Omnívoro</rdfs:label>
+    <rdfs:label xml:lang="en">Omnivore</rdfs:label>
+    <rdfs:label xml:lang="fr">Omnivore</rdfs:label>
+    <rdfs:label xml:lang="pt">Onívoro</rdfs:label>
+    <rdfs:label xml:lang="de">Allesfresser</rdfs:label>
+    <rdfs:comment xml:lang="es">Animal que consume tanto plantas como carne de otros animales.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Ave">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Ave</rdfs:label>
+    <rdfs:label xml:lang="en">Bird</rdfs:label>
+    <rdfs:label xml:lang="fr">Oiseau</rdfs:label>
+    <rdfs:label xml:lang="pt">Ave</rdfs:label>
+    <rdfs:label xml:lang="de">Vogel</rdfs:label>
+    <rdfs:comment xml:lang="es">Vertebrado ovíparo con plumas, pico y extremidades anteriores adaptadas como alas.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Bird"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Delfin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Cetaceo"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dolphin"/>
+    <rdfs:label xml:lang="es">Delfín</rdfs:label>
+    <rdfs:label xml:lang="en">Dolphin</rdfs:label>
+    <rdfs:label xml:lang="fr">Dauphin</rdfs:label>
+    <rdfs:label xml:lang="pt">Golfinho</rdfs:label>
+    <rdfs:label xml:lang="de">Delfin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Animal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Animal</rdfs:label>
+    <rdfs:label xml:lang="en">Animal</rdfs:label>
+    <rdfs:label xml:lang="fr">Animal</rdfs:label>
+    <rdfs:label xml:lang="pt">Animal</rdfs:label>
+    <rdfs:label xml:lang="de">Tier</rdfs:label>
+    <rdfs:comment xml:lang="es">Clase raíz que representa a todos los animales del reino Animalia.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#nombreCientifico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Nombre Científico</rdfs:label>
+    <rdfs:label xml:lang="en">Scientific Name</rdfs:label>
+    <rdfs:label xml:lang="fr">Nom Scientifique</rdfs:label>
+    <rdfs:label xml:lang="pt">Nome Científico</rdfs:label>
+    <rdfs:label xml:lang="de">Wissenschaftlicher Name</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/scientificName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#imagenRepresentativa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Imagen Representativa</rdfs:label>
+    <rdfs:label xml:lang="en">Representative Image</rdfs:label>
+    <rdfs:label xml:lang="fr">Image Représentative</rdfs:label>
+    <rdfs:label xml:lang="pt">Imagem Representativa</rdfs:label>
+    <rdfs:label xml:lang="de">Repräsentatives Bild</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/thumbnail"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Primate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Primate</rdfs:label>
+    <rdfs:label xml:lang="en">Primate</rdfs:label>
+    <rdfs:label xml:lang="fr">Primate</rdfs:label>
+    <rdfs:label xml:lang="pt">Primata</rdfs:label>
+    <rdfs:label xml:lang="de">Primat</rdfs:label>
+    <rdfs:comment xml:lang="es">Mamífero del orden Primates; incluye humanos, simios y monos.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#claseTaxonomica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Clase Taxonómica</rdfs:label>
+    <rdfs:label xml:lang="en">Taxonomic Class</rdfs:label>
+    <rdfs:label xml:lang="fr">Classe Taxonomique</rdfs:label>
+    <rdfs:label xml:lang="pt">Classe Taxonômica</rdfs:label>
+    <rdfs:label xml:lang="de">Taxonomische Klasse</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Marsupial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Marsupial</rdfs:label>
+    <rdfs:label xml:lang="en">Marsupial</rdfs:label>
+    <rdfs:label xml:lang="fr">Marsupial</rdfs:label>
+    <rdfs:label xml:lang="pt">Marsupial</rdfs:label>
+    <rdfs:label xml:lang="de">Beuteltier</rdfs:label>
+    <rdfs:comment xml:lang="es">Mamífero que cría a sus hijos en una bolsa o marsupio; ej. canguro y koala.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#pesoPromedio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Peso Promedio</rdfs:label>
+    <rdfs:label xml:lang="en">Average Weight</rdfs:label>
+    <rdfs:label xml:lang="fr">Poids Moyen</rdfs:label>
+    <rdfs:label xml:lang="pt">Peso Médio</rdfs:label>
+    <rdfs:label xml:lang="de">Durchschnittsgewicht</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#tipoLocomocion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Tipo de Locomoción</rdfs:label>
+    <rdfs:label xml:lang="en">Locomotion Type</rdfs:label>
+    <rdfs:label xml:lang="fr">Type de Locomotion</rdfs:label>
+    <rdfs:label xml:lang="pt">Tipo de Locomoção</rdfs:label>
+    <rdfs:label xml:lang="de">Fortbewegungsart</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Carnivoro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Carnívoro</rdfs:label>
+    <rdfs:label xml:lang="en">Carnivore</rdfs:label>
+    <rdfs:label xml:lang="fr">Carnivore</rdfs:label>
+    <rdfs:label xml:lang="pt">Carnívoro</rdfs:label>
+    <rdfs:label xml:lang="de">Fleischfresser</rdfs:label>
+    <rdfs:comment xml:lang="es">Animal cuya dieta consiste principalmente en carne de otros animales.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#tieneDepredador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">Tiene Depredador</rdfs:label>
+    <rdfs:label xml:lang="en">Has Predator</rdfs:label>
+    <rdfs:label xml:lang="fr">A un Prédateur</rdfs:label>
+    <rdfs:label xml:lang="pt">Tem Predador</rdfs:label>
+    <rdfs:label xml:lang="de">Hat Raubtier</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Pinguino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Ave"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Penguin"/>
+    <rdfs:label xml:lang="es">Pingüino</rdfs:label>
+    <rdfs:label xml:lang="en">Penguin</rdfs:label>
+    <rdfs:label xml:lang="fr">Manchot</rdfs:label>
+    <rdfs:label xml:lang="pt">Pinguim</rdfs:label>
+    <rdfs:label xml:lang="de">Pinguin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#IguanaVerde">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Reptil"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Herbivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Green_iguana"/>
+    <rdfs:label xml:lang="es">Iguana Verde</rdfs:label>
+    <rdfs:label xml:lang="en">Green Iguana</rdfs:label>
+    <rdfs:label xml:lang="fr">Iguane vert</rdfs:label>
+    <rdfs:label xml:lang="pt">Iguana-verde</rdfs:label>
+    <rdfs:label xml:lang="de">Grüner Leguan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Herbivoro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Herbívoro</rdfs:label>
+    <rdfs:label xml:lang="en">Herbivore</rdfs:label>
+    <rdfs:label xml:lang="fr">Herbivore</rdfs:label>
+    <rdfs:label xml:lang="pt">Herbívoro</rdfs:label>
+    <rdfs:label xml:lang="de">Pflanzenfresser</rdfs:label>
+    <rdfs:comment xml:lang="es">Animal cuya dieta consiste exclusivamente en plantas y vegetales.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#regionNativa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Región Nativa</rdfs:label>
+    <rdfs:label xml:lang="en">Native Region</rdfs:label>
+    <rdfs:label xml:lang="fr">Région Natale</rdfs:label>
+    <rdfs:label xml:lang="pt">Região Nativa</rdfs:label>
+    <rdfs:label xml:lang="de">Heimatregion</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Aracnido">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Arácnido</rdfs:label>
+    <rdfs:label xml:lang="en">Arachnid</rdfs:label>
+    <rdfs:label xml:lang="fr">Arachnide</rdfs:label>
+    <rdfs:label xml:lang="pt">Arácnido</rdfs:label>
+    <rdfs:label xml:lang="de">Spinnentier</rdfs:label>
+    <rdfs:comment xml:lang="es">Artrópodo con cuatro pares de patas; incluye arañas, escorpiones y ácaros.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Invertebrado"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#habitat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="es">Hábitat</rdfs:label>
+    <rdfs:label xml:lang="en">Habitat</rdfs:label>
+    <rdfs:label xml:lang="fr">Habitat</rdfs:label>
+    <rdfs:label xml:lang="pt">Habitat</rdfs:label>
+    <rdfs:label xml:lang="de">Lebensraum</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/habitat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Invertebrado">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Invertebrado</rdfs:label>
+    <rdfs:label xml:lang="en">Invertebrate</rdfs:label>
+    <rdfs:label xml:lang="fr">Invertébré</rdfs:label>
+    <rdfs:label xml:lang="pt">Invertebrado</rdfs:label>
+    <rdfs:label xml:lang="de">Wirbelloser</rdfs:label>
+    <rdfs:comment xml:lang="es">Animal que carece de columna vertebral; constituye el 97% de las especies animales.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Leon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Felino"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Lion"/>
+    <rdfs:label xml:lang="es">León</rdfs:label>
+    <rdfs:label xml:lang="en">Lion</rdfs:label>
+    <rdfs:label xml:lang="fr">Lion</rdfs:label>
+    <rdfs:label xml:lang="pt">Leão</rdfs:label>
+    <rdfs:label xml:lang="de">Löwe</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#RanaArborea">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Anfibio"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Carnivoro"/>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Tree_frog"/>
     <rdfs:label xml:lang="es">Rana Arbórea</rdfs:label>
     <rdfs:label xml:lang="en">Tree Frog</rdfs:label>
@@ -169,23 +550,35 @@
     <rdfs:label xml:lang="pt">Perereca</rdfs:label>
     <rdfs:label xml:lang="de">Laubfrosch</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Animal">
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Roedor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Animal</rdfs:label>
+    <rdfs:label xml:lang="es">Roedor</rdfs:label>
+    <rdfs:label xml:lang="en">Rodent</rdfs:label>
+    <rdfs:label xml:lang="fr">Rongeur</rdfs:label>
+    <rdfs:label xml:lang="pt">Roedor</rdfs:label>
+    <rdfs:label xml:lang="de">Nagetier</rdfs:label>
+    <rdfs:comment xml:lang="es">Mamífero del orden Rodentia con dientes incisivos de crecimiento continuo.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Reptil">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Reptil</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Caballo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Mamifero"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/grupo10/animales#Herbivoro"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Horse"/>
+    <rdfs:label xml:lang="es">Caballo</rdfs:label>
+    <rdfs:label xml:lang="en">Horse</rdfs:label>
+    <rdfs:label xml:lang="fr">Cheval</rdfs:label>
+    <rdfs:label xml:lang="pt">Cavalo</rdfs:label>
+    <rdfs:label xml:lang="de">Pferd</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Mamifero">
+  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Crustaceo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Mamifero</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/grupo10/animales#Ave">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="es">Ave</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Animal"/>
+    <rdfs:label xml:lang="es">Crustáceo</rdfs:label>
+    <rdfs:label xml:lang="en">Crustacean</rdfs:label>
+    <rdfs:label xml:lang="fr">Crustacé</rdfs:label>
+    <rdfs:label xml:lang="pt">Crustáceo</rdfs:label>
+    <rdfs:label xml:lang="de">Krebstier</rdfs:label>
+    <rdfs:comment xml:lang="es">Artrópodo con exoesqueleto de quitina y dos pares de antenas; ej. cangrejos y langostas.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/grupo10/animales#Invertebrado"/>
   </rdf:Description>
 </rdf:RDF>

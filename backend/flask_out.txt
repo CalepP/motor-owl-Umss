@@ -1,0 +1,72 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[Fuseki] 'leon' -> 4 resultados
+[Fuseki] 'lion' -> 3 resultados
+[Fuseki] 'lion' -> 3 resultados
+[Fuseki] 'leao' -> 3 resultados
+[Fuseki] 'lowe' -> 3 resultados
+[Fuseki] 'tiburon' -> 9 resultados
+[Wikidata] 'tiburon'->ES:'tiburon' (es) -> 0 resultados [MODO B]
+[DBpedia Lookup] 'tiburon'->'shark' (es) -> 27 resultados
+[Fuseki] 'perro' -> 19 resultados
+[Wikidata] 'perro' (es) -> 1 resultados [MODO A clase:Q39367]
+[DBpedia Lookup] 'perro'->'dog' (es) -> 1 resultados
+[Fuseki] 'leon' -> 4 resultados
+[Fuseki] 'lion' -> 3 resultados
+[Fuseki] 'lion' -> 3 resultados
+[Fuseki] 'leao' -> 3 resultados
+[Fuseki] 'lowe' -> 3 resultados
+[Fuseki] 'perro' -> 19 resultados
+[Wikidata] 'perro' (es) -> 1 resultados [MODO A clase:Q39367]
+[DBpedia Lookup] 'perro'->'dog' (es) -> 1 resultados
+[Fuseki] 'GATO' -> 8 resultados
+[Wikidata] 'GATO' (es) -> 3 resultados [MODO A clase:Q146]
+[DBpedia Lookup] 'GATO'->'cat' (es) -> 1 resultados
+[Fuseki] 'delfin' -> 5 resultados
+[Wikidata] 'delfin'->ES:'delfin' (es) -> 1 resultados [MODO B]
+[DBpedia Lookup] 'delfin'->'dolphin' (es) -> 25 resultados
+[Fuseki] 'tiburon' -> 9 resultados
+[Wikidata] 'tiburon'->ES:'tiburon' (es) -> 0 resultados [MODO B]
+[DBpedia Lookup] 'tiburon'->'shark' (es) -> 27 resultados
+[Fuseki] 'pez payaso' -> 1 resultados
+[DBpedia Lookup] 'pez payaso'->'pez payaso' (es) -> 0 resultados
+[Fuseki] 'aguila' -> 5 resultados
+[Wikidata] 'aguila'->ES:'aguila' (es) -> 4 resultados [MODO B]
+[DBpedia Lookup] 'aguila'->'eagle' (es) -> 23 resultados
+[Fuseki] 'mamiferos' -> 50 resultados
+[DBpedia Lookup] 'mamiferos'->'mammal' (es) -> 17 resultados
+[Wikidata] 'mamiferos'->ES:'mamiferos' (es) -> 2 resultados [MODO B]
+[Fuseki] 'aves' -> 15 resultados
+[Wikidata] 'aves'->ES:'aves' (es) -> 2 resultados [MODO B]
+[DBpedia Lookup] 'aves'->'bird' (es) -> 1 resultados
+[Fuseki] 'reptiles' -> 9 resultados
+[Wikidata] 'reptiles'->ES:'reptiles' (es) -> 2 resultados [MODO B]
+[DBpedia Lookup] 'reptiles'->'reptile' (es) -> 16 resultados
+[Fuseki] 'delfín' -> 5 resultados
+[Fuseki] 'manchot' -> 3 resultados
+[Wikidata] 'manchot'->ES:'pinguino' (fr) -> 2 resultados [MODO B]
+[DBpedia Lookup] 'manchot'->'penguin' (fr) -> 26 resultados
+[Fuseki] 'invertebres' -> 0 resultados
+[Wikidata] 'invertebres'->ES:'invertebres' (fr) -> 0 resultados [MODO B]
+[DBpedia Lookup] 'invertebres'->'invertebres' (fr) -> 0 resultados
+[DBpedia live] 'invertebres' -> 0 resultados
+[Fuseki] 'invertebres' -> 0 resultados
+[Wikidata] 'invertebres'->ES:'invertebres' (es) -> 0 resultados [MODO B]
+[DBpedia Lookup] 'invertebres'->'invertebres' (es) -> 0 resultados
+[DBpedia live] 'invertebres' -> 0 resultados
+[Fuseki] 'invertebres' -> 0 resultados
+[Wikidata] 'invertebres'->ES:'invertebres' (es) -> 0 resultados [MODO B]
+[DBpedia Lookup] 'invertebres'->'invertebres' (es) -> 0 resultados
+[Fuseki] 'perro' -> 19 resultados
+[Wikidata] 'perro' (es) -> 1 resultados [MODO A clase:Q39367]
+[DBpedia Lookup] 'perro'->'dog' (es) -> 1 resultados
+[DBpedia live] 'invertebres' -> 0 resultados
+[Fuseki] 'invertebrados' -> 16 resultados
+[Fuseki] 'invertebrados' -> 16 resultados
+[Wikidata] 'invertebrados'->ES:'invertebrados' (es) -> 2 resultados [MODO B]
+[DBpedia Lookup] error: HTTPSConnectionPool(host='lookup.dbpedia.org', port=443): Read timed out.
+[DBpedia SPARQL] error: HTTPSConnectionPool(host='dbpedia.org', port=443): Read timed out. (read timeout=12)
+[Fuseki] 'invertebrados' -> 16 resultados
+[Fuseki] 'invertebrates' -> 0 resultados
+[Fuseki] 'invertebres' -> 0 resultados
+[Fuseki] 'wirbellosen' -> 0 resultados

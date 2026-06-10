@@ -1,7 +1,5 @@
 from flask import Blueprint, jsonify, request
 from ..ontology.loader import get_all_animals, get_animal_by_id
-from ..sparql.fuseki import search_fuseki
-
 bp = Blueprint("animals", __name__)
 
 @bp.route("/", methods=["GET"])
@@ -25,15 +23,10 @@ def get_details():
 
     if "dbpedia.org/resource/" in uri:
         import requests as req
-
-        resource_id = uri.split("/resource/")[-1]
-
-        # Usar la API REST de DBpedia (más estable que SPARQL)
         try:
-            print(f"🔍 Buscando detalles para: {uri} en idioma: {lang}")
-            import requests as req
             resource_id    = uri.split("/resource/")[-1]
             nombre_legible = resource_id.replace("_", " ")
+            print(f"🔍 Buscando detalles para: {uri} en idioma: {lang}")
 
             WIKI_ES_TITLES = {
                 "Lion": "León_(animal)", "Tiger": "Tigre", "Bear": "Oso",
@@ -161,6 +154,53 @@ def get_details():
                         })
             except Exception as e2:
                 print(f"❌ Fuseki fallback falló: {e2}")
+
+    if "wikidata.org/entity/" in uri:
+        import requests as req
+        q_id = uri.rstrip("/").split("/")[-1]   # e.g. "Q144"
+        try:
+            entity_resp = req.get(
+                f"https://www.wikidata.org/wiki/Special:EntityData/{q_id}.json",
+                headers={"User-Agent": "MotorOWL/1.0 (UMSS Grupo10; contacto@umss.edu)"},
+                timeout=8
+            )
+            if entity_resp.status_code == 200:
+                entity = entity_resp.json().get("entities", {}).get(q_id, {})
+
+                # Labels en todos los idiomas disponibles
+                labels_raw = entity.get("labels", {})
+                labels     = {code: d.get("value", "")
+                              for code, d in labels_raw.items() if d.get("value")}
+
+                # Descripción en el idioma pedido, fallback EN
+                desc_raw    = entity.get("descriptions", {})
+                description = (desc_raw.get(lang,  {}).get("value", "") or
+                               desc_raw.get("en",   {}).get("value", ""))
+
+                # Thumbnail: P18 → Commons URL directo
+                thumbnail = ""
+                p18_list  = entity.get("claims", {}).get("P18", [])
+                if p18_list:
+                    fname = (p18_list[0].get("mainsnak", {})
+                             .get("datavalue", {}).get("value", ""))
+                    if fname:
+                        fname = fname.replace(" ", "_")
+                        thumbnail = (
+                            f"https://commons.wikimedia.org/wiki/Special:FilePath/{fname}"
+                            "?width=400"
+                        )
+
+                return jsonify({
+                    "uri":               uri,
+                    "labels":            labels,
+                    "abstract":          description,
+                    "thumbnail":         thumbnail,
+                    "nombre_cientifico": "",
+                    "clasificacion":     {},
+                    "fuente":            "wikidata"
+                })
+        except Exception as e:
+            print(f"❌ Wikidata EntityData error: {e}")
 
     return jsonify({"error": "No se encontraron detalles"}), 404
 

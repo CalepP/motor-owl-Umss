@@ -9,15 +9,36 @@
 <body>
 
   <div class="app home" id="app">
-
     <header class="topbar">
+      <button class="back-btn" id="backBtn" onclick="volverInicio()">
+        ← Inicio
+      </button>
       <div class="brand">
         <div class="logo-text">
           <span>M</span><span>o</span><span>t</span><span>o</span><span>r</span><span>OWL</span><span>-GR10</span>
         </div>
-        <p class="brand-sub">Motor de búsqueda semántica · UMSS 2026 · Grupo 10</p>
+        <p class="brand-sub" id="brandSub">Motor de búsqueda semántica · UMSS 2026 · Grupo 10</p>
+      </div>
+      <div class="ui-lang-selector">
+        <div class="connection-toggle">
+          <span class="conn-label" id="connLabel">🌐 Online</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="onlineToggle" checked onchange="toggleConexion()">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <button class="ui-lang-btn active" onclick="cambiarIdiomaUI('es')">
+          <img src="https://flagcdn.com/w20/es.png" alt="ES"> ES
+        </button>
+        <button class="ui-lang-btn" onclick="cambiarIdiomaUI('en')">
+          <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN
+        </button>
+        <button class="ui-lang-btn" onclick="cambiarIdiomaUI('fr')">
+          <img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR
+        </button>
       </div>
     </header>
+  
 
     <!-- HERO -->
     <section class="hero-animals" id="heroAnimals"></section>
@@ -57,7 +78,7 @@
       </div>
       <div class="stat-div"></div>
       <div class="stat-item">
-        <span class="stat-num">1431</span>
+        <span class="stat-num">1976</span>
         <span class="stat-label">Triples RDF</span>
       </div>
       <div class="stat-div"></div>

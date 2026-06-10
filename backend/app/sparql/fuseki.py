@@ -47,6 +47,35 @@ TRADUCCIONES_EN = {
     "herviboros": "herbivore",
     "herbivoro":  "herbivore",
     "herbivoros": "herbivore",
+    "extincion":             "endangered",
+    "en extincion":          "endangered",
+    "animales en extincion": "endangered",
+    "peligro":               "endangered",
+    "en peligro":            "endangered",
+    # PT → EN (sin acentos para normalización)
+    "leao": "lion", "urso": "bear", "lobo": "wolf", "raposa": "fox",
+    "golfinho": "dolphin", "tubarao": "shark", "baleia": "whale",
+    "aguia": "eagle", "jacare": "crocodile", "sapo": "frog",
+    "tartaruga": "turtle", "borboleta": "butterfly", "abelha": "bee",
+    "aranha": "spider", "polvo": "octopus", "girafa": "giraffe",
+    "macaco": "monkey", "cavalo": "horse", "coelho": "rabbit",
+    "morcego": "bat", "cao": "dog", "pinguim": "penguin",
+    "papagaio": "parrot", "rinoceronte": "rhinoceros",
+    # DE → EN (sin umlauts para normalización)
+    "lowe": "lion", "bar": "bear", "wal": "whale", "hai": "shark",
+    "adler": "eagle", "schlange": "snake", "frosch": "frog",
+    "krokodil": "crocodile", "pinguin": "penguin", "elefant": "elephant",
+    "giraffe": "giraffe", "nashorn": "rhinoceros", "kamel": "camel",
+    "hund": "dog", "katze": "cat", "fledermaus": "bat", "hase": "rabbit",
+    "schmetterling": "butterfly", "ente": "duck",
+    # FR → EN
+    "canard": "duck", "renard": "fox", "ours": "bear", "loup": "wolf",
+    "dauphin": "dolphin", "baleine": "whale", "requin": "shark",
+    "aigle": "eagle", "serpent": "snake", "grenouille": "frog",
+    "papillon": "butterfly", "abeille": "bee", "araignee": "spider",
+    "pieuvre": "octopus", "girafe": "giraffe", "cheval": "horse",
+    "lapin": "rabbit", "chauve-souris": "bat", "manchot": "penguin",
+    "perroquet": "parrot", "rhinoceros": "rhinoceros",
 }
 
 def _normalizar(texto):
@@ -60,11 +89,85 @@ def _a_ingles(query):
     q_norm = _normalizar(q)
     return TRADUCCIONES_EN.get(q) or TRADUCCIONES_EN.get(q_norm) or q_norm
 
+# Diccionario inverso EN/otros → ES generado automáticamente + adiciones manuales
+TRADUCCIONES_ES = {en: es for es, en in TRADUCCIONES_EN.items()}
+TRADUCCIONES_ES.update({
+    "dogs": "perro", "cats": "gato", "sharks": "tiburon", "whales": "ballena",
+    "bears": "oso", "lions": "leon", "tigers": "tigre", "wolves": "lobo",
+    "foxes": "zorro", "horses": "caballo", "dolphins": "delfin",
+    "crocodiles": "cocodrilo", "penguins": "pinguino", "monkeys": "mono",
+    "snakes": "serpiente", "frogs": "rana", "turtles": "tortuga",
+    "reptiles": "reptiles", "amphibians": "anfibios", "fish": "peces",
+    "insects": "insectos", "mammals": "mamiferos", "birds": "aves",
+    "primates": "primates", "spiders": "aracnidos", "parrots": "loro",
+    "owls": "buho", "rabbits": "conejo", "bats": "murcielago",
+    "elephants": "elefante", "giraffes": "jirafa", "zebras": "cebra",
+    "gorillas": "gorila", "chimpanzees": "chimpance",
+    # FR → ES
+    "chien": "perro", "chat": "gato", "requin": "tiburon", "baleine": "ballena",
+    "ours": "oso", "lion": "leon", "tigre": "tigre", "loup": "lobo",
+    "dauphin": "delfin", "aigle": "aguila", "serpent": "serpiente",
+    "grenouille": "rana", "crocodile": "cocodrilo", "manchot": "pinguino",
+    "papillon": "mariposa", "éléphant": "elefante", "girafe": "jirafa",
+    "singe": "mono", "perroquet": "loro", "hibou": "buho",
+    # PT → ES
+    "cão": "perro", "tubarão": "tiburon", "baleia": "ballena",
+    "golfinho": "delfin", "águia": "aguila", "cobra": "serpiente",
+    "sapo": "rana", "crocodilo": "cocodrilo", "pinguim": "pinguino",
+    "borboleta": "mariposa", "elefante": "elefante", "girafa": "jirafa",
+    "macaco": "mono", "papagaio": "loro",
+    # DE → ES
+    "hund": "perro", "katze": "gato", "hai": "tiburon", "wal": "ballena",
+    "bär": "oso", "löwe": "leon", "wolf": "lobo", "delfin": "delfin",
+    "adler": "aguila", "schlange": "serpiente", "frosch": "rana",
+    "krokodil": "cocodrilo", "pinguin": "pinguino", "schmetterling": "mariposa",
+    "elefant": "elefante", "giraffe": "jirafa", "affe": "mono", "papagei": "loro",
+    # Categorías EN (chips UI)
+    "invertebrates": "invertebrados", "invertebrate": "invertebrado",
+    "felines": "felinos", "feline": "felino",
+    "vertebrates": "vertebrados", "vertebrate": "vertebrado",
+    "carnivores": "carnivoros", "carnivore": "carnivoro",
+    "herbivores": "herbivoros", "herbivore": "herbivoro",
+    "omnivores": "omnivoros", "omnivore": "omnivoro",
+    "arachnids": "aracnidos", "arachnid": "aracnido",
+    "crustaceans": "crustaceos", "crustacean": "crustaceo",
+    "mollusks": "moluscos", "mollusk": "molusco",
+    "cetaceans": "cetaceos", "cetacean": "cetaceo",
+    "rodents": "roedores", "rodent": "roedor",
+    # Categorías FR (chips UI)
+    "invertebres": "invertebrados", "invertébrés": "invertebrados",
+    "felins": "felinos", "félins": "felinos",
+    "mammiferes": "mamiferos", "mammifères": "mamiferos",
+    "oiseaux": "aves", "poissons": "peces", "insectes": "insectos",
+    "amphibiens": "anfibios", "reptiles": "reptiles",
+    "vertebres": "vertebrados", "vertébrés": "vertebrados",
+    "carnivores": "carnivoros", "herbivores": "herbivoros",
+    # Categorías DE (chips UI)
+    "wirbellosen": "invertebrados", "wirbellose": "invertebrados",
+    "felinen": "felinos",
+    "saugetiere": "mamiferos", "säugetiere": "mamiferos",
+    "vogel": "aves", "vögel": "aves", "fische": "peces",
+    "insekten": "insectos", "amphibien": "anfibios", "reptilien": "reptiles",
+    "primaten": "primates", "krokodile": "cocodrilos",
+    # Categorías PT (chips UI)
+    "primatas": "primates", "invertebrados": "invertebrados",
+    "mamiferos": "mamiferos", "peixes": "peces", "insetos": "insectos",
+    "repteis": "reptiles", "anfibios": "anfibios",
+})
+
+def _a_espanol(query):
+    """Intenta traducir al español un término en cualquier idioma."""
+    q = query.lower().strip()
+    q_norm = _normalizar(q)
+    return TRADUCCIONES_ES.get(q) or TRADUCCIONES_ES.get(q_norm) or q
+
 def search_fuseki(query, lang="es"):
-    """Busca en Fuseki local — funciona offline."""
-    query_en = _a_ingles(query)
-    query_lower = query.lower()
+    """Busca en Fuseki local — funciona offline, multilingüe."""
+    query_en       = _a_ingles(query)
+    query_es       = _a_espanol(query)      # para búsquedas en EN/FR/PT/DE
+    query_lower    = query.lower()
     query_en_lower = query_en.lower()
+    query_es_lower = query_es.lower()
 
     # Para búsquedas de tipo "perro", también buscar por clase/tipo
     CLASES_EXTRA = {
@@ -75,8 +178,8 @@ def search_fuseki(query, lang="es"):
                   "dalmatian", "dobermann", "schnauzer", "shih tzu",
                   "yorkshire", "border collie", "great dane"],
         # Gatos
-        "gato": ["cat", "persian", "siamese", "maine coon", "bengal",
-                 "sphynx", "british shorthair", "scottish fold", "abyssinian"],
+        "gato": ["cat", "persian cat", "siamese cat", "maine coon", "bengal cat",
+                 "sphynx cat", "british shorthair", "scottish fold", "abyssinian cat"],
         # Tiburones
         "tiburon":  ["shark"],
         "tiburones":["shark"],
@@ -257,10 +360,29 @@ def search_fuseki(query, lang="es"):
                      "monodon", "physeter", "megaptera", "balaenoptera"],
         "cetaceos": ["whale", "dolphin", "orca", "narwhal", "tursiops",
                      "stenella", "delphinapterus", "physeter", "balaenoptera"],
+                     "extincion":         ["endangered", "critically", "threatened", "extinct",
+                      "gorilla", "tiger", "polar bear", "blue whale",
+                      "snow leopard", "orangutan", "chimpanzee", "rhinoceros",
+                      "vaquita", "amur leopard", "sumatran"],
+"en extincion":      ["endangered", "critically", "threatened",
+                      "gorilla", "tiger", "polar bear", "blue whale",
+                      "snow leopard", "orangutan", "rhinoceros"],
+"animales en extincion": ["endangered", "critically", "threatened",
+                          "gorilla", "tiger", "polar bear", "blue whale",
+                          "snow leopard", "orangutan", "rhinoceros"],
+"peligro":           ["endangered", "critically", "threatened",
+                      "gorilla", "tiger", "polar bear", "snow leopard"],
+"en peligro":        ["endangered", "critically", "threatened",
+                      "gorilla", "tiger", "polar bear", "snow leopard"],
+"dalmata":           ["dalmatian"],
+"dálmata":           ["dalmatian"],
+"perro dalmata":     ["dalmatian"],
     }
 
-    # Construir filtros adicionales
+    # Construir filtros adicionales (busca en ES y, si es búsqueda no-española, también por equivalente ES)
     extras = CLASES_EXTRA.get(query_lower, CLASES_EXTRA.get(_normalizar(query_lower), []))
+    if not extras and query_es_lower != query_lower:
+        extras = CLASES_EXTRA.get(query_es_lower, CLASES_EXTRA.get(_normalizar(query_es_lower), []))
     
     # Construir filtros de CLASES_EXTRA con palabras completas
     filtros_extra = ""
@@ -277,7 +399,17 @@ def search_fuseki(query, lang="es"):
             )
         filtros_extra = "|| " + " ||\n            ".join(condiciones)
 
-    query_norm = _normalizar(query_lower)
+    query_norm    = _normalizar(query_lower)
+    query_es_norm = _normalizar(query_es_lower)
+
+    # Label opcional en el idioma pedido (solo cuando no es español)
+    if lang != "es":
+        label_lang_optional = f'OPTIONAL {{ ?animal rdfs:label ?labelLang . FILTER(lang(?labelLang) = "{lang}") }}'
+        label_lang_filter   = (f'|| CONTAINS(LCASE(str(?labelLang)), "{query_lower}")'
+                               f'|| CONTAINS(LCASE(str(?labelLang)), "{query_norm}")')
+    else:
+        label_lang_optional = ""
+        label_lang_filter   = ""
 
     sparql_query = f"""
     PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
@@ -285,24 +417,27 @@ def search_fuseki(query, lang="es"):
     PREFIX dbo:   <http://dbpedia.org/ontology/>
     PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 
-    SELECT DISTINCT ?animal ?label ?labelEn ?sci ?abstract ?thumbnail
+    SELECT DISTINCT ?animal ?labelEs ?labelLang ?labelEn ?sci ?abstract ?thumbnail
     WHERE {{
         ?animal a owl:NamedIndividual .
-        ?animal rdfs:label ?label .
-        FILTER(lang(?label) = "{lang}")
+        ?animal rdfs:label ?labelEs .
+        FILTER(lang(?labelEs) = "es")
+        {label_lang_optional}
         OPTIONAL {{ ?animal rdfs:label ?labelEn . FILTER(lang(?labelEn) = "en") }}
         OPTIONAL {{ ?animal dbo:scientificName ?sci . }}
-        OPTIONAL {{ ?animal dbo:abstract ?abstract . FILTER(lang(?abstract) = "{lang}") }}
+        OPTIONAL {{ ?animal dbo:abstract ?abstract .
+                   FILTER(lang(?abstract) = "{lang}" || (lang(?abstract) = "es" && "{lang}" != "es")) }}
         OPTIONAL {{ ?animal foaf:depiction ?thumbnail . }}
         FILTER(
-            CONTAINS(LCASE(str(?label)), "{query_lower}") ||
-            CONTAINS(LCASE(str(?label)), "{query_norm}") ||
-            CONTAINS(LCASE(str(?labelEn)), "{query_en_lower}") ||
-            CONTAINS(LCASE(str(?labelEn)), "{query_norm}")
+            CONTAINS(LCASE(str(?labelEs)),  "{query_es_lower}") ||
+            CONTAINS(LCASE(str(?labelEs)),  "{query_es_norm}") ||
+            CONTAINS(LCASE(str(?labelEn)),  "{query_en_lower}") ||
+            CONTAINS(LCASE(str(?labelEn)),  "{query_norm}")
+            {label_lang_filter}
             {filtros_extra}
         )
     }}
-    ORDER BY ?label
+    ORDER BY ?labelEs
     LIMIT 50
     """
 
@@ -316,10 +451,10 @@ def search_fuseki(query, lang="es"):
         resp.raise_for_status()
         data = resp.json()
         resultados = _parse_fuseki(data, lang)
-        print(f"🔵 Fuseki '{query}' → {len(resultados)} resultados")
+        print(f"[Fuseki] '{query}' -> {len(resultados)} resultados")
         return resultados
     except Exception as e:
-        print(f"⚠️ Fuseki no disponible: {e}")
+        print(f"[Fuseki] no disponible: {e}")
         return []
 
 def search_dbpedia_live(query, lang="es"):
@@ -364,11 +499,11 @@ def search_dbpedia_live(query, lang="es"):
         try:
             results = sparql.query().convert()
             animales = _parse_dbpedia(results, lang)
-            print(f"🌐 DBpedia live '{query_en}' → {len(animales)} resultados")
+            print(f"[DBpedia live] '{query_en}' -> {len(animales)} resultados")
             return animales
         except Exception as e:
             if intento == RETRIES:
-                print(f"⚠️ DBpedia live falló: {e}")
+                print(f"[DBpedia live] fallo: {e}")
                 return []
     return []
 
@@ -376,23 +511,32 @@ def _parse_fuseki(data, lang):
     animales = {}  # uri -> datos
 
     for r in data.get("results", {}).get("bindings", []):
-        uri       = r.get("animal",    {}).get("value", "")
-        label     = r.get("label",     {}).get("value", "")
-        label_en  = r.get("labelEn",   {}).get("value", "")
-        sci       = r.get("sci",       {}).get("value", "")
-        abstract  = r.get("abstract",  {}).get("value", "")
-        thumbnail = r.get("thumbnail", {}).get("value", "")
+        uri        = r.get("animal",    {}).get("value", "")
+        label_es   = r.get("labelEs",   {}).get("value", "")
+        label_lang = r.get("labelLang", {}).get("value", "")
+        label_en   = r.get("labelEn",   {}).get("value", "")
+        sci        = r.get("sci",       {}).get("value", "")
+        abstract   = r.get("abstract",  {}).get("value", "")
+        thumbnail  = r.get("thumbnail", {}).get("value", "")
 
         if not uri:
             continue
 
+        # Nombre a mostrar: idioma pedido > español > inglés
+        nombre = label_lang or label_es or label_en
+
         if uri not in animales:
             fuente = "local" if "semanticweb.org" in uri else "dbpedia"
+            labels = {"es": label_es} if label_es else {}
+            if label_en:
+                labels["en"] = label_en
+            if label_lang and lang not in labels:
+                labels[lang] = label_lang
             animales[uri] = {
                 "id":                uri.split("#")[-1].split("/")[-1],
                 "uri":               uri,
-                "nombre":            label,
-                "labels":            {lang: label, "en": label_en} if label_en else {lang: label},
+                "nombre":            nombre,
+                "labels":            labels,
                 "abstract":          abstract,
                 "nombre_cientifico": sci,
                 "thumbnail":         thumbnail,
@@ -400,15 +544,20 @@ def _parse_fuseki(data, lang):
                 "fuente":            fuente
             }
         else:
-            # Actualizar campos vacíos si llegan en filas siguientes
-            if not animales[uri]["thumbnail"] and thumbnail:
-                animales[uri]["thumbnail"] = thumbnail
-            if not animales[uri]["abstract"] and abstract:
-                animales[uri]["abstract"] = abstract
-            if not animales[uri]["nombre_cientifico"] and sci:
-                animales[uri]["nombre_cientifico"] = sci
-            if label_en and "en" not in animales[uri]["labels"]:
-                animales[uri]["labels"]["en"] = label_en
+            entry = animales[uri]
+            if not entry["thumbnail"] and thumbnail:
+                entry["thumbnail"] = thumbnail
+            if not entry["abstract"] and abstract:
+                entry["abstract"] = abstract
+            if not entry["nombre_cientifico"] and sci:
+                entry["nombre_cientifico"] = sci
+            if label_en and "en" not in entry["labels"]:
+                entry["labels"]["en"] = label_en
+            if label_lang and lang not in entry["labels"]:
+                entry["labels"][lang] = label_lang
+            # Actualizar nombre si ahora tenemos etiqueta en el idioma pedido
+            if label_lang and not (entry["nombre"] and entry["nombre"] != label_es):
+                entry["nombre"] = label_lang
 
     return list(animales.values())
 
